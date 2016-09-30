@@ -381,7 +381,7 @@ ul.template_campos span {
 ul.template_campos li.lista {
 	position:absolute;
 	z-index:3;
-	min-width:200px;
+	min-width:140px;
 	display:none;
 }
 
@@ -406,11 +406,12 @@ ul.template_campos li.lista ul {
 	overflow-y:auto;
 	overflow-x:hidden;
 	max-height:200px;
+	margin-left: -14px;
 }
 
-ul.template_campos li ul li {
+/*ul.template_campos li ul li {
 	padding:0px 5px;
-}
+}*/
 
 ul.template_campos li ul li:hover {
 	background-color:#ededed;
@@ -1722,6 +1723,15 @@ input, select, textarea {
 .template_contenedorBusquedaHeader {
 	width: 82%;
 	position: absolute;
+	background-color: rgba(255,255,255,0.45);
+	left: 9%;
+	padding: 0 1%;
+	z-index: 99;
+
+}
+.template_contenedorBusquedaHeader2 {
+	width: 82%;
+	/*position: absolute;*/
 	background-color: rgba(255,255,255,0.45);
 	left: 9%;
 	padding: 0 1%;

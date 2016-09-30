@@ -155,7 +155,6 @@
 </div>
 
 <div class="banner inmueble hidden-xs">
-	<?php templateBuscadorResponsive(); ?>
 	<img src="images/images/0451438001436838815.jpg" class="img-responsive" alt="Casas en venta en guadalajara">
 
 </div>
@@ -198,6 +197,9 @@
 			<div class="paginacionNumeracion"></div>
 
 		</div>
+	</section>
+	<section class="col-lg-3 columna3 hidden-xs">
+		<?php templateBuscadorResponsive2(); ?>
 	</section>
 </div>
 <!-- <div class="catalogo_cuerpo">
