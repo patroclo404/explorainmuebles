@@ -2471,9 +2471,19 @@ function templateBuscadorResponsive(){
                 <li class='lista'>
                     <ul>
                         <?php
-                        for ($x = 0; $x < count($arrayTipoInmueble); $x++) {
+                        /*casa*/
+                        echo "<li data-value='" . $arrayTipoInmueble[1]["id"] . "' " . (in_array($arrayTipoInmueble[1]["id"], array(1, 2)) ? "data-transaccion='3'" : "") . ">" . $arrayTipoInmueble[1]["nombre"] . "</li>";
+                        /*Depa*/
+                        echo "<li data-value='" . $arrayTipoInmueble[2]["id"] . "' " . (in_array($arrayTipoInmueble[2]["id"], array(1, 2)) ? "data-transaccion='3'" : "") . ">" . $arrayTipoInmueble[2]["nombre"] . "</li>";
+                        /*Oficina*/
+                        echo "<li data-value='" . $arrayTipoInmueble[4]["id"] . "' " . (in_array($arrayTipoInmueble[4]["id"], array(1, 2)) ? "data-transaccion='3'" : "") . ">" . $arrayTipoInmueble[4]["nombre"] . "</li>";
+                        /*Local*/
+                        echo "<li data-value='" . $arrayTipoInmueble[6]["id"] . "' " . (in_array($arrayTipoInmueble[6]["id"], array(1, 2)) ? "data-transaccion='3'" : "") . ">" . $arrayTipoInmueble[6]["nombre"] . "</li>";
+                        /*Terreno*/
+                        echo "<li data-value='" . $arrayTipoInmueble[3]["id"] . "' " . (in_array($arrayTipoInmueble[3]["id"], array(1, 2)) ? "data-transaccion='3'" : "") . ">" . $arrayTipoInmueble[3]["nombre"] . "</li>";
+                        /*for ($x = 0; $x < count($arrayTipoInmueble); $x++) {
                             echo "<li data-value='" . $arrayTipoInmueble[$x]["id"] . "' " . (in_array($arrayTipoInmueble[$x]["id"], array(1, 2)) ? "data-transaccion='3'" : "") . ">" . $arrayTipoInmueble[$x]["nombre"] . "</li>";
-                        }
+                        }*/
                         ?>
                     </ul>
                 </li>
@@ -2486,8 +2496,12 @@ function templateBuscadorResponsive(){
                 <li class='lista'>
                     <ul>
                         <?php
+                        $var=13;
+                        echo "<li data-value='" . $arrayEstado[$var]["id"] . "'>" . $arrayEstado[$var]["nombre"] . "</li>";
                         for ($x = 0; $x < count($arrayEstado); $x++) {
-                            echo "<li data-value='" . $arrayEstado[$x]["id"] . "'>" . $arrayEstado[$x]["nombre"] . "</li>";
+                            if($x!=13){
+                                echo "<li data-value='" . $arrayEstado[$x]["id"] . "'>" . $arrayEstado[$x]["nombre"] . "</li>";
+                            }
                         }
                         ?>
                     </ul>
@@ -2505,7 +2519,7 @@ function templateBuscadorResponsive(){
                 <input type='text' value='' style='position:absolute; top:0px; left:0px; z-index:-1;' readonly='true' />
             </ul>
         </div>
-        <div class='template_campos_select colonias hidden-xs'>
+        <!--<div class='template_campos_select colonias hidden-xs'>
             <ul id='template_busqueda_header_colonia' class='template_campos'>
                 <li class='lista'>
                     <ul></ul>
@@ -2513,21 +2527,21 @@ function templateBuscadorResponsive(){
                 <p data-value='-1'>Colonia</p>
                 <input type='text' value='' style='position:absolute; top:0px; left:0px; z-index:-1;' readonly='true' />
             </ul>
-        </div>
+        </div>-->
 
-        <div class='template_campos_select precio hidden-xs'>
+        <!--<div class='template_campos_select precio hidden-xs'>
             <ul id='template_busqueda_header_precios_min' class='template_campos'>
                 <li class='lista'>
-                    <ul>
-                        <?php
-                        templateSeleccionTransaccion($_SESSION[userFiltros]['transaccion']);
+                    <ul>-->
+                        <?php/*
+                        templateSeleccionTransaccion($_SESSION[userFiltros]['transaccion']);*/
                         ?>
-                    </ul>
+                    <!--</ul>
                 </li>
                 <p data-value='-1'>Precio</p>
                 <input type='text' value='' style='position:absolute; top:0px; left:0px; z-index:-1;' readonly='true' />
             </ul>
-        </div>
+        </div>-->
 
         <p class='textBuscar template_campos_select buscar' onclick='template_buscar();'>
             <a class='buscador btn btn-inmueble btn-lg'><i class='glyphicon glyphicon-search'></i> BUSCAR</a>
@@ -2744,6 +2758,9 @@ function templateBuscadorResponsive2(){
                 <li class='lista'>
                     <ul>
                         <?php
+                        $var=1;
+                        echo "<li data-value='" . $arrayTipoInmueble[$var]["id"] . "' " . (in_array($arrayTipoInmueble[$var]["id"], array(1, 2)) ? "data-transaccion='3'" : "") . ">" . $arrayTipoInmueble[$var]["nombre"] . "</li>";
+                        
                         for ($x = 0; $x < count($arrayTipoInmueble); $x++) {
                             echo "<li data-value='" . $arrayTipoInmueble[$x]["id"] . "' " . (in_array($arrayTipoInmueble[$x]["id"], array(1, 2)) ? "data-transaccion='3'" : "") . ">" . $arrayTipoInmueble[$x]["nombre"] . "</li>";
                         }
@@ -2759,8 +2776,12 @@ function templateBuscadorResponsive2(){
                 <li class='lista'>
                     <ul>
                         <?php
+                         $var=13;
+                        echo "<li data-value='" . $arrayEstado[$var]["id"] . "'>" . $arrayEstado[$var]["nombre"] . "</li>";
                         for ($x = 0; $x < count($arrayEstado); $x++) {
-                            echo "<li data-value='" . $arrayEstado[$x]["id"] . "'>" . $arrayEstado[$x]["nombre"] . "</li>";
+                            if($x!=13){
+                                echo "<li data-value='" . $arrayEstado[$x]["id"] . "'>" . $arrayEstado[$x]["nombre"] . "</li>";
+                            }
                         }
                         ?>
                     </ul>
@@ -2778,7 +2799,7 @@ function templateBuscadorResponsive2(){
                 <input type='text' value='' style='position:absolute; top:0px; left:0px; z-index:-1;' readonly='true' />
             </ul>
         </div><!--<br/><br/><br/>-->
-        <div class='template_campos_select colonias hidden-xs'>
+        <!--<div class='template_campos_select colonias hidden-xs'>
             <ul id='template_busqueda_header_colonia' class='template_campos'>
                 <li class='lista'>
                     <ul></ul>
@@ -2788,14 +2809,14 @@ function templateBuscadorResponsive2(){
             </ul>
         </div><!--<br/><br/><br/>-->
 
-        <div class='template_campos_select precio hidden-xs'>
+        <!--<div class='template_campos_select precio hidden-xs'>
             <ul id='template_busqueda_header_precios_min' class='template_campos'>
                 <li class='lista'>
-                    <ul>
-                        <?php
-                        templateSeleccionTransaccion($_SESSION[userFiltros]['transaccion']);
+                    <ul>-->
+                        <?php/*
+                        templateSeleccionTransaccion($_SESSION[userFiltros]['transaccion']);*/
                         ?>
-                    </ul>
+                    <!--</ul>
                 </li>
                 <p data-value='-1'>Precio</p>
                 <input type='text' value='' style='position:absolute; top:0px; left:0px; z-index:-1;' readonly='true' />

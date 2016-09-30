@@ -1721,10 +1721,10 @@ input, select, textarea {
 }
 
 .template_contenedorBusquedaHeader {
-	width: 82%;
+	width: 100%;
 	position: absolute;
-	background-color: rgba(255,255,255,0.45);
-	left: 9%;
+	/*background-color: rgba(255,255,255,0.45);*/
+	left: 13%;
 	padding: 0 1%;
 	z-index: 99;
 
