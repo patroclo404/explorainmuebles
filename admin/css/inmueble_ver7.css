@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+
+#main {
+	width:2550px;/*2700*/
+}
+
+#backImage {
+	width:600px;
+}
+
+#backImage input.ObjFocusBlur {
+	width:88%;
+}
+
+#backImage select.ObjFocusBlur {
+	width:92%;
+}
+
+#backImage textarea.ObjFocusBlur {
+	max-width:88%;
+	min-width:88%;
+	max-height:150px;
+	min-height:150px;
+}
+
+.inmueble_pestana {
+	position:relative;
+	float:right;
+}
+
+.template_contenedorCeldas {
+	width:95%;
+	cursor:pointer;
+	border-bottom:1px solid #012851;
+	padding:0px 10px 5px 10px;
+	color:#555;
+}
+
+.template_contenedorCeldas2 {
+	width:44%;
+	display:inline-block;
+	vertical-align:top;
+	text-align:left;
+	margin:0px auto;
+}
+
+.template_contenedorCeldas3 {
+	width:92%;
+	padding:0px 10px 5px 10px;
+	text-align:left;
+	margin:0px auto;
+}
+
+.inmueble_obtenerCoordenadas {
+	width:800px;
+}
+
+.inmueble_subirImagen .template_contenedorCeldas {
+	width:270px;
+	padding:0px;
+	border:none;
+}
+
+.inmueble_abrirModificarUsuario .template_contenedorCeldas {
+	width:270px;
+	border:none;
+}

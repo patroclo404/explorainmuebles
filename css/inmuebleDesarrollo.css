@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+
+.inmuebleDesarrollo_cuerpo {
+	width:100%;
+}
+
+.inmuebleDesarrollo_cuerpo .columna1,
+.inmuebleDesarrollo_cuerpo .columna2 {
+	display:inline-block;
+	vertical-align:top;
+	position:relative;
+	padding:20px 0px;
+}
+
+.inmuebleDesarrollo_cuerpo .columna1 {
+	width:300px;
+}
+
+.inmuebleDesarrollo_cuerpo .columna2 {
+	width:860px;
+}
+
+.inmuebleDesarrollo_cuerpo .columna2 p.titulo {
+	width:95%;
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	font-size:20px;
+	padding-bottom:10px;
+	padding-top:10px;
+}
+
+.inmuebleDesarrollo_cuerpo .columna2 p.titulo span {
+	color:#852c2b;
+	font-size:16px;
+	float:right;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+a.agregar {
+	display:inline-block;
+	vertical-align:top;
+	width:23px;
+	height:23px;
+	background-color:#dadad9;
+	cursor:pointer;
+	text-align:center;
+	color:#852c2b;
+	font-family:'GothamNarrowBlack', sans-serif;
+	line-height:23px;
+	font-size:inherit;
+	margin-right:10px;
+}

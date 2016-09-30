@@ -1,0 +1,340 @@
+@charset "utf-8";
+/* CSS Document */
+
+.desarrollo_cuerpo {
+	width:100%;
+}
+
+.desarrollo_cuerpo .columna1,
+.desarrollo_cuerpo .columna2 {
+	display:inline-block;
+	vertical-align:top;
+	position:relative;
+	padding:20px 0px;
+}
+
+.desarrollo_cuerpo .columna1 {
+	width:300px;
+}
+
+.desarrollo_cuerpo .columna2 {
+	width:860px;
+}
+
+.desarrollo_cuerpo .columna2 p.titulo {
+	width:95%;
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	font-size:20px;
+	padding-bottom:10px;
+}
+
+.desarrollo_cuerpo .columna2 p.titulo a.template_btnsShare {
+	float:right;
+	margin-left:10px;
+}
+
+.desarrollo_cuerpo .columna2 table.contenedorInfo {
+	width:95%;
+}
+
+.desarrollo_cuerpo .columna2 table td {
+	vertical-align:top;
+}
+
+.desarrollo_cuerpo .columna2 table.contenedorInfo td.imagen {
+	width:75%;
+	text-align:center;
+}
+
+.desarrollo_cuerpo .columna2 table.contenedorInfo td.imagen img.imagenPrincipal {
+	height:285px;
+	max-width:600px;
+	cursor:pointer;
+}
+
+.galeria {
+	width:460px;
+	height:80px;
+	margin:10px auto;
+	overflow:hidden;
+}
+
+.contenedorFlechas,
+.contenedorDesplazamiento {
+	display:inline-block;
+	vertical-align:top;
+	height:100%;
+}
+
+.contenedorFlechas {
+	width:50px;
+}
+
+.flechas {
+	width:30px;
+	height:30px;
+	display:block;
+	position:relative;
+	margin-top:-15px;
+	top:50%;
+	overflow:hidden;
+	text-indent:-200px;
+	cursor:pointer;
+	border-radius:15px;
+}
+
+.flechas.prev {
+	background:url(../images/flechas.png) no-repeat #5c5c5c;
+	background-size:30px auto;
+}
+
+.flechas.next {
+	float:right;
+	background:url(../images/flechas.png) no-repeat 0px -30px #5c5c5c;
+	background-size:30px auto;
+}
+
+.contenedorDesplazamiento {
+	width:360px;
+	overflow:hidden;
+}
+
+.desplazamiento {
+	position:relative;
+	width:100%;
+	left:0px;
+}
+
+.desplazamiento .bloque {
+	display:inline-block;
+	vertical-align:top;
+	height:100%;
+	width:86px;
+	margin:0px 2px;
+	text-align:center;
+	overflow:hidden;
+	cursor:pointer;
+}
+
+.desplazamiento .bloque img {
+	min-width:86px;
+	height:inherit;
+}
+
+.desarrollo_cuerpo .columna2 table.contenedorInfo td.descripcionBotones {
+	padding-left:20px;
+}
+
+.desarrollo_cuerpo .columna2 table.contenedorInfo td.descripcionBotones p {
+	height:25px;
+}
+
+.desarrollo_cuerpo .columna2 table.contenedorInfo td.descripcionBotones a.btnBotones {
+	position:relative;
+	top:-3px;
+	margin-right:5px;
+}
+
+.desarrollo_cuerpo .columna2 table.contenedorInfo td.descripcionBotones a.btnBotones.mundo {
+	width:20px;
+	height:20px;
+	background:url(../images/botones.png) no-repeat -180px 0px;
+	background-size:260px 20px;
+}
+
+.desarrollo_cuerpo .columna2 table.contenedorInfo td.descripcionBotones a.btnBotones.estrella {
+	width:20px;
+	height:20px;
+	background:url(../images/botones3.png) no-repeat -20px 0px;
+	background-size:auto 20px;
+}
+
+.desarrollo_cuerpo .columna2 table.contenedorInfo td.descripcionBotones a.btnBotones.estrella.activo {
+	width:20px;
+	height:20px;
+	background:url(../images/botones3.png) no-repeat -40px 0px;
+	background-size:auto 20px;
+}
+
+.desarrollo_cuerpo .columna2 table.contenedorInfo td.descripcionBotones a.btnBotones.contacto {
+	width:25px;
+	height:25px;
+	background:url(../images/botones2.png) no-repeat -100px 0px;
+	background-size:auto 25px;
+	margin-right:0px;
+}
+
+.desarrollo_cuerpo .columna2 table.contenedorInfo td.descripcionBotones a.btnBotones.imprimir {
+	width:25px;
+	height:25px;
+	background:url(../images/botones2.png) no-repeat -400px 0px;
+	background-size:auto 25px;
+	margin-right:0px;
+}
+
+.desarrollo_cuerpo .columna2 table.contenedorInfo td.descripcionBotones a.btnBotones.compartir {
+	width:20px;
+	height:20px;
+	background:url(../images/botones3.png) no-repeat -80px 0px;
+	background-size:auto 20px;
+}
+
+.desarrollo_cuerpo .columna2 table.contenedorInfo td.descripcionBotones a.btnBotones.reportar {
+	width:20px;
+	height:20px;
+	background:url(../images/botones3.png) no-repeat -60px 0px;
+	background-size:auto 20px;
+}
+
+.desarrollo_cuerpo .columna2 table.contenedorInfo td.descripcionBotones a.btnBotones.editar {
+	width:20px;
+	height:20px;
+	background:url(../images/botones3.png) no-repeat -100px 0px;
+	background-size:auto 20px;
+}
+
+.desarrollo_cuerpo .columna2 table.contenedorInfo td.descripcionBotones a.btnBotones.pdf {
+	width:20px;
+	height:20px;
+	background:url(../images/pdf.png) no-repeat;
+	background-size:auto 20px;
+}
+
+.desarrollo_cuerpo .columna2 table.contenedorInfo td.descripcionBotones a.otrosBotones {
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	font-size:12px;
+	margin-left:5px;
+	cursor:pointer;
+	text-decoration:none;
+}
+
+.desarrollo_cuerpo .columna2 table.contenedorInfo td.descripcion {
+	padding-top:30px;
+}
+
+.desarrollo_cuerpo .columna2 table.contenedorInfo td.descripcion table {
+	width:auto;
+}
+
+.desarrollo_cuerpo .columna2 table.contenedorInfo td.descripcion table td {
+	padding-right:100px;
+	text-align:center;
+}
+
+.desarrollo_cuerpo .columna2 table.contenedorInfo td.descripcion table td.subtitulo {
+	font-weight:bold;
+	text-align:left;
+}
+
+.desarrollo_cuerpo .columna2 table.inmuebles {
+	width:95%;
+	margin:30px 0px 20px 0px;
+}
+
+.desarrollo_cuerpo .columna2 table.inmuebles td {
+	vertical-align:middle;
+}
+
+.desarrollo_cuerpo .columna2 table.inmuebles td.imagen {
+	width:86px;
+	text-align:center;
+	padding-right:20px;
+}
+
+.desarrollo_cuerpo .columna2 table.inmuebles td.imagen img {
+	height:80px;
+	max-width:86px;
+}
+
+.desarrollo_cuerpo .columna2 table.inmuebles td.precio {
+	width:150px;
+	font-weight:bold;
+}
+
+.desarrollo_cuerpo .columna2 table.desarrollo_contacto {
+	margin-top:30px;
+}
+
+.desarrollo_cuerpo .columna2 table.desarrollo_contacto td {
+	padding-bottom:10px;
+	padding-right:10px;
+}
+
+.desarrollo_cuerpo .columna2 table.desarrollo_contacto td a.btnBotones.email {
+	width:20px;
+	height:20px;
+	background:url(../images/botones.png) no-repeat -80px 0px;
+	background-size:260px 20px;
+	margin-left:10px;
+}
+
+.desarrollo_cuerpo .columna2 table.desarrollo_contacto td.titulo {
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+}
+
+.desarrollo_cuerpo .columna2 table.desarrollo_contacto td input.template_campos {
+	width:400px;
+}
+
+.desarrollo_cuerpo .columna2 table.desarrollo_contacto td textarea.template_campos {
+	min-width:400px;
+	max-width:400px;
+	max-height:150px;
+	min-height:150px;
+}
+
+.desarrollo_cuerpo .columna2 table.desarrollo_contacto td .btnEnviar,
+.desarrollo_cuerpo .columna2 div.reportarAnuncio .btnEnviar {
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	cursor:pointer;
+}
+
+.desarrollo_cuerpo .columna2 .desarrollo_mapa {
+	width:95%;
+	height:400px;
+	margin-top:30px;
+}
+
+.desarrollo_mostrarImagen img {
+	max-width:800px;
+	max-height:500px;
+}
+
+.desarrollo_mostrarImagen .flechas {
+	position:absolute;
+}
+
+.desarrollo_mostrarImagen .flechas.prev {
+	left:20px;
+}
+
+.desarrollo_mostrarImagen .flechas.next {
+	right:20px;
+}
+
+.desarrollo_cuerpo .columna2 div.reportarAnuncio {
+	display:none;
+}
+
+.desarrollo_cuerpo .columna2 div.reportarAnuncio .btnEnviar,
+.desarrollo_cuerpo .columna2 table.desarrollo_contacto td .btnEnviar {
+	float:right;
+	padding:10px 10px 0px 20px;
+	background:url(../images/ico-paloma.png) no-repeat left 12px;
+	background-size:15px auto;
+}
+
+.contenedorCompartir {
+	display:none;
+	padding-left:30px;
+	padding-bottom:10px;
+}
+
+a.template_btnsShare.email {
+	background:url(../images/botones.png) no-repeat -120px 0px;
+	background-size:390px 30px;
+}

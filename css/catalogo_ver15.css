@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* CSS Document */
+
+.catalogo_cuerpo {
+	width:100%;
+}
+
+.catalogo_cuerpo .columna1,
+.catalogo_cuerpo .columna2 {
+	display:inline-block;
+	vertical-align:top;
+	position:relative;
+	padding:20px 0px;
+}
+
+.catalogo_cuerpo .columna1 {
+	width:300px;
+}
+
+.catalogo_cuerpo .columna2 {
+	width:800px;
+}
+
+.opcionesBusqueda {
+	width:100%;
+	padding-bottom:50px;
+}
+
+.opcionesBusqueda .cadenaResultados,
+.opcionesBusqueda .opciones {
+	display:inline-block;
+	vertical-align:top;
+}
+
+.opcionesBusqueda .cadenaResultados {
+	width:350px;
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+}
+
+.opcionesBusqueda .opciones {
+	width:450px;
+}
+
+.opcionesBusqueda .opciones .campo1,
+.opcionesBusqueda .opciones .campo2 {
+	display:inline-block;
+	vertical-align:top;
+}
+
+.opcionesBusqueda .opciones .campo1 {
+	width:250px;
+}
+
+.opcionesBusqueda .opciones .campo2 {
+	width:200px;
+}
+
+.opcionesBusqueda .opciones .opcionesPaginacion {
+	display:inline-block;
+	vertical-align:top;
+}
+
+.opcionesBusqueda .opciones .opcionesPaginacion span {
+	display:inline-block;
+	vertical-align:top;
+	color:#852c2b;
+	border:1px solid #852c2b;
+	width:20px;
+	height:20px;
+	text-align:center;
+	line-height:20px;
+	margin:0px 2px;
+	cursor:pointer;
+	border-radius:5px;
+}
+
+.opcionesBusqueda .opciones .opcionesPaginacion span.active {
+	background-color:#852c2b;
+	color:#fff;
+}
+
+.resultadosConsulta {
+	width:100%;
+}
+
+.paginacion_otros {
+	padding-right:40px;
+}
+
+.paginacion_otros .paginacionNumeracion,
+.paginacion_otros .otros {
+	text-align:right;
+}
+
+.paginacion_otros .paginacionNumeracion a {
+	margin:0px 2px;
+	color:#852c2b;
+	text-decoration:none;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+.paginacion_otros .paginacionNumeracion a.active {
+	text-decoration:underline;
+}
+
+.paginacion_otros .paginacionNumeracion a.anterior {
+	margin:0px 20px 0px 0px;
+}
+
+.paginacion_otros .paginacionNumeracion a.siguiente {
+	margin:0px 0px 0px 20px;
+}
+
+.paginacion_otros .otros {
+	padding-top:15px;
+	display:none;
+}
+
+.paginacion_otros .otros,
+.paginacion_otros .otros * {
+	color:#852c2b;
+}
+
+.paginacion_otros .otros span {
+	font-weight:bold;
+}

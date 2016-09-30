@@ -1,0 +1,446 @@
+@charset "utf-8";
+/* CSS Document */
+
+#main {
+	width:1275px;/*1630*/
+}
+
+#backImage {
+	width:600px;
+}
+
+#backImage input.ObjFocusBlur {
+	width:88%;
+}
+
+#backImage select.ObjFocusBlur {
+	width:92%;
+}
+
+#backImage textarea.ObjFocusBlur {
+	max-width:88%;
+	min-width:88%;
+	max-height:150px;
+	min-height:150px;
+}
+
+.inmueble_pestana {
+	position:relative;
+	float:right;
+}
+
+.template_contenedorCeldas {
+	width:95%;
+	cursor:pointer;
+	border-bottom:1px solid #012851;
+	padding:0px 10px 5px 10px;
+	color:#555;
+}
+
+.template_contenedorCeldas2 {
+	width:44%;
+	display:inline-block;
+	vertical-align:top;
+	text-align:left;
+	margin:0px auto;
+}
+
+.template_contenedorCeldas3 {
+	width:92%;
+	padding:0px 10px 5px 10px;
+	text-align:left;
+	margin:0px auto;
+}
+
+.inmueble_obtenerCoordenadas {
+	width:800px;
+}
+
+.inmueble_subirImagen .template_contenedorCeldas {
+	width:270px;
+	padding:0px;
+	border:none;
+}
+
+.inmueble_abrirModificarUsuario .template_contenedorCeldas {
+	width:270px;
+	border:none;
+}
+
+.inmueble_popupIframe {
+	width:870px;
+	padding:20px;
+}
+
+
+/***********************************************************************************************************************
+	formulario inmueble
+***********************************************************************************************************************/
+@font-face {
+	font-family: GothamNarrowBook;
+	src: url(../../fonts/GothamNarrowBook.otf);
+}
+
+@font-face {
+	font-family: GothamNarrowBlack;
+	src: url(../../fonts/GothamNarrowBlack.otf);
+}
+
+.template_principal ul.template_campos {
+	position:relative;
+	height:50px;
+	line-height:25px;
+	text-align:left;
+	display:inline-block;
+	vertical-align:top;
+	border:none;
+	cursor:default;
+	list-style-type:none;
+	padding:0px;
+}
+
+.template_principal ul.template_campos span {
+	position:absolute;
+	width:23px;
+	height:23px !important;
+	right:1px;
+	top:1px;
+	background:url(../../images/dropDown.png) no-repeat center center;
+	background-size:15px 15px;
+}
+
+.template_principal ul.template_campos li.lista {
+	position:relative;
+	z-index:3;
+	min-width:200px;
+	display:none;
+}
+
+.template_principal ul.template_campos p {
+	background-color:#dadad9;
+	border-radius:15px;
+	padding:0px 5px !important;
+	position:absolute;
+	top:25px;
+	width:100%;
+	height:25px;
+	white-space:nowrap;
+	overflow:hidden;
+	-moz-box-sizing:border-box; 
+    -webkit-box-sizing:border-box; 
+    box-sizing:border-box;
+	color:inherit;
+}
+
+.template_principal ul.template_campos li.lista ul {
+	background-color:#dadad9;
+	border-radius:15px;
+	list-style-type:none;
+	white-space:nowrap;
+	overflow-y:auto;
+	overflow-x:hidden;
+	max-height:200px;
+}
+
+.template_principal ul.template_campos li ul li {
+	padding:0px 5px;
+}
+
+.template_principal ul.template_campos li ul li:hover {
+	background-color:#ededed;
+}
+
+.template_principal .template_campos {
+	width:170px;
+	height:25px;
+	border:1px solid #dadad9;
+	border-radius:15px;
+	padding:0px 5px;
+	color:#575756;
+}
+
+.template_principal input.template_campos,
+.template_principal textarea.template_campos {
+	background-color:#dadad9;
+}
+
+.template_principal textarea.template_campos {
+	min-width:400px;
+	max-width:400px;
+	min-height:150px;
+	max-height:150px;
+}
+
+.template_principal a.btnBotones {
+	display:inline-block;
+	vertical-align:top;
+	width:30px;
+	height:30px;
+	overflow:hidden;
+	text-indent:-200px;
+	cursor:pointer;
+	text-align:left;
+}
+
+.template_principal {
+	width:100%;
+	position:relative;
+}
+
+.template_principal .template_cuerpo {
+	width:900px;/*1160*/
+	position:relative;
+	margin:0px auto;
+}
+
+.template_principal .template_contenedorCuerpo {
+	/*background-color:#f6f6f6;*/
+	background-color:#fff;
+}
+
+.template_principal .template_contenedorCuerpo div.lineaIzq,
+.template_principal .template_contenedorCuerpo div.lineaDer {
+	position:absolute;
+	/*border: 2px solid #852c2b;*/
+    border-radius: 2px;
+	height:100%;
+	top:0%;
+	box-sizing:border-box;
+}
+
+.template_principal .template_contenedorCuerpo div.lineaIzq {
+	left:0px;
+}
+
+.template_principal .template_contenedorCuerpo div.lineaDer {
+	right:0px;
+}
+
+.template_mascaraPrincipal {
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0px;
+	left:0px;
+	background:rgba(255, 255, 255, 0);
+	z-index:10;
+	cursor:pointer;
+	display:none;
+}
+
+.templatePopUp {
+	position:fixed;
+	top:0px;
+	left:0px;
+	z-index:11;
+	background-color:#fff;
+	display:none;
+	border-radius:7px;
+	border:2px solid #852c2b;
+}
+
+.templatePopUp table {
+	width:100%;
+	height:100%;
+	border:none;
+	border-spacing:0px;
+	border-collapse:collapse;
+}
+
+.templatePopUp table tbody tr td {
+	padding:10px;
+}
+
+.templatePopUp span.btnCerrar {
+	width:20px;
+	height:20px;
+	display:block;
+	background:rgba(0, 0, 0, 0.7);
+	font-size:14px;
+	color:#fff;
+	cursor:pointer;
+	text-align:center;
+	position:absolute;
+	top:-10px;
+	right:-10px;
+	border-radius:15px;
+}
+
+.template_errorSelectMunicipio {
+	padding:20px;
+}
+
+.template_alertPersonalizado {
+	padding:20px;
+}
+
+.formularioInmueble_cuerpo {
+	width:900px;
+	position:relative;
+	margin:0px auto;
+}
+
+a.btnBotones {
+	width:25px;
+	height:25px;
+	margin-right:5px;
+	position:relative;
+	top:-3px;
+}
+
+a.btnBotones.guardar {
+	background:url(../../images/botones2.png) no-repeat -375px 0px;
+	background-size:auto 25px;
+}
+
+a.btnBotones.publicar {
+	background:url(../../images/botones2.png) no-repeat -125px 0px;
+	background-size:auto 25px;
+}
+
+a.btnBotones.palomita {
+	background:url(../../images/palomita2.png) no-repeat center center;
+	background-size:auto 16px;
+}
+
+p.titulo {
+	width:95%;
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	font-size:20px;
+	padding-bottom:10px;
+	padding-top:10px;
+}
+
+.formularioInmueble_cuerpo table {
+	width:100%;
+}
+
+.formularioInmueble_cuerpo table td {
+	width:50%;
+	vertical-align:top;
+	text-align:left;
+}
+
+.formularioInmueble_cuerpo table.conMargen td {
+	padding-right:40px;
+}
+
+.formularioInmueble_cuerpo .subtitulo {
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	padding-bottom:10px !important;
+}
+
+.formularioInmueble_cuerpo p {
+	padding-bottom:5px;
+}
+
+.formularioInmueble_cuerpo .contenedorCampos {
+	position:relative;
+	padding-bottom:15px;
+}
+
+.formularioInmueble_cuerpo .contenedorCampos.columnas {
+	display:inline-block;
+	vertical-align:top;
+	width:50%;
+	box-sizing:border-box;
+	padding-right:20px;
+	text-align:left;
+}
+
+.formularioInmueble_cuerpo .template_campos,
+.formularioInmueble_cuerpo select.ObjFocusBlur {
+	width:95%;
+}
+
+.formularioInmueble_cuerpo textarea.template_campos {
+	min-width:95%;
+	max-width:95%;
+}
+
+.formularioInmueble_cuerpo .contenedorCampos .imagen {
+	height:115px;
+	padding-bottom:5px;
+}
+
+.formularioInmueble_cuerpo .contenedorCampos .imagen img {
+	max-height:115px;
+}
+
+.formularioInmueble_cuerpo .contenedorCampos p {
+	text-align:left;
+}
+
+p.guardar,
+p.publicar {
+	cursor:pointer;
+}
+
+.contenedorMapa {
+	width:95%;
+	height:300px;
+	background-color:#ccc;
+}
+
+.encontrarUbicacion {
+	font-family:'GothamNarrowBlack', sans-serif !important;
+	color:#852c2b !important;
+	float:right;
+	padding-right:40px;
+}
+
+.imagenesTemporales,
+.videosTemporales {
+	padding-bottom:10px;
+	text-align:left;
+}
+
+.imagenesTemporales .bloqueImagen,
+.videosTemporales .bloqueVideo {
+	display:inline-block;
+	vertical-align:top;
+	margin-right:10px;
+	width:60px;
+	text-align:center;
+	position:relative;
+}
+
+.imagenesTemporales .bloqueImagen img {
+	height:60px;
+	max-width:60px;
+}
+
+.imagenesTemporales .bloqueImagen p {
+	text-align:center;
+	padding-top:5px;
+}
+
+.imagenesTemporales .bloqueImagen span.borrar,
+.videosTemporales .bloqueVideo span.borrar {
+	color:#fff;
+	font-family:'GothamNarrowBlack', sans-serif;
+	text-align:center;
+	border-radius:5px;
+	padding:2px 5px;
+	background-color:#852c2b;
+	position:absolute;
+	top:0px;
+	right:0px;
+	cursor:pointer;
+}
+
+.mascara {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	z-index:1;
+	display:none;
+}
+
+.obligatorio {
+	display:none;
+}

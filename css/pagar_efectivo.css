@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+.pagar_efectivo_cuerpo {
+	padding:20px 0px;
+	width:400px;
+	margin:0px auto;
+}
+
+.pagar_efectivo_cuerpo p.titulo {
+	width:95%;
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	font-size:20px;
+	padding-bottom:10px;
+	text-align:center;
+}
+
+.pagar_efectivo_cuerpo .cuerpo table {
+	width:500px;
+	margin:0px auto;
+}
+
+.pagar_efectivo_cuerpo .cuerpo table tbody tr {
+	height:35px;
+}
+
+.btn_general {
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	cursor:pointer;
+}

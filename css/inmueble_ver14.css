@@ -1,0 +1,299 @@
+@charset "utf-8";
+/* CSS Document */
+
+.inmueble_cuerpo {
+	width:100%;
+}
+
+.inmueble_cuerpo .columna1,
+.inmueble_cuerpo .columna2 {
+	display:inline-block;
+	vertical-align:top;
+	position:relative;
+	padding:20px 0px;
+}
+
+.inmueble_cuerpo .columna1 {
+	width:300px;
+}
+
+.inmueble_cuerpo .columna2 {
+	width:860px;
+}
+
+.inmueble_cuerpo .columna2 p.titulo {
+	width:95%;
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	font-size:20px;
+	padding-bottom:10px;
+}
+
+.inmueble_cuerpo .columna2 p.titulo a.template_btnsShare {
+	float:right;
+	margin-left:10px;
+}
+
+.inmueble_cuerpo .columna2 table.contenedorInfo {
+	width:95%;
+}
+
+.inmueble_cuerpo .columna2 table td {
+	vertical-align:top;
+}
+
+.inmueble_cuerpo .columna2 table.contenedorInfo td.imagen {
+	width:75%;
+	text-align:center;
+}
+
+.inmueble_cuerpo .columna2 table.contenedorInfo td.imagen img.imagenPrincipal {
+	height:285px;
+	max-width:600px;
+}
+
+.galeria {
+	width:460px;
+	height:80px;
+	margin:10px auto;
+	overflow:hidden;
+}
+
+.contenedorFlechas,
+.contenedorDesplazamiento {
+	display:inline-block;
+	vertical-align:top;
+	height:100%;
+}
+
+.contenedorFlechas {
+	width:50px;
+}
+
+.flechas {
+	width:30px;
+	height:30px;
+	display:block;
+	position:relative;
+	margin-top:-15px;
+	top:50%;
+	overflow:hidden;
+	text-indent:-200px;
+	cursor:pointer;
+	border-radius:15px;
+}
+
+.flechas.prev {
+	background:url(../images/flechas.png) no-repeat #5c5c5c;
+	background-size:30px auto;
+}
+
+.flechas.next {
+	float:right;
+	background:url(../images/flechas.png) no-repeat 0px -30px #5c5c5c;
+	background-size:30px auto;
+}
+
+.contenedorDesplazamiento {
+	width:360px;
+	overflow:hidden;
+}
+
+.desplazamiento {
+	position:relative;
+	width:100%;
+	left:0px;
+}
+
+.desplazamiento .bloque {
+	display:inline-block;
+	vertical-align:top;
+	height:100%;
+	width:86px;
+	margin:0px 2px;
+	text-align:center;
+	overflow:hidden;
+	cursor:pointer;
+}
+
+.desplazamiento .bloque img {
+	min-width:86px;
+	height:inherit;
+}
+
+.inmueble_cuerpo .columna2 table.contenedorInfo td.descripcionBotones {
+	padding-left:20px;
+}
+
+.inmueble_cuerpo .columna2 table.contenedorInfo td.descripcionBotones p {
+	height:25px;
+}
+
+.inmueble_cuerpo .columna2 table.contenedorInfo td.descripcionBotones a.btnBotones {
+	position:relative;
+	top:-3px;
+	margin-right:5px;
+}
+
+.inmueble_cuerpo .columna2 table.contenedorInfo td.descripcionBotones a.btnBotones.mundo {
+	width:20px;
+	height:20px;
+	background:url(../images/botones.png) no-repeat -180px 0px;
+	background-size:260px 20px;
+}
+
+.inmueble_cuerpo .columna2 table.contenedorInfo td.descripcionBotones a.btnBotones.estrella {
+	width:20px;
+	height:20px;
+	background:url(../images/botones3.png) no-repeat -20px 0px;
+	background-size:auto 20px;
+}
+
+.inmueble_cuerpo .columna2 table.contenedorInfo td.descripcionBotones a.btnBotones.estrella.activo {
+	width:20px;
+	height:20px;
+	background:url(../images/botones3.png) no-repeat -40px 0px;
+	background-size:auto 20px;
+}
+
+.inmueble_cuerpo .columna2 table.contenedorInfo td.descripcionBotones a.btnBotones.contacto {
+	width:25px;
+	height:25px;
+	background:url(../images/botones2.png) no-repeat -100px 0px;
+	background-size:auto 25px;
+	margin-right:0px;
+}
+
+.inmueble_cuerpo .columna2 table.contenedorInfo td.descripcionBotones a.btnBotones.imprimir {
+	width:25px;
+	height:25px;
+	background:url(../images/botones2.png) no-repeat -400px 0px;
+	background-size:auto 25px;
+	margin-right:0px;
+}
+
+.inmueble_cuerpo .columna2 table.contenedorInfo td.descripcionBotones a.btnBotones.compartir {
+	width:20px;
+	height:20px;
+	background:url(../images/botones3.png) no-repeat -80px 0px;
+	background-size:auto 20px;
+}
+
+.inmueble_cuerpo .columna2 table.contenedorInfo td.descripcionBotones a.btnBotones.reportar {
+	width:20px;
+	height:20px;
+	background:url(../images/botones3.png) no-repeat -60px 0px;
+	background-size:auto 20px;
+}
+
+.inmueble_cuerpo .columna2 table.contenedorInfo td.descripcionBotones a.btnBotones.editar {
+	width:20px;
+	height:20px;
+	background:url(../images/botones3.png) no-repeat -100px 0px;
+	background-size:auto 20px;
+}
+
+.inmueble_cuerpo .columna2 table.contenedorInfo td.descripcionBotones a.otrosBotones {
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	font-size:12px;
+	margin-left:5px;
+}
+
+.inmueble_cuerpo .columna2 table.contenedorInfo td.descripcion {
+	padding-top:30px;
+}
+
+.inmueble_cuerpo .columna2 table.servicios,
+.inmueble_cuerpo .columna2 table.contacto,
+.inmueble_cuerpo .columna2 table.reportarAnuncio,
+.inmueble_cuerpo .columna2 table.vendedor {
+	margin-top:30px;
+}
+
+.inmueble_cuerpo .columna2 table.servicios td {
+	padding-right:40px;
+	min-width:140px;
+}
+
+.inmueble_cuerpo .columna2 table.servicios td p {
+	text-align:center;
+	font-family:'GothamNarrowBlack', sans-serif;
+}
+
+.inmueble_cuerpo .columna2 table.servicios td ul {
+	list-style-position:inside;
+	list-style-type:square;
+}
+
+.inmueble_cuerpo .columna2 table.servicios td ul li {
+	color:#852c2b;
+}
+
+.inmueble_cuerpo .columna2 table.servicios td ul li span {
+	color:#575756;
+}
+
+.inmueble_cuerpo .columna2 table.contacto td,
+.inmueble_cuerpo .columna2 table.reportarAnuncio td,
+.inmueble_cuerpo .columna2 table.vendedor td {
+	padding-bottom:10px;
+	padding-right:10px;
+}
+
+.inmueble_cuerpo .columna2 table.contacto td a.btnBotones.email {
+	width:20px;
+	height:20px;
+	background:url(../images/botones.png) no-repeat -80px 0px;
+	background-size:260px 20px;
+	margin-left:10px;
+}
+
+.inmueble_cuerpo .columna2 table.contacto td.titulo,
+.inmueble_cuerpo .columna2 table.reportarAnuncio td.titulo,
+.inmueble_cuerpo .columna2 table.vendedor td.titulo {
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+}
+
+.inmueble_cuerpo .columna2 table.contacto td input.template_campos,
+.inmueble_cuerpo .columna2 table.reportarAnuncio td input.template_campos,
+.inmueble_cuerpo .columna2 table.reportarAnuncio ul.template_campos {
+	width:400px;
+}
+
+.inmueble_cuerpo .columna2 table.contacto td textarea.template_campos,
+.inmueble_cuerpo .columna2 table.reportarAnuncio td textarea.template_campos {
+	min-width:400px;
+	max-width:400px;
+	max-height:150px;
+	min-height:150px;
+}
+
+.inmueble_cuerpo .columna2 table.contacto td .btnEnviar,
+.inmueble_cuerpo .columna2 table.reportarAnuncio td .btnEnviar {
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	cursor:pointer;
+}
+
+.inmueble_cuerpo .columna2 .inmueble_mapa {
+	width:95%;
+	height:400px;
+	margin-top:30px;
+}
+
+.inmueble_exitoNuevoAnuncio {
+	padding:30px 80px;
+}
+
+.inmueble_cuerpo .columna2 table.contacto,
+.inmueble_cuerpo .columna2 table.vendedor {
+	display:inline-block;
+	vertical-align:top;
+}
+
+.inmueble_cuerpo .columna2 table.vendedor {
+	width:300px;
+	margin-left:20px;
+}

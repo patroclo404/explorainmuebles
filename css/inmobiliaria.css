@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+
+.inmobiliaria_cuerpo {
+	width:100%;
+}
+
+
+
+.inmobiliaria_cuerpo .columna2 p.titulo {
+	width:95%;
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	font-size:20px;
+	padding-bottom:10px;
+	padding-top:10px;
+}
+
+.datosInmobiliaria h2 {
+	color: #842d2c;
+}
+
+.datosInmobiliaria {
+	width:100%;
+	padding-bottom:30px;
+}
+
+.datosInmobiliaria table {
+	width:100%;
+}
+
+.datosInmobiliaria td {
+	vertical-align:top;
+}
+
+.datosInmobiliaria td.logotipo {
+	width:150px;
+	padding-right:20px;
+}
+
+.datosInmobiliaria td.logotipo img {
+	width:inherit;
+}
+
+.datosInmobiliaria td p.titulo {
+	padding-top:0px !important;
+}
+
+.datosInmobiliaria td.info p {
+	padding-bottom:10px;
+}
+
+.paginacionNumeracion {
+	text-align:right;
+	padding-right:100px;
+}
+
+.paginacionNumeracion a {
+	margin:0px 2px;
+	color:#852c2b;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+.paginacionNumeracion a.active {
+	text-decoration:underline;
+}
+
+.paginacionNumeracion a.anterior {
+	margin:0px 20px 0px 0px;
+}
+
+.paginacionNumeracion a.siguiente {
+	margin:0px 0px 0px 20px;
+}
+
+.inmueble_contacto {
+	width: 50%;
+}
+
+.inmueble_contacto input, textarea{
+	width: 100%;
+}
+
+.inmueble_contacto td {
+	border: none !important;
+}
+
+.contenedorMensajes{
+	font-size: 1.2rem;
+	border-top: 2px solid #ebebeb;
+}
+
+.contenedorMensaje .comment {
+	border-bottom: 2px solid #ebebeb;
+	padding: 45px 0;
+}
+
+.contenedorMensaje:last-child .comment {
+	border-bottom: 0;
+}

@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+
+.pagoInmobiliaria_cuerpo {
+	padding:20px 0px;
+	width:600px;
+	margin:0px auto;
+}
+
+.pagoInmobiliaria_cuerpo p.titulo {
+	width:95%;
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	font-size:20px;
+	padding-bottom:10px;
+	text-align:center;
+}
+
+.pagoInmobiliaria_cuerpo p.total,
+.pagoInmobiliaria_cuerpo table td._titulo {
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	font-size:16px;
+}
+
+.pagoInmobiliaria_cuerpo table {
+	width:100%;
+}
+
+.pagoInmobiliaria_cuerpo table td {
+	padding:4px 0px;
+}
+
+.pagoInmobiliaria_cuerpo table td._titulo {
+	text-align:center;
+	padding-bottom:10px;
+}
+
+.pagoInmobiliaria_cuerpo table td .template_campos {
+	width:98%;
+}
+
+.pagoInmobiliaria_cuerpo table td .nombreCampos {
+	display:inline-block;
+	vertical-align:top;
+}
+
+.pagoInmobiliaria_cuerpo a.btnBotones.palomita {
+	width:25px;
+	height:25px;
+	background:url(../images/palomita2.png) no-repeat center center;
+	background-size:auto 16px;
+	margin-right:5px;
+	position:relative;
+	top:-3px;
+}
+
+.pagoInmobiliaria_cuerpo .guardar {
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	cursor:pointer;
+}

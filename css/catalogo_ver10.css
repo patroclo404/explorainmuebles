@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+.catalogo_cuerpo {
+	width:100%;
+}
+
+.catalogo_cuerpo .columna1,
+.catalogo_cuerpo .columna2 {
+	display:inline-block;
+	vertical-align:top;
+	position:relative;
+	padding:20px 0px;
+}
+
+.catalogo_cuerpo .columna1 {
+	width:300px;
+}
+
+.catalogo_cuerpo .columna2 {
+	width:700px;
+}
+
+.cadenaResultados {
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	padding-bottom:50px;
+}

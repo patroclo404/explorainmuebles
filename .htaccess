@@ -1,0 +1,29 @@
+<IfModule mod_rewrite.c>
+
+Options +FollowSymlinks
+
+RewriteEngine On
+RewriteBase /explorainmuebles2/
+
+#RewriteCond %{HTTP_HOST} !^localhost/explorainmuebles2/$ [NC]
+#RewriteRule ^(.*)$ http://localhost/explorainmuebles2/$1 [R=301,L]
+RewriteRule ^ayuda/?$ ayuda.php [NC,L]
+RewriteRule ^aviso-privacidad/?$ avisoPrivacidad.php [NC,L]
+RewriteRule ^terminos-condiciones/?$ terminosCondiciones.php [NC,L]
+RewriteRule ^reglas-publicacion/?$ reglasPublicacion.php [NC,L]
+RewriteRule ^contacto/?$ contacto.php [NC,L]
+RewriteRule ^registro/?$ registro.php [NC,L]
+RewriteRule ^publica-anuncio/?$ nuevoAnuncio.php [NC,L]
+RewriteRule ^venta/([^/]+)/([^/]+)/([^/]+)/([^/]+)/?$ inmueble.php?id=$4 [NC,L]
+RewriteRule ^renta/([^/]+)/([^/]+)/([^/]+)/([^/]+)/?$ inmueble.php?id=$4 [NC,L]
+RewriteRule ^renta-vacacional/([^/]+)/([^/]+)/([^/]+)/([^/]+)/?$ catalogo.php?id_inmueble=$4
+RewriteRule ^venta/([^/]+)/([^/]+)/([^/]+)/?$ catalogo.php?transaccion=2&tipoInmueble=$1&estado=$2&ciudad=$3 [NC,L]
+RewriteRule ^renta/([^/]+)/([^/]+)/([^/]+)/?$ catalogo.php?transaccion=1&tipoInmueble=$1&estado=$2&ciudad=$3 [NC,L]
+RewriteRule ^renta-vacacional/([^/]+)/([^/]+)/([^/]+)/?$ catalogo.php?transaccion=3&tipoInmueble=$1&estado=$2&ciudad=$3 [NC,L]
+
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+</IfModule>
+

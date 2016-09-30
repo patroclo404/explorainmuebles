@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+
+.contacto_cuerpo {
+	padding:0px 20px;
+}
+
+.contacto_cuerpo .datos {
+	width:500px;
+	margin:0px auto;
+	padding-top:30px;
+}
+
+.contacto_cuerpo table.contacto {
+	margin:0px auto;
+}
+
+.contacto_cuerpo table.contacto td {
+	padding-bottom:10px;
+	padding-right:10px;
+	vertical-align:top;
+}
+
+.contacto_cuerpo table.contacto td a.btnBotones.email {
+	width:20px;
+	height:20px;
+	background:url(../images/botones.png) no-repeat -80px 0px;
+	background-size:260px 20px;
+	margin-left:10px;
+}
+
+.contacto_cuerpo table.contacto td.titulo {
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	padding-top:30px;
+}
+
+.contacto_cuerpo table.contacto td input.template_campos {
+	width:400px;
+}
+
+.contacto_cuerpo table.contacto td textarea.template_campos {
+	min-width:400px;
+	max-width:400px;
+	max-height:150px;
+	min-height:150px;
+}
+
+.contacto_cuerpo table.contacto td .btnEnviar {
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	cursor:pointer;
+}

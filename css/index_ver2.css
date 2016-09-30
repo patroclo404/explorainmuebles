@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+
+.template_contenedorCuerpo > .template_cuerpo {
+	width:100%;
+}
+
+.template_principal .template_contenedorCuerpo div.lineaIzq,
+.template_principal .template_contenedorCuerpo div.lineaDer {
+	display:none;
+}
+
+.indexFondo {
+	width:100%;
+}

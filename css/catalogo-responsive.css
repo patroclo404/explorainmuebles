@@ -1,0 +1,254 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+.catalogo_cuerpo {
+	width:100%;
+}
+
+.catalogo_cuerpo .columna1,
+.catalogo_cuerpo .columna2 {
+	display:inline-block;
+	vertical-align:top;
+	position:relative;
+	padding:20px 0px;
+}
+
+.catalogo_cuerpo .columna1 {
+	width:300px;
+}
+
+.catalogo_cuerpo .columna2 {
+	width:800px;
+}
+
+.opcionesBusqueda {
+	width:100%;
+	padding-bottom:50px;
+}
+*/
+.opcionesBusqueda .cadenaResultados,
+.opcionesBusqueda .opciones {
+	display:inline-block;
+	vertical-align:top;
+}
+
+.opcionesBusqueda .cadenaResultados {
+
+	color:#852c2b;
+}
+
+.opcionesBusqueda .opciones {
+
+}
+
+.opcionesBusqueda .opciones .campo1,
+.opcionesBusqueda .opciones .campo2 {
+	vertical-align:middle;
+	font-size: 1.3rem;
+}
+
+.opcionesBusqueda .opciones .campo1 p {
+	display: inline-block;
+	margin: 0;
+	cursor: pointer;
+}
+
+.opcionesBusqueda .title h1 {
+	font-size: 1.85rem;
+	text-transform: uppercase;
+}
+
+/*
+
+.opcionesBusqueda .opciones .opcionesPaginacion {
+	display:inline-block;
+	vertical-align:top;
+}
+
+.opcionesBusqueda .opciones .opcionesPaginacion span {
+	display:inline-block;
+	vertical-align:top;
+	color:#852c2b;
+	border:1px solid #852c2b;
+	width:20px;
+	height:20px;
+	text-align:center;
+	line-height:20px;
+	margin:0px 2px;
+	cursor:pointer;
+	border-radius:5px;
+}
+
+.opcionesBusqueda .opciones .opcionesPaginacion span.active {
+	background-color:#852c2b;
+	color:#fff;
+}
+
+.resultadosConsulta {
+	width:100%;
+}*/
+
+.opcionesBusqueda{
+	/*height: 95px;*/
+}
+
+.property.items {
+	padding: 40px 0;
+	border-top: 2px solid #ebebeb;
+
+}
+
+.property.items:last-child{
+	border-bottom: 2px solid #ebebeb;
+}
+
+.property.items  img {
+	margin: 0 auto;
+}
+.property.header {
+	color: #852c2b;
+	margin: 0;
+	font-size: 1.35rem;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.property.subheader {
+	color: #919191;
+	margin: 0;
+	font-size: 1rem;
+	font-weight: bold;
+	display: block;
+	margin-bottom: 10px;
+}
+.property.information {
+	text-align: center;
+	font-size: 1rem;
+	color: #852c2b;
+	font-weight: bold;
+}
+
+.property.descriptions {
+	margin-top: 10px ;
+	font-size: 0.85rem;
+	font-weight: bold;
+}
+
+.property.price span{
+	display: inline-block;
+	padding: 5px 15px;
+	height: 2.8rem;
+	font-size: 1.6rem;
+	color: white;
+	background-color: #862d2c;
+	margin-top: 10px;
+}
+
+.property.main-info{
+	padding: 0 3px;
+	border-right: 1px solid #efefef;
+	height: 50px;
+	background-color: #fafafa;
+	font-size: 0.97rem;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.property.main-info div{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 50px;
+}
+
+.property.main-info div a, .property.main-info div a:hover{
+	color: #6d6d6d;
+	text-decoration: none;
+	font-size: 1.1rem;
+}
+
+.property.main-info i:before{
+	margin-left: 0;
+}
+
+.property.main-info:last-child{
+
+	border-right: 0;
+}
+
+@media (max-width: 991px) {
+	.property.main-info{
+
+		border: 0;
+	}
+
+	.property.main-info:nth-child(2n+1){
+		border-right: 1px solid #efefef;
+	}
+}
+
+.paginacion_otros .paginacionNumeracion{
+	margin-top: 20px;
+}
+
+.paginacion_otros .paginacionNumeracion,
+.paginacion_otros .otros {
+	text-align:right;
+}
+
+.paginacion_otros .paginacionNumeracion a {
+	margin:0px 5px;
+	color:#3b373b;
+	text-decoration:none;
+	font-weight:bold;
+	cursor:pointer;
+	font-size: 1.6rem;
+}
+
+.paginacion_otros .paginacionNumeracion a.active {
+	text-decoration:none;
+	color: #852c2b;
+}
+
+.paginacion_otros .paginacionNumeracion a.anterior {
+	margin:0px 20px 0px 0px;
+	color: #852c2b;
+}
+
+.paginacion_otros .paginacionNumeracion a.siguiente {
+	margin:0px 0px 0px 20px;
+	color: #852c2b;
+}
+
+.paginacion_otros .otros {
+	padding-top:15px;
+	display:none;
+}
+
+.paginacion_otros .otros,
+.paginacion_otros .otros * {
+	color:#852c2b;
+}
+
+.paginacion_otros .otros span {
+	font-weight:bold;
+}
+
+.opcionesPaginacion span {
+	display: inline-block;
+	text-align: center;
+	padding: 0 5px;
+}
+
+.opcionesPaginacion span.active {
+	color: #842d2c;
+}
+
+
+@media (min-width: 1200px) {
+	.container {
+		/*width: 1300px;*/ /*Genera que la pantalla sea mas ancha */
+	}
+}

@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+.catalogo_cuerpo {
+	width:100%;
+}
+
+.catalogo_cuerpo .columna1,
+.catalogo_cuerpo .columna2 {
+	display:inline-block;
+	vertical-align:top;
+	position:relative;
+	padding:20px 0px;
+}
+
+.catalogo_cuerpo .columna1 {
+	width:300px;
+}
+
+.catalogo_cuerpo .columna2 {
+	width:800px;
+}
+
+.opcionesBusqueda {
+	width:100%;
+	padding-bottom:50px;
+}
+
+.opcionesBusqueda .cadenaResultados,
+.opcionesBusqueda .opciones {
+	display:inline-block;
+	vertical-align:top;
+}
+
+.opcionesBusqueda .cadenaResultados {
+	width:600px;
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+}
+
+.opcionesBusqueda .opciones {
+	width:200px;
+}
+
+.resultadosConsulta {
+	width:100%;
+}

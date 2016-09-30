@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+
+.opcionPagoInmobiliaria_cuerpo {
+	padding:20px 0px;
+	width:600px;
+	margin:0px auto;
+}
+
+.opcionPagoInmobiliaria_cuerpo p.titulo {
+	width:95%;
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	font-size:20px;
+	padding-bottom:10px;
+	text-align:center;
+}
+
+.opcionPagoInmobiliaria_cuerpo a.btnBotones.palomita {
+	width:25px;
+	height:25px;
+	background:url(../images/palomita2.png) no-repeat center center;
+	background-size:auto 16px;
+	margin-right:5px;
+	position:relative;
+	top:-3px;
+}
+
+.opcionPagoInmobiliaria_cuerpo .guardar {
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	cursor:pointer;
+	display:inline-block;
+	vertical-align:top;
+}

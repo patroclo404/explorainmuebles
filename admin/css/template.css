@@ -1,0 +1,304 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin:0px;
+	padding:0px;
+	font-family:'Open Sans', Arial;
+	color:#000;
+}
+
+.cabecera {
+	width:100%;
+	height:70px;
+	position:relative;
+}
+
+.logo {
+	cursor:pointer;
+	position:relative;
+	margin:15px 0px 0px 200px;
+	height:80px;
+}
+
+.cabeceraContenedor {
+	width:1000px;
+	height:100%;
+	margin:0px auto;
+	position:relative;
+}
+
+.cabeceraContenedor .tituloLogo {
+	display:inline-block;
+	vertical-align:top;
+	font-weight:bold;
+	font-size:28px;
+	padding-top:30px;
+}
+
+.cabeceraContenedor .tituloLogo .amarillo {
+	color:#d2dc00;
+	font-weight:inherit;
+}
+
+.cabeceraContenedor .tituloLogo .verde {
+	color:#0db04a;
+	font-weight:inherit;
+}
+
+.cabeceraContenedor_contenedorLogueado {
+	height:30px;
+	color:#000;
+	margin:16px 20px 0px 0px;
+	display:inline;
+	float:right;
+}
+
+.cabeceraContenedor_contenedorLogueado table, .cabeceraContenedor_contenedorLogueadoDesplegable table {
+	width:100%;
+	height:100%;
+	border:none;
+	border-spacing:0px;
+}
+
+.cabeceraContenedor_contenedorLogueado table tr td, .cabeceraContenedor_contenedorLogueadoDesplegable table tr td {
+	padding:0px 10px;
+	background-color:#fff;
+}
+
+.cabeceraContenedor_contenedorLogueadoDesplegable {
+	width:200px;
+	position:absolute;
+	top:65px;
+	left:776px;
+	border-radius:0px 0px 7px 7px;
+	border:1px solid #012851;
+	box-shadow:5px 5px 10px #aeadb3;
+	overflow:hidden;
+}
+
+.cabeceraContenedor_contenedorLogueadoDesplegable table tr {
+	height:35px;
+}
+
+.cabeceraContenedor_contenedorLogueadoDesplegable table tr td:hover {
+	border-radius:0px 0px 7px 7px;
+	background-color:#EDEDED;
+	cursor:pointer;
+}
+
+#framehidden{
+	width:300px;
+	height:240px;
+	visibility:hidden;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+
+.backInv{
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0px;
+	left:0px;
+	background:rgba(0, 0, 0, 0.7);
+	z-index:100;
+	cursor:pointer;
+	display:none;
+}
+
+#backImage, .classPopUp{
+	width:460px;
+	position:fixed;
+	top:0px;
+	left:0px;
+	float:none;
+	display:none;
+	background-color:#FEFEFE;
+	z-index:101;
+	cursor:default;
+	text-align:center;
+	color:#000000;
+	border-radius:7px;
+	border:1px solid #aeadb3;
+	box-shadow:5px 5px 10px #aeadb3;
+}
+
+.classPopUp table {
+	width:100%;
+	border:none;
+	border-spacing:0px;
+	padding:10px;
+}
+
+.classPopUp table tbody tr td {
+	padding:0px 10px;
+}
+
+table.picker__table tbody tr td {
+	padding:0px;
+}
+
+.picker__header .picker__select--month {
+	height:auto;
+}
+
+.mascaraPrincipalNivel2 {
+	z-index:102;
+}
+
+.mascaraPrincipalNivel3 {
+	z-index:104;
+}
+
+.mascaraPrincipalNivel4 {
+	z-index:106;
+}
+
+.mascaraPrincipalNivel5 {
+	z-index:108;
+}
+
+.classPopUpNivel2 {
+	z-index:103;
+}
+
+.classPopUpNivel3 {
+	z-index:105;
+}
+
+.classPopUpNivel4 {
+	z-index:107;
+}
+
+.classPopUpNivel5 {
+	z-index:109;
+}
+
+.thumbImg{
+	background-color:#EDEDED;
+	height:25px; 
+	margin:5px;
+	text-align:justify;
+	color:#6a70b4;
+}
+
+.thumbImg:hover{
+	background-color:#61a4d7;
+}
+
+.thumbImg:hover table tr td, .thumbImg:hover a {
+	color:#fff;
+}
+
+.thumbImg table {
+	width:100%;
+	padding:0px;
+	border-spacing:0px;
+}
+
+.thumbImg table tr {
+	height:25px;
+}
+
+#main{
+	background-color:#FFFFFF;
+	width:800px;
+	margin:30px auto 20px auto;
+	text-align:center;
+	border-radius:7px;
+	border:1px solid #012851;
+	box-shadow:5px 5px 10px #aeadb3;
+}
+
+.main_table {
+	width:100%;
+	border:none;
+	border-spacing:0px;
+	padding:0px 20px 20px 20px;
+}
+
+.main_table tbody tr td {
+	text-align:left;
+	padding:0px 10px;
+}
+
+.main_table tbody tr td img.miniOpcion {
+	width:25px;
+	height:25px;
+}
+
+.main_table tbody tr td.titulo {
+	font-size:16px;
+	font-weight:bold;
+	border-bottom:1px solid #012851;
+	text-align:center;
+}
+
+.template_contenedorCeldas {
+	width:272px;
+	margin:0px auto;
+	text-align:left;
+}
+
+div.btnOpciones {
+	width:270px;
+	height:25px;
+	background-color:#012851;
+	cursor:pointer;
+	padding-top:5px;
+	color:#fff;
+	margin:0px auto;
+	text-align:center;
+}
+
+.template_contenedoresCeldas {
+	width:272px;
+	text-align:left;
+	margin:0px auto;
+}
+
+*.ObjFocusBlur {
+	background-color:#fff;
+	color:#000;
+	padding:0px 10px;
+	border:1px solid #000;
+	font-size:14px;
+}
+
+input.ObjFocusBlur {
+	width:250px;
+	height:25px;
+}
+
+select.ObjFocusBlur {
+	width:270px;
+	height:25px;
+}
+
+select.ObjFocusBlur option.off {
+	color:#999;
+}
+
+textarea.ObjFocusBlur {
+	max-width:250px;
+	min-width:250px;
+	max-height:100px;
+	min-height:100px;
+}
+
+.template_sistemaPaginacion {
+	text-align:center;
+}
+
+.template_sistemaPaginacion a {
+	margin:0px 5px;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.template_sistemaPaginacion a.activo {
+	color:#d89998;
+	text-decoration:underline;
+}

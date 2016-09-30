@@ -1,0 +1,198 @@
+@charset "utf-8";
+/* CSS Document */
+
+.misAnuncios_cuerpo {
+	width:100%;
+}
+
+.misAnuncios_cuerpo .columna1,
+.misAnuncios_cuerpo .columna2 {
+	display:inline-block;
+	vertical-align:top;
+	position:relative;
+	padding:20px 0px;
+}
+
+.misAnuncios_cuerpo .columna1 {
+	width:300px;
+}
+
+.misAnuncios_cuerpo .columna2 {
+	width:860px;
+}
+
+.misAnuncios_cuerpo .columna1 .titulo {
+	padding-top:20%;
+}
+
+.misAnuncios_cuerpo .columna1 p {
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	padding-left:20px;
+	padding-bottom:10px;
+	cursor:pointer;
+}
+
+.misAnuncios_cuerpo p a {
+	font-family:inherit;
+	font-size:inherit;
+	color:inherit;
+	text-decoration:none;
+}
+
+.misAnuncios_cuerpo p a.btnBotones.buscador {
+	width:20px;
+	height:20px;
+	background:url(../images/botones.png) no-repeat;
+	background-size:260px 20px;
+}
+
+.misAnuncios_cuerpo .columna2 p.titulo {
+	width:95%;
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	font-size:20px;
+	padding-bottom:10px;
+	padding-top:10px;
+}
+
+.misAnuncios_cuerpo .columna2 table {
+	width:100%;
+}
+
+.misAnuncios_cuerpo .columna2 table td {
+	width:50%;
+	padding-right:40px;
+	vertical-align:top;
+}
+
+.misAnuncios_cuerpo .subtitulo {
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	padding-bottom:10px !important;
+}
+
+.misAnuncios_cuerpo .columna2 p {
+	padding-bottom:5px;
+}
+
+.contenedorInfo {
+	width:750px;
+	height:200px;
+	border:4px solid #852c2b;
+	border-radius:15px;
+	overflow:hidden;
+	position:relative;
+	margin-bottom:30px;
+}
+
+.contenedorInfo table {
+	width:100%;
+	height:100%;
+}
+
+.contenedorInfo table td {
+	vertical-align:top;
+	width:auto;
+	padding-right:0px !important;
+}
+
+.contenedorInfo table td.imagen {
+	width:300px !important;
+}
+
+.contenedorInfo table td.imagen div {
+	width:300px;
+	height:200px;
+	overflow:hidden;
+	position:relative;
+	cursor:pointer;
+}
+
+.contenedorInfo table td.descripcion {
+	padding:5px 10px 5px 20px !important;
+	width:auto !important;
+}
+
+.contenedorInfo p {
+	padding-bottom:0px !important;
+}
+
+.contenedorInfo .like {
+	height:20px;
+	text-align:right;
+}
+
+.contenedorInfo .like a.btnBotones.corazon {
+	width:20px;
+	height:20px;
+	background:url(../images/botones.png) no-repeat -220px 0px;
+	background-size:260px 20px;
+}
+
+.contenedorInfo .btns {
+	height:30px;
+	padding-bottom:10px !important;
+}
+
+.contenedorInfo .btns .otrosBotones {
+	display:inline-block;
+	vertical-align:top;
+	height:30px;
+	line-height:30px;
+	font-size:12px;
+	color:#fff;
+	padding:0px 5px;
+	background-color:#852c2b;
+	border-radius:5px;
+	text-decoration:none;
+	margin-right:5px;
+}
+
+.contenedorInfo .btns .otrosBotones.wcs {
+	background:url(../images/btnWc.png) no-repeat #852c2b;
+	background-position:right;
+	background-size:auto 25px;
+	padding-right:22px;
+}
+
+.contenedorInfo .btns .otrosBotones.recamaras {
+	background:url(../images/btnCama.png) no-repeat #852c2b;
+	background-position:right;
+	background-size:auto 25px;
+	padding-right:25px;
+}
+
+.contenedorInfo .btns .otrosBotones sup {
+	color:#fff;
+	font-size:8px;
+}
+
+.contenedorInfo .info {
+	height:100px;
+	overflow:hidden;
+	cursor:pointer;
+}
+
+.contenedorInfo .info * {
+	font-size:12px;
+}
+
+.contenedorInfo .info .descripcion {
+	height:30px;
+	overflow:hidden;
+}
+
+.contenedorInfo .precioVerMas .precio {
+	cursor:pointer;
+	color:#852c2b;
+	font-family:'GothamNarrowBlack', sans-serif;
+}
+
+.contenedorInfo .precioVerMas .verMas {
+	float:right;
+	color:#852c2b;
+	font-family:'GothamNarrowBlack', sans-serif;
+	font-size:12px;
+	cursor:pointer;
+}

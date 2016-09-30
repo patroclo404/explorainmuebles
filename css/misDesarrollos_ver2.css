@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+
+.misDesarrollos_cuerpo {
+	width:100%;
+}
+
+.misDesarrollos_cuerpo .columna1,
+.misDesarrollos_cuerpo .columna2 {
+	display:inline-block;
+	vertical-align:top;
+	position:relative;
+	padding:20px 0px;
+}
+
+.misDesarrollos_cuerpo .columna1 {
+	width:300px;
+}
+
+.misDesarrollos_cuerpo .columna2 {
+	width:860px;
+}
+
+.misDesarrollos_cuerpo .columna2 p.titulo {
+	width:95%;
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	font-size:20px;
+	padding-bottom:10px;
+	padding-top:10px;
+}
+
+.misDesarrollos_cuerpo .columna2 p.titulo span {
+	color:#852c2b;
+	float:right;
+	cursor:pointer;
+	font-family: "GothamNarrowBlack",sans-serif;
+}
+
+a.agregar {
+	display:inline-block;
+	vertical-align:top;
+	width:23px;
+	height:23px;
+	background-color:#dadad9;
+	cursor:pointer;
+	text-align:center;
+	color:#852c2b;
+	font-family:'GothamNarrowBlack', sans-serif;
+	line-height:23px;
+	font-size:inherit;
+	margin-right:10px;
+	margin-top:-2px;
+}
+
+.template_catalogo_contenedorInfo .info {
+	height:140px;
+}
+
+.template_catalogo_contenedorInfo .precioVerMas .verMas {
+	font-size:inherit;
+}
+
+.template_catalogo_contenedorInfo .like a.btnBotones.editar {
+	width:20px;
+	height:20px;
+	background:url(../images/botones3.png) no-repeat -100px 0px;
+	background-size:auto 20px;
+	float:right;
+}

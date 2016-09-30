@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* CSS Document */
+
+.template_contenedorCuerpo {
+	background-color:#f6f6f6;
+}
+
+.inmueble_cuerpo {
+	width:100%;
+}
+
+.inmueble_cuerpo .columna1,
+.inmueble_cuerpo .columna2 {
+	display:inline-block;
+	vertical-align:top;
+	position:relative;
+	padding:20px 0px;
+}
+
+.inmueble_cuerpo .columna1 {
+	width:300px;
+}
+
+.inmueble_cuerpo .columna2 {
+	width:860px;
+}
+
+.inmueble_cuerpo .columna1 .titulo {
+	padding-top:20%;
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	padding-bottom:30px;
+	cursor:pointer;
+}
+
+.inmueble_cuerpo .columna1 p,
+.inmueble_cuerpo .columna1 div.inmueble_campos_select {
+	padding-left:20px;
+	padding-bottom:20px;
+}
+
+.inmueble_cuerpo .columna1 p.titulo a.btnBotones.buscador {
+	width:20px;
+	height:20px;
+	background:url(../images/botones.png) no-repeat;
+	background-size:260px 20px;
+}
+
+.inmueble_cuerpo .columna2 p.titulo {
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	font-size:20px;
+	padding-bottom:10px;
+}
+
+.inmueble_cuerpo .columna2 table.contenedorInfo {
+	width:90%;
+}
+
+.inmueble_cuerpo .columna2 table td {
+	vertical-align:top;
+}
+
+.inmueble_cuerpo .columna2 table.contenedorInfo td.imagen {
+	width:60%;
+}
+
+.inmueble_cuerpo .columna2 table.contenedorInfo td.imagen img {
+	width:100%;
+}
+
+.inmueble_cuerpo .columna2 table.contenedorInfo td.descripcion {
+	padding-left:20px;
+}
+
+.inmueble_cuerpo .columna2 table.contenedorInfo td.descripcion a.btnBotones.mundo {
+	width:20px;
+	height:20px;
+	background:url(../images/botones.png) no-repeat -180px 0px;
+	background-size:260px 20px;
+}
+
+.inmueble_cuerpo .columna2 table.contenedorInfo td.descripcion a.btnBotones.corazon {
+	width:20px;
+	height:20px;
+	background:url(../images/botones.png) no-repeat -220px 0px;
+	background-size:260px 20px;
+}
+
+.inmueble_cuerpo .columna2 table.contenedorInfo td.descripcion a.otrosBotones {
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	font-size:12px;
+	margin-left:10px;
+}
+
+.inmueble_cuerpo .columna2 table.servicios,
+.inmueble_cuerpo .columna2 table.contacto {
+	margin-top:30px;
+}
+
+.inmueble_cuerpo .columna2 table.servicios td {
+	padding-right:40px;
+	min-width:140px;
+}
+
+.inmueble_cuerpo .columna2 table.servicios td p {
+	text-align:center;
+	font-family:'GothamNarrowBlack', sans-serif;
+}
+
+.inmueble_cuerpo .columna2 table.servicios td ul {
+	list-style-position:inside;
+}
+
+.inmueble_cuerpo .columna2 table.servicios td ul li {
+	list-style-image:url(../images/ico-paloma.png);
+}
+
+.inmueble_cuerpo .columna2 table.contacto td {
+	padding-bottom:10px;
+	padding-right:10px;
+}
+
+.inmueble_cuerpo .columna2 table.contacto td a.btnBotones.email {
+	width:20px;
+	height:20px;
+	background:url(../images/botones.png) no-repeat -80px 0px;
+	background-size:260px 20px;
+	margin-left:10px;
+}
+
+.inmueble_cuerpo .columna2 table.contacto td.titulo {
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+}
+
+.inmueble_cuerpo .columna2 table.contacto td input.template_campos {
+	width:400px;
+}
+
+.inmueble_cuerpo .columna2 table.contacto td textarea.template_campos {
+	min-width:400px;
+	max-width:400px;
+	max-height:150px;
+	min-height:150px;
+}
+
+.inmueble_cuerpo .columna2 table.contacto td .btnEnviar {
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	cursor:pointer;
+}

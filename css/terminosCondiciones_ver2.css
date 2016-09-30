@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+
+.terminosCondiciones_cuerpo * {
+	font-size:inherit;
+	font-family:inherit;
+	color:inherit;
+}
+
+.terminosCondiciones_cuerpo {
+	padding:0px 20px;
+}

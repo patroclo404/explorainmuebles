@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+
+.pagar_payment_cuerpo {
+	padding:20px 0px;
+	width:400px;
+	margin:0px auto;
+}
+
+.pagar_payment_cuerpo p.titulo {
+	width:95%;
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	font-size:20px;
+	padding-bottom:10px;
+	text-align:center;
+}
+
+.pagar_payment_cuerpo table {
+	width:100%;
+}
+
+.pagar_payment_cuerpo table td {
+	padding:4px 0px;
+}
+
+.pagar_payment_cuerpo table td.card-errors {
+	background-color:#b61b30;
+	color:#fff;
+}
+
+.pagar_payment_cuerpo table td .template_campos {
+	width:98%;
+}
+
+.pagar_payment_cuerpo table td .nombreCampos {
+	display:inline-block;
+	vertical-align:top;
+}
+
+.pagar_payment_cuerpo a.btnBotones.palomita {
+	width:25px;
+	height:25px;
+	background:url(../images/palomita2.png) no-repeat center center;
+	background-size:auto 16px;
+	margin-right:5px;
+	position:relative;
+	top:-3px;
+}
+
+.pagar_payment_cuerpo .guardar {
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	cursor:pointer;
+}
+
+.pagarPayment_popupCVC td {
+	padding:10px;
+}

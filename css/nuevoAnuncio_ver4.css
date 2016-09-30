@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* CSS Document */
+
+.nuevoAnuncio_cuerpo {
+	width:100%;
+}
+
+.nuevoAnuncio_cuerpo .columna1,
+.nuevoAnuncio_cuerpo .columna2 {
+	display:inline-block;
+	vertical-align:top;
+	position:relative;
+	padding:20px 0px;
+}
+
+.nuevoAnuncio_cuerpo .columna1 {
+	width:300px;
+}
+
+.nuevoAnuncio_cuerpo .columna2 {
+	width:860px;
+}
+
+.nuevoAnuncio_cuerpo .columna2 a.btnBotones.guardar {
+	width:25px;
+	height:25px;
+	background:url(../images/botones2.png) no-repeat -375px 0px;
+	background-size:auto 25px;
+	margin-right:5px;
+	position:relative;
+	top:-3px;
+}
+
+.nuevoAnuncio_cuerpo .columna2 p.titulo {
+	width:95%;
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	font-size:20px;
+	padding-bottom:10px;
+	padding-top:10px;
+}
+
+.nuevoAnuncio_cuerpo .columna2 table {
+	width:100%;
+}
+
+.nuevoAnuncio_cuerpo .columna2 table td {
+	width:50%;
+	padding-right:40px;
+	vertical-align:top;
+}
+
+.nuevoAnuncio_cuerpo .subtitulo {
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	padding-bottom:10px !important;
+}
+
+.nuevoAnuncio_cuerpo .columna2 p {
+	padding-bottom:5px;
+}
+
+.nuevoAnuncio_cuerpo .columna2 .contenedorCampos {
+	padding-bottom:15px;
+}
+
+.nuevoAnuncio_cuerpo .columna2 .contenedorCampos.columnas {
+	display:inline-block;
+	vertical-align:top;
+	width:50%;
+	box-sizing:border-box;
+	padding-right:20px;
+}
+
+.nuevoAnuncio_cuerpo .columna2 .template_campos {
+	width:95%;
+}
+
+.nuevoAnuncio_cuerpo .columna2 textarea.template_campos {
+	min-width:95%;
+	max-width:95%;
+}
+
+.nuevoAnuncio_cuerpo .columna2 .contenedorCampos .imagen {
+	height:115px;
+	padding-bottom:5px;
+}
+
+.nuevoAnuncio_cuerpo .columna2 .contenedorCampos .imagen img {
+	max-height:115px;
+}
+
+.nuevoAnuncio_cuerpo p.guardar {
+	cursor:pointer;
+}
+
+.nuevoAnuncio_cuerpo .contenedorMapa {
+	width:95%;
+	height:300px;
+	background-color:#ccc;
+}
+
+.encontrarUbicacion {
+	font-family:'GothamNarrowBlack', sans-serif !important;
+	color:#852c2b !important;
+	float:right;
+	padding-right:40px;
+}
+
+.imagenesTemporales {
+	padding-bottom:10px;
+}
+
+.imagenesTemporales .bloqueImagen {
+	display:inline-block;
+	vertical-align:top;
+	margin-right:10px;
+	width:60px;
+	text-align:center;
+	position:relative;
+}
+
+.imagenesTemporales .bloqueImagen img {
+	height:60px;
+	max-width:60px;
+}
+
+.imagenesTemporales .bloqueImagen span.borrar {
+	color:#fff;
+	font-family:'GothamNarrowBlack', sans-serif;
+	text-align:center;
+	border-radius:5px;
+	padding:2px 5px;
+	background-color:#852c2b;
+	position:absolute;
+	top:0px;
+	right:0px;
+	cursor:pointer;
+}

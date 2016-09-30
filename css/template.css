@@ -1,0 +1,354 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	font-family: GothamNarrowBook;
+	src: url(../fonts/GothamNarrowBook.otf);
+}
+
+@font-face {
+	font-family: GothamNarrowBlack;
+	src: url(../fonts/GothamNarrowBlack.otf);
+}
+
+* {
+	margin:0px;
+	padding:0px;
+	font-family:'GothamNarrowBook', sans-serif;
+	font-size:14px;
+	color:#575756;
+}
+
+.img {
+	border:none;
+}
+
+table {
+	border:none;
+	border-spacing:0px;
+	border-collapse:collapse;
+}
+
+select option.off {
+	background-color:#fff !important;
+}
+
+.template_principal {
+	width:100%;
+	position:relative;
+}
+
+.template_principal .template_cuerpo {
+	width:1000px;
+	position:relative;
+	margin:0px auto;
+}
+
+.template_principal a.btnBotones {
+	display:inline-block;
+	vertical-align:top;
+	width:30px;
+	height:30px;
+	overflow:hidden;
+	text-indent:-200px;
+	cursor:pointer;
+}
+
+.template_principal a.btnBotones.buscador {
+	background:url(../images/botones.png) no-repeat;
+	background-size:390px 30px;
+}
+
+.template_principal a.btnBotones.facebook {
+	background:url(../images/botones.png) no-repeat -30px 0px;
+	background-size:390px 30px;
+}
+
+.template_principal a.btnBotones.twitter {
+	background:url(../images/botones.png) no-repeat -60px 0px;
+	background-size:390px 30px;
+}
+
+.template_principal a.btnBotones.google {
+	background:url(../images/botones.png) no-repeat -90px 0px;
+	background-size:390px 30px;
+}
+
+.template_principal a.btnBotones.email {
+	background:url(../images/botones.png) no-repeat -120px 0px;
+	background-size:390px 30px;
+}
+
+.template_principal a.btnBotones.telefono {
+	background:url(../images/botones.png) no-repeat -150px 0px;
+	background-size:390px 30px;
+}
+
+.template_principal a.btnBotones.mundo {
+	background:url(../images/botones.png) no-repeat -270px 0px;
+	background-size:390px 30px;
+}
+
+.template_principal .template_cabecera {
+	width:100%;
+	position:relative;
+}
+
+.template_principal .template_cabecera .contenedorLogin {
+	width:100%;
+	height:50px;
+	position:relative;
+}
+
+.template_principal .template_cabecera .contenedorLogin table {
+	float:right;
+}
+
+.template_principal .template_cabecera .contenedorLogin table td {
+	position:relative;
+	text-align:center;
+}
+
+.template_principal .template_cabecera .contenedorLogin table td.texto {
+	width:80px;
+	cursor:pointer;
+}
+
+.template_principal .template_cabecera .contenedorLogin span {
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	height:26px;
+}
+
+.template_principal .template_cabecera .contenedorLogin span.barra {
+	border:2px solid #852c2b;
+	border-radius:2px;
+	display:block;
+}
+
+.template_principal .template_cabecera .contenedorLogin span.texto {
+	cursor:pointer;
+	height:30px;
+	line-height:30px;
+}
+
+.template_principal .template_cabecera .contenedorLogin table td:hover div {
+	display:block;
+}
+
+.template_principal .template_cabecera .contenedorLogin .opcionLogin {
+	display:none;
+	position:absolute;
+	width:200px;
+	top:26px;
+	right:-4px;
+	border:4px solid #852c2b;
+	border-radius:15px 0px 15px 15px;
+	padding:10px;
+	background-color:#fff;
+	text-align:center;
+}
+
+.template_principal .template_cabecera .contenedorLogin .opcionLogin p.arregloBorder {
+	position:absolute;
+	width:80px;
+	height:4px;
+	background-color:#fff;
+	top:-4px;
+	right:0px;
+}
+
+.template_principal .template_cabecera .contenedorLogin .opcionLogin input {
+	width:95%;
+	border:1px solid #dadad9;
+	border-radius:2px;
+	height:25px;
+	margin-bottom:2px;
+	padding:0px 5px;
+	color:#575756;
+}
+
+.template_principal .template_cabecera .contenedorMenu {
+	width:100%;
+	height:85px;
+}
+
+.template_principal .template_cabecera .contenedorMenu p {
+	display:inline-block;
+	vertical-align:top;
+	float:right;
+	height:85px;
+	line-height:85px;
+}
+
+.template_principal .template_cabecera .contenedorMenu p a {
+	padding:0px 0px 0px 30px;
+	text-decoration:none;
+	font-style:italic;
+}
+
+.template_principal .template_cabecera .contenedorMenu2 {
+	width:100%;
+	height:50px;
+	padding-top:30px;
+	position:relative;
+	z-index:1;
+}
+
+.template_principal .template_cabecera .contenedorMenu2 table {
+	margin:0px auto;
+}
+
+.template_principal .template_cabecera .contenedorMenu2 table td {
+	text-align:center;
+	position:relative;
+}
+
+.template_principal .template_cabecera .contenedorMenu2 table td.btn {
+	width:50px;
+}
+
+.template_principal .template_cabecera .contenedorMenu2 table td:hover div {
+	display:block;
+}
+
+.template_principal .template_cabecera .contenedorMenu2 table td.texto {
+	width:100px;
+}
+
+.template_principal .template_cabecera .contenedorMenu2 table td.texto2 {
+	width:180px;
+}
+
+.template_principal .template_cabecera .contenedorMenu2 span {
+	height:26px;
+}
+
+.template_principal .template_cabecera .contenedorMenu2 span.barra {
+	border:2px solid #852c2b;
+	border-radius:2px;
+	display:block;
+}
+
+.template_principal .template_cabecera .contenedorMenu2 span.texto {
+	height:32px;
+	line-height:32px;
+	cursor:pointer;
+}
+
+.template_principal .template_cabecera .contenedorMenu2 span.texto.btn {
+	padding-top:5px;
+}
+
+.template_principal .template_cabecera .contenedorMenu2 a.btnBotones {
+	width:20px;
+	height:20px;
+}
+
+.template_principal .template_cabecera .contenedorMenu2 a.btnBotones.buscador {
+	background:url(../images/botones.png) no-repeat;
+	background-size:260px 20px;
+}
+
+.template_principal .template_cabecera .contenedorMenu2 a.btnBotones.mundo {
+	background:url(../images/botones.png) no-repeat -180px 0px;
+	background-size:260px 20px;
+}
+
+.template_principal .template_cabecera .contenedorMenu2 .opcionRenta {
+	display:none;
+	position:absolute;
+	width:450px;
+	top:30px;
+	left:-4px;
+	border:4px solid #852c2b;
+	border-radius:0px 15px 15px 15px;
+	padding:10px;
+	background-color:#fff;
+	text-align:center;
+}
+
+.template_principal .template_cabecera .contenedorMenu2 .opcionRenta p.arregloBorder {
+	position:absolute;
+	width:100px;
+	height:4px;
+	background-color:#fff;
+	top:-4px;
+	left:0px;
+}
+
+.template_principal .template_cabecera .contenedorMenu2 .opcionRenta input,
+.template_principal .template_cabecera .contenedorMenu2 .opcionRenta select {
+	border:1px solid #dadad9;
+	border-radius:2px;
+	height:25px;
+	margin-bottom:2px;
+	padding:0px 5px;
+	color:#575756;
+	margin:0px 5px 5px 5px;
+}
+
+.template_principal .template_cabecera .contenedorMenu2 .opcionRenta select option {
+	background-color:#dadad9;
+}
+
+.template_principal .template_cabecera .contenedorMenu2 .opcionRenta p.textBuscar {
+	width:auto;
+	padding:0px 10px;
+	float:right;
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	cursor:pointer;
+}
+
+.template_principal .template_cabecera .contenedorMenu2 .opcionRenta p.textBuscar a.btnBotones.buscador {
+	width:15px;
+	height:15px;
+	background:url(../images/botones.png) no-repeat;
+	background-size:195px 15px;
+}
+
+.template_principal .template_footer {
+	width:100%;
+	margin-top:50px;
+	position:relative;
+}
+
+.template_principal .template_footer p.linea {
+	width:100%;
+	height:4px;
+	background-color:#852c2b;
+	position:absolute;
+	top:12px;
+}
+
+.template_principal .template_footer .contenedorIconos {
+	width:100%;
+	height:20px;
+	text-align:center;
+}
+
+.template_principal .template_footer .contenedorIconos p {
+	position:relative;
+	width:330px;
+	display:inline-block;
+	background-color:#fff;
+	text-align:center;
+	z-index:2;
+}
+
+.template_principal .template_footer .contenedorIconos p a {
+	margin:0px 10px;
+}
+
+.template_principal .template_footer .ligas {
+	height:100px;
+	line-height:100px;
+	text-align:center;
+	text-align:center;
+}
+
+.template_principal .template_footer .ligas a {
+	margin:0px 10px;
+	text-decoration:none;
+}

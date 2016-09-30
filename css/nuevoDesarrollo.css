@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* CSS Document */
+
+.nuevoDesarrollo_cuerpo {
+	width:100%;
+}
+
+.nuevoDesarrollo_cuerpo .columna1,
+.nuevoDesarrollo_cuerpo .columna2 {
+	display:inline-block;
+	vertical-align:top;
+	position:relative;
+	padding:20px 0px;
+}
+
+.nuevoDesarrollo_cuerpo .columna1 {
+	width:300px;
+}
+
+.nuevoDesarrollo_cuerpo .columna2 {
+	width:860px;
+}
+
+.nuevoDesarrollo_cuerpo .columna2 a.btnBotones {
+	width:25px;
+	height:25px;
+	margin-right:5px;
+	position:relative;
+	top:-3px;
+}
+
+.nuevoDesarrollo_cuerpo .columna2 a.btnBotones.guardar {
+	background:url(../images/botones2.png) no-repeat -375px 0px;
+	background-size:auto 25px;
+}
+
+.nuevoDesarrollo_cuerpo .columna2 a.btnBotones.publicar {
+	background:url(../images/botones2.png) no-repeat -125px 0px;
+	background-size:auto 25px;
+}
+
+.nuevoDesarrollo_cuerpo .columna2 p.titulo {
+	width:95%;
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	font-size:20px;
+	padding-bottom:10px;
+	padding-top:10px;
+}
+
+.nuevoDesarrollo_cuerpo .subtitulo {
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	padding-bottom:10px !important;
+}
+
+.nuevoDesarrollo_cuerpo .columna2 table {
+	width:100%;
+}
+
+.nuevoDesarrollo_cuerpo .columna2 table td {
+	width:50%;
+	vertical-align:top;
+}
+
+.nuevoDesarrollo_cuerpo .columna2 p {
+	padding-bottom:5px;
+}
+
+.nuevoDesarrollo_cuerpo .columna2 .contenedorCampos {
+	position:relative;
+	padding-bottom:15px;
+}
+
+.nuevoDesarrollo_cuerpo .columna2 .contenedorCampos.columnas {
+	display:inline-block;
+	vertical-align:top;
+	width:50%;
+	box-sizing:border-box;
+	padding-right:20px;
+}
+
+.nuevoDesarrollo_cuerpo .columna2 .template_campos {
+	width:95%;
+}
+
+.nuevoDesarrollo_cuerpo .columna2 textarea.template_campos {
+	min-width:95%;
+	max-width:95%;
+}
+
+.nuevoDesarrollo_cuerpo .columna2 .contenedorCampos .imagen {
+	height:115px;
+	padding-bottom:5px;
+}
+
+.nuevoDesarrollo_cuerpo .columna2 .contenedorCampos .imagen img {
+	max-height:115px;
+}
+
+.nuevoDesarrollo_cuerpo p.guardar,
+.nuevoDesarrollo_cuerpo p.publicar {
+	cursor:pointer;
+}
+
+.nuevoDesarrollo_cuerpo .contenedorMapa {
+	width:95%;
+	height:300px;
+	background-color:#ccc;
+}
+
+.encontrarUbicacion {
+	font-family:'GothamNarrowBlack', sans-serif !important;
+	color:#852c2b !important;
+	float:right;
+	padding-right:40px;
+}
+
+.imagenesTemporales {
+	padding-bottom:10px;
+}
+
+.imagenesTemporales .bloqueImagen {
+	display:inline-block;
+	vertical-align:top;
+	margin-right:10px;
+	width:60px;
+	text-align:center;
+	position:relative;
+}
+
+.imagenesTemporales .bloqueImagen img {
+	height:60px;
+	max-width:60px;
+}
+
+.imagenesTemporales .bloqueImagen p {
+	text-align:center;
+	padding-top:5px;
+}
+
+.imagenesTemporales .bloqueImagen span.borrar {
+	color:#fff;
+	font-family:'GothamNarrowBlack', sans-serif;
+	text-align:center;
+	border-radius:5px;
+	padding:2px 5px;
+	background-color:#852c2b;
+	position:absolute;
+	top:0px;
+	right:0px;
+	cursor:pointer;
+}

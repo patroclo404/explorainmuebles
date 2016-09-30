@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+.registro_cuerpo {
+	padding:20px;
+}
+
+.registro_cuerpo h1 {
+	color:#852c2b;
+	margin:0px auto;
+	text-align: center;
+}
+
+.registro_cuerpo table {
+	margin:50px auto 0px;
+}
+
+.registro_cuerpo table td {
+	vertical-align:top;
+	padding-right:50px;
+}
+
+.registro_cuerpo table p {
+	color:#852c2b;
+	padding-bottom:5px;
+}
+
+.registro_cuerpo p.btn {
+	cursor:pointer;
+}
+
+.registro_cuerpo p.btn a.paloma {
+    background: rgba(0, 0, 0, 0) url("../images/palomita2.png") no-repeat scroll center center / 15px 15px;
+    display: inline-block;
+    height: 15px;
+    margin: 2px 5px 0 0;
+    overflow: hidden;
+    vertical-align: top;
+    width: 15px;
+}
+
+.registro_cuerpo p.btn a.btnBotones.facebook {
+    background: rgba(0, 0, 0, 0) url("../images/botones.png") no-repeat scroll -20px 0 / 260px 20px;
+    height: 20px;
+    margin-right: 5px;
+    width: 20px;
+}
+
+.registro_cuerpo p.btn span {
+	color:inherit;
+}
+

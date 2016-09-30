@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+
+.ayuda_cuerpo * {
+	font-size:inherit;
+	font-family:inherit;
+	color:inherit;
+}
+
+.ayuda_cuerpo {
+	padding:0px 20px;
+}

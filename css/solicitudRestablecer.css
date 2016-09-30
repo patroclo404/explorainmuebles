@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+.solicitudRestablecer_cuerpo * {
+	font-size:inherit;
+	font-family:inherit;
+	color:inherit;
+}
+
+.solicitudRestablecer_cuerpo {
+	padding:40px 20px;
+}
+
+.solicitudRestablecer_cuerpo h1 {
+	font-size:initial;
+}
+
+.solicitudRestablecer_cuerpo p {
+	padding-bottom:10px;
+}
+
+.solicitudRestablecer_cuerpo .boton {
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	cursor:pointer;
+}

@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* CSS Document */
+
+.misAnuncios_cuerpo {
+	width:100%;
+}
+
+.misAnuncios_cuerpo .columna1,
+.misAnuncios_cuerpo .columna2 {
+	display:inline-block;
+	vertical-align:top;
+	position:relative;
+	padding:20px 0px;
+}
+
+.misAnuncios_cuerpo .columna1 {
+	width:300px;
+}
+
+.misAnuncios_cuerpo .columna2 {
+	width:860px;
+}
+
+.misAnuncios_cuerpo .columna2 p.titulo {
+	width:95%;
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	font-size:20px;
+	padding-bottom:10px;
+	padding-top:10px;
+}
+
+.misAnuncios_contenedorBuscador {
+	width:750px;
+	padding-bottom:20px;
+}
+
+.misAnuncios_contenedorBuscador .template_campos {
+	width:95%;
+}
+
+.misAnuncios_contenedorBuscador .btnBuscar {
+	display:inline-block;
+	vertical-align:top;
+	width:20px;
+	height:20px;
+	overflow:hidden;
+	text-indent:-200px;
+	cursor:pointer;
+	background:url(../images/botones.png) no-repeat;
+	background-size:auto 20px;
+	position:relative;
+	top:2px;
+	float:right;
+}
+
+.mensajeRenovacion {
+	position:absolute !important;
+	top:0px;
+	background-color:rgba(255, 255, 255, 0.7);
+	cursor:default !important;
+	padding-top:70px;
+	box-sizing:border-box;
+}
+
+.mensajeRenovacion p {
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	text-align:center;
+	position:relative;
+}
+
+.mensajeRenovacion a {
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	text-decoration:underline;
+	cursor:pointer;
+}
+
+.misAnuncios_popupRenovar {
+	padding:20px;
+}
+
+.misAnuncios_popupRenovar a.btnBotones {
+	display:inline-block;
+	vertical-align:top;
+	width:30px;
+	height:30px;
+	overflow:hidden;
+	text-indent:-200px;
+	cursor:pointer;
+	text-align:left;
+}
+
+.misAnuncios_popupRenovar a.btnBotones.palomita {
+	width:25px;
+	height:25px;
+	background:url(../images/palomita2.png) no-repeat center center;
+	background-size:auto 16px;
+	margin-right:5px;
+	position:relative;
+	top:-3px;
+}
+
+.misAnuncios_popupRenovar .guardar {
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	cursor:pointer;
+	display:inline-block;
+	vertical-align:top;
+}

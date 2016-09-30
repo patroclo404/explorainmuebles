@@ -1,0 +1,19 @@
+[19-May-2015 20:51:32 America/Mexico_City] PHP Warning:  fopen(): Filename cannot be empty in /home/inmuebles/public_html/lib_php/template.php on line 158
+[19-May-2015 20:51:50 America/Mexico_City] PHP Warning:  fopen(): Filename cannot be empty in /home/inmuebles/public_html/lib_php/template.php on line 158
+[19-May-2015 20:51:56 America/Mexico_City] PHP Warning:  unlink(../images/images/temp/): Is a directory in /home/inmuebles/public_html/lib_php/tempSubirImagen2.php on line 23
+[19-May-2015 20:51:58 America/Mexico_City] PHP Warning:  unlink(../images/images/temp/): Is a directory in /home/inmuebles/public_html/lib_php/tempSubirImagen2.php on line 23
+[13-Jun-2015 17:49:58 America/Mexico_City] PHP Warning:  fread(): Length parameter must be greater than 0 in /home/inmuebles/public_html/lib_php/template.php on line 159
+[19-Jun-2015 10:31:04 America/Mexico_City] PHP Fatal error:  Call to undefined function template_extension() in /home/inmuebles/public_html/lib_php/template.php on line 157
+[19-Jun-2015 10:31:43 America/Mexico_City] PHP Fatal error:  Call to undefined function template_extension() in /home/inmuebles/public_html/lib_php/template.php on line 157
+[19-Jun-2015 10:32:47 America/Mexico_City] PHP Fatal error:  Call to undefined function template_extension() in /home/inmuebles/public_html/lib_php/template.php on line 157
+[19-Jun-2015 10:33:10 America/Mexico_City] PHP Fatal error:  Call to undefined function template_extension() in /home/inmuebles/public_html/lib_php/template.php on line 157
+[19-Jun-2015 10:35:03 America/Mexico_City] PHP Fatal error:  Call to undefined function template_extension() in /home/inmuebles/public_html/lib_php/template.php on line 157
+[23-Jun-2015 16:14:13 America/Mexico_City] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/inmuebles/public_html/lib_php/consInmueble.php on line 431
+[23-Jun-2015 16:14:21 America/Mexico_City] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/inmuebles/public_html/lib_php/consInmueble.php on line 431
+[23-Jun-2015 16:14:26 America/Mexico_City] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/inmuebles/public_html/lib_php/consInmueble.php on line 431
+[23-Jun-2015 16:14:29 America/Mexico_City] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/inmuebles/public_html/lib_php/consInmueble.php on line 431
+[23-Jun-2015 16:15:05 America/Mexico_City] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/inmuebles/public_html/lib_php/consInmueble.php on line 431
+[23-Jun-2015 16:15:05 America/Mexico_City] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/inmuebles/public_html/lib_php/consInmueble.php on line 431
+[23-Jun-2015 16:15:06 America/Mexico_City] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/inmuebles/public_html/lib_php/consInmueble.php on line 431
+[23-Jun-2015 16:16:06 America/Mexico_City] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/inmuebles/public_html/lib_php/consInmueble.php on line 431
+[23-Jun-2015 16:17:08 America/Mexico_City] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/inmuebles/public_html/lib_php/consInmueble.php on line 431

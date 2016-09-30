@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+.misAnuncios_cuerpo {
+	width:100%;
+}
+
+.misAnuncios_cuerpo .columna1,
+.misAnuncios_cuerpo .columna2 {
+	display:inline-block;
+	vertical-align:top;
+	position:relative;
+	padding:20px 0px;
+}
+
+.misAnuncios_cuerpo .columna1 {
+	width:300px;
+}
+
+.misAnuncios_cuerpo .columna2 {
+	width:860px;
+}
+
+.misAnuncios_cuerpo .columna2 p.titulo {
+	width:95%;
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	font-size:20px;
+	padding-bottom:10px;
+	padding-top:10px;
+}

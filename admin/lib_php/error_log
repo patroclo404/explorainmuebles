@@ -1,0 +1,88 @@
+[27-Mar-2015 13:03:08 America/Mexico_City] PHP Warning:  session_start(): open(/tmp/sess_e279989adb4a997e0e80ad7be68dbc88, O_RDWR) failed: Permission denied (13) in /home/inmuebles/public_html/lib_php/template.php on line 8
+[27-Mar-2015 13:03:08 America/Mexico_City] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/inmuebles/public_html/lib_php/template.php:8) in /home/inmuebles/public_html/lib_php/template.php on line 8
+[27-Mar-2015 13:03:08 America/Mexico_City] PHP Warning:  Unknown: open(/tmp/sess_e279989adb4a997e0e80ad7be68dbc88, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[27-Mar-2015 13:03:08 America/Mexico_City] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[27-Mar-2015 13:03:09 America/Mexico_City] PHP Warning:  session_start(): open(/tmp/sess_e279989adb4a997e0e80ad7be68dbc88, O_RDWR) failed: Permission denied (13) in /home/inmuebles/public_html/lib_php/template.php on line 8
+[27-Mar-2015 13:03:09 America/Mexico_City] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/inmuebles/public_html/lib_php/template.php:8) in /home/inmuebles/public_html/lib_php/template.php on line 8
+[27-Mar-2015 13:03:09 America/Mexico_City] PHP Warning:  Unknown: open(/tmp/sess_e279989adb4a997e0e80ad7be68dbc88, O_RDWR) failed: Permission denied (13) in Unknown on line 0
+[27-Mar-2015 13:03:09 America/Mexico_City] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/tmp) in Unknown on line 0
+[19-May-2015 16:23:02 America/Mexico_City] PHP Warning:  fopen(): Filename cannot be empty in /home/inmuebles/public_html/lib_php/template.php on line 158
+[19-May-2015 16:23:02 America/Mexico_City] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/inmuebles/public_html/lib_php/template.php on line 159
+[19-May-2015 16:23:02 America/Mexico_City] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/inmuebles/public_html/lib_php/template.php on line 169
+[19-May-2015 16:27:38 America/Mexico_City] PHP Warning:  unlink(../../images/images/0969450001432070582.jpg): No such file or directory in /home/inmuebles/public_html/admin/lib_php/updImagenPortada.php on line 25
+[21-May-2015 12:30:16 America/Mexico_City] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/inmuebles/public_html/admin/lib_php/updPagina.php on line 22
+[21-May-2015 12:35:15 America/Mexico_City] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/inmuebles/public_html/admin/lib_php/updPagina.php on line 22
+[21-May-2015 12:35:50 America/Mexico_City] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/inmuebles/public_html/admin/lib_php/updPagina.php on line 22
+[21-May-2015 12:37:43 America/Mexico_City] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/inmuebles/public_html/admin/lib_php/updPagina.php on line 22
+[21-May-2015 12:37:43 America/Mexico_City] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/inmuebles/public_html/admin/lib_php/updPagina.php on line 22
+[21-May-2015 12:38:03 America/Mexico_City] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/inmuebles/public_html/admin/lib_php/updPagina.php on line 22
+[21-May-2015 12:38:03 America/Mexico_City] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/inmuebles/public_html/admin/lib_php/updPagina.php on line 22
+[21-May-2015 12:38:44 America/Mexico_City] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/inmuebles/public_html/admin/lib_php/updPagina.php on line 22
+[21-May-2015 12:38:44 America/Mexico_City] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/inmuebles/public_html/admin/lib_php/updPagina.php on line 22
+[21-May-2015 12:38:52 America/Mexico_City] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/inmuebles/public_html/admin/lib_php/updPagina.php on line 22
+[21-May-2015 12:38:52 America/Mexico_City] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/inmuebles/public_html/admin/lib_php/updPagina.php on line 22
+[21-May-2015 12:41:16 America/Mexico_City] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/inmuebles/public_html/admin/lib_php/updPagina.php on line 22
+[21-May-2015 12:41:16 America/Mexico_City] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/inmuebles/public_html/admin/lib_php/updPagina.php on line 22
+[21-May-2015 12:41:53 America/Mexico_City] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/inmuebles/public_html/admin/lib_php/updPagina.php on line 22
+[21-May-2015 12:41:53 America/Mexico_City] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/inmuebles/public_html/admin/lib_php/updPagina.php on line 22
+[21-May-2015 12:50:15 America/Mexico_City] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/inmuebles/public_html/admin/lib_php/updPagina.php on line 22
+[21-May-2015 12:50:15 America/Mexico_City] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/inmuebles/public_html/admin/lib_php/updPagina.php on line 22
+[21-May-2015 12:50:40 America/Mexico_City] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/inmuebles/public_html/admin/lib_php/updPagina.php on line 22
+[21-May-2015 12:50:40 America/Mexico_City] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/inmuebles/public_html/admin/lib_php/updPagina.php on line 22
+[21-May-2015 12:50:54 America/Mexico_City] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/inmuebles/public_html/admin/lib_php/updPagina.php on line 22
+[21-May-2015 12:50:54 America/Mexico_City] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/inmuebles/public_html/admin/lib_php/updPagina.php on line 22
+[21-May-2015 12:51:16 America/Mexico_City] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/inmuebles/public_html/admin/lib_php/updPagina.php on line 22
+[21-May-2015 12:51:16 America/Mexico_City] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/inmuebles/public_html/admin/lib_php/updPagina.php on line 22
+[21-May-2015 13:14:24 America/Mexico_City] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/inmuebles/public_html/admin/lib_php/updPagina.php on line 22
+[21-May-2015 13:14:24 America/Mexico_City] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/inmuebles/public_html/admin/lib_php/updPagina.php on line 22
+[21-May-2015 13:14:32 America/Mexico_City] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/inmuebles/public_html/admin/lib_php/updPagina.php on line 22
+[21-May-2015 13:14:32 America/Mexico_City] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/inmuebles/public_html/admin/lib_php/updPagina.php on line 22
+[21-May-2015 13:14:52 America/Mexico_City] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/inmuebles/public_html/admin/lib_php/updPagina.php on line 22
+[21-May-2015 13:14:52 America/Mexico_City] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/inmuebles/public_html/admin/lib_php/updPagina.php on line 22
+[24-May-2015 23:07:31 America/Mexico_City] PHP Warning:  unlink(../../images/images/): Is a directory in /home/inmuebles/public_html/admin/lib_php/updInmobiliaria.php on line 80
+[18-Jun-2015 18:22:29 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/updPositionsUsuario.php on line 12
+[18-Jun-2015 18:22:39 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/updPositionsUsuario.php on line 12
+[18-Jun-2015 18:22:42 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/updPositionsInmueble.php on line 135
+[18-Jun-2015 18:22:47 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/updPositionsPagina.php on line 9
+[18-Jun-2015 18:23:11 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/updPositionsUsuario.php on line 12
+[18-Jun-2015 18:23:20 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/updPositionsAnunciosVencidos.php on line 9
+[18-Jun-2015 18:23:23 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/updPositionsDesarrollo.php on line 9
+[18-Jun-2015 18:24:28 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/updPositionsUsuario.php on line 12
+[18-Jun-2015 18:24:30 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/updPositionsUsuario.php on line 12
+[18-Jun-2015 19:36:08 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/updPositionsUsuario.php on line 12
+[19-Jun-2015 10:15:27 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/updPositionsUsuario.php on line 12
+[19-Jun-2015 10:33:40 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/login.php on line 16
+[22-Jun-2015 17:18:23 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/login.php on line 16
+[22-Jun-2015 17:18:26 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/login.php on line 16
+[22-Jun-2015 17:18:27 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/login.php on line 16
+[22-Jun-2015 17:18:32 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/login.php on line 16
+[22-Jun-2015 17:18:34 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/login.php on line 16
+[22-Jun-2015 17:18:34 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/login.php on line 16
+[22-Jun-2015 17:18:35 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/login.php on line 16
+[22-Jun-2015 17:19:00 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/login.php on line 16
+[22-Jun-2015 17:19:51 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/login.php on line 16
+[22-Jun-2015 17:19:52 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/login.php on line 16
+[22-Jun-2015 17:19:53 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/login.php on line 16
+[22-Jun-2015 17:19:54 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/login.php on line 16
+[22-Jun-2015 17:19:54 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/login.php on line 16
+[22-Jun-2015 17:19:54 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/login.php on line 16
+[22-Jun-2015 17:19:54 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/login.php on line 16
+[22-Jun-2015 17:28:09 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/login.php on line 16
+[23-Jun-2015 07:51:45 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/login.php on line 16
+[23-Jun-2015 07:51:48 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/login.php on line 16
+[23-Jun-2015 07:51:48 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/login.php on line 16
+[23-Jun-2015 07:51:49 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/login.php on line 16
+[23-Jun-2015 07:51:49 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/login.php on line 16
+[23-Jun-2015 07:51:50 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/login.php on line 16
+[23-Jun-2015 07:51:59 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/login.php on line 16
+[23-Jun-2015 11:36:11 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/login.php on line 16
+[23-Jun-2015 11:36:13 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/login.php on line 16
+[23-Jun-2015 11:36:14 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/login.php on line 16
+[23-Jun-2015 11:36:15 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/login.php on line 16
+[23-Jun-2015 11:36:17 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/login.php on line 16
+[23-Jun-2015 11:36:59 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/login.php on line 16
+[23-Jun-2015 11:42:16 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/login.php on line 16
+[23-Jun-2015 11:42:23 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/login.php on line 16
+[23-Jun-2015 11:42:24 America/Mexico_City] PHP Fatal error:  Call to undefined function crearConsulta() in /home/inmuebles/public_html/admin/lib_php/login.php on line 16
+[23-Jun-2015 17:09:14 America/Mexico_City] PHP Warning:  unlink(../../images/images/): Is a directory in /home/inmuebles/public_html/admin/lib_php/updInmobiliaria.php on line 91
+[23-Jun-2015 17:09:21 America/Mexico_City] PHP Warning:  unlink(../../images/images/): Is a directory in /home/inmuebles/public_html/admin/lib_php/updInmobiliaria.php on line 91

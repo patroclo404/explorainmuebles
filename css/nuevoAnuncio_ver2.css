@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* CSS Document */
+
+.nuevoAnuncio_cuerpo {
+	width:100%;
+}
+
+.nuevoAnuncio_cuerpo .columna1,
+.nuevoAnuncio_cuerpo .columna2 {
+	display:inline-block;
+	vertical-align:top;
+	position:relative;
+	padding:20px 0px;
+}
+
+.nuevoAnuncio_cuerpo .columna1 {
+	width:300px;
+}
+
+.nuevoAnuncio_cuerpo .columna2 {
+	width:860px;
+}
+
+.nuevoAnuncio_cuerpo .columna1 .titulo {
+	padding-top:20%;
+}
+
+.nuevoAnuncio_cuerpo .columna1 p {
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	padding-left:20px;
+	padding-bottom:10px;
+	cursor:pointer;
+}
+
+.nuevoAnuncio_cuerpo p a {
+	font-family:inherit;
+	font-size:inherit;
+	color:inherit;
+	text-decoration:none;
+}
+
+.nuevoAnuncio_cuerpo p a.btnBotones.buscador {
+	width:20px;
+	height:20px;
+	background:url(../images/botones.png) no-repeat;
+	background-size:260px 20px;
+}
+
+.nuevoAnuncio_cuerpo .columna2 p.titulo {
+	width:95%;
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	font-size:20px;
+	padding-bottom:10px;
+	padding-top:10px;
+}
+
+.nuevoAnuncio_cuerpo .columna2 table {
+	width:100%;
+}
+
+.nuevoAnuncio_cuerpo .columna2 table td {
+	width:50%;
+	padding-right:40px;
+	vertical-align:top;
+}
+
+.nuevoAnuncio_cuerpo .subtitulo {
+	font-family:'GothamNarrowBlack', sans-serif;
+	color:#852c2b;
+	padding-bottom:10px !important;
+}
+
+.nuevoAnuncio_cuerpo .columna2 p {
+	padding-bottom:5px;
+}
+
+.nuevoAnuncio_cuerpo .columna2 .contenedorCampos {
+	padding-bottom:15px;
+}
+
+.nuevoAnuncio_cuerpo .columna2 .contenedorCampos.columnas {
+	display:inline-block;
+	vertical-align:top;
+	width:50%;
+	box-sizing:border-box;
+	padding-right:20px;
+}
+
+.nuevoAnuncio_cuerpo .columna2 .template_campos {
+	width:95%;
+}
+
+.nuevoAnuncio_cuerpo .columna2 textarea.template_campos {
+	min-width:95%;
+	max-width:95%;
+}
+
+.nuevoAnuncio_cuerpo .columna2 .contenedorCampos .imagen {
+	height:115px;
+	padding-bottom:5px;
+}
+
+.nuevoAnuncio_cuerpo .columna2 .contenedorCampos .imagen img {
+	max-height:115px;
+}
+
+.nuevoAnuncio_cuerpo p.guardar {
+	cursor:pointer;
+}
+
+.nuevoAnuncio_cuerpo .contenedorMapa {
+	width:95%;
+	height:300px;
+	background-color:#ccc;
+}
+
+.encontrarUbicacion {
+	font-family:'GothamNarrowBlack', sans-serif !important;
+	color:#852c2b !important;
+	float:right;
+	padding-right:40px;
+}

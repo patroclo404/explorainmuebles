@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+#backImage {
+	width:900px;
+}
+
+#backImage input.ObjFocusBlur {
+	width:92%;
+}
+
+.sceditor-container {
+	margin:0px auto !important;
+}
