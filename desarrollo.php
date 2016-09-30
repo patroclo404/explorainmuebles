@@ -236,7 +236,7 @@
 	FinCuerpo();
 	PopUpGenerales("desarrollo_cerrarPopup");
 ?>
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript" src="ttp://maps.google.com/maps/api/js&key=AIzaSyBRA-KzdLEazYGt2JI83xzYpJegbTwKsI8?sensor=true"></script>
 <div id="desarrollo_mostrarImagen" class="templatePopUp desarrollo_mostrarImagen">
     <span class="btnCerrar" onclick="template_principalCerrarPopUp(desarrollo_cerrarPopup);">x</span>
     <table>
