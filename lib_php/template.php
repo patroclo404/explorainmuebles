@@ -89,14 +89,14 @@ function getDateNormal($date)
 function crearConexionPDO()
 {
     $db = "inmueble_inmuebledb";
-    $user = "root";/*inmueble_root*//*explorainmuebles*/
-    $pass = "";/*hsNdfcyh654ON*//*Casas2015*/
-    $host = "localhost";/*localhost*//*mysql.explorainmuebles.com*/
+    $user = "root";
+    $pass = "";
+    $host = "localhost";
 
     $db = "explora2";
-    $user = "root";/*inmueble_root*//*explorainmuebles*/
-    $pass = "";/*hsNdfcyh654ON*//*Casas2015*/
-    $host = "localhost";/*localhost*//*mysql.explorainmuebles.com*/
+    $user = "root";
+    $pass = "";
+    $host = "localhost";
 
     $conexion = new PDO("mysql:host=" . $host . "; dbname=" . $db . "; charset=utf8", $user, $pass);
     return $conexion;
@@ -581,7 +581,7 @@ echo                            "<span class='glyphicon glyphicon-bullhorn' aria
     }
 
     echo "
-                        <div class='item' onclick='index_mostrarMapa(3)'>
+                        <div class='item' onclick='index_mostrarMapa(1)'>
                             Buscar en Mapa
                         </div>
                         <div class='item'>

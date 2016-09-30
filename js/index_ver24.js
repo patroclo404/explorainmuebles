@@ -393,12 +393,13 @@ function index_buscarEnMapa() {
 				preciosMax: -1,
 				wcs: -1,
 				recamaras: -1
-			}
+			},
 		}).always(function(respuesta_json){
 			var maxCadena = 200;
 			
 			for (var x = 0; x < respuesta_json.datos.length; x++) {
 				googlePunto = new google.maps.LatLng(respuesta_json.datos[x].latitud, respuesta_json.datos[x].longitud);
+				console.log(googlePunto);
 				titulo = respuesta_json.datos[x].titulo;
 				conMarca = false;
 				
@@ -445,7 +446,7 @@ function index_buscarEnMapa() {
 						id: respuesta_json.datos[x].id,
 						isActived: false,
 						title: titulo,
-						position : googlePunto,
+						position : googlePunto ,
 						map : map,
 						infowindow : infoWindow,
 						icon: "images/marcador3.png"
