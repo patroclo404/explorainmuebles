@@ -6,6 +6,7 @@
 	
 	
 	$variables = "";
+	
 	$arrayDatosPost = array();
 	
 	
