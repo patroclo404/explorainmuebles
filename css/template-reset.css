@@ -391,6 +391,9 @@ ul.template_campos li.lista {
 	z-index:3;
 	min-width:140px;
 	display:none;
+	/*bottom: 100%;*/
+}
+ul.butt li.lista{
 	bottom: 100%;
 }
 
