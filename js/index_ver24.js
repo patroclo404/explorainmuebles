@@ -379,7 +379,7 @@ function index_buscarEnMapa() {
 	
 		
 		$.ajax({
-			url: "lib_php/consInmueble.php",
+			url: "lib_php/consultamapa.php",
 			type: "POST",
 			dataType: "json",
 			data: {

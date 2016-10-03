@@ -12,8 +12,8 @@
 	$ciudad = $_POST["ciudad"];
 	$colonia = $_POST["colonia"];
 	$codigo = $_POST["codigo"];
-	$preciosMin = $_POST["preciosMin"];
-	$preciosMax = $_POST["preciosMax"];
+	$preciosMin = $_POST["preciosMin2"];
+	$preciosMax = $_POST["preciosMax2"];
 	$wcs = $_POST["wcs"];
 	$recamaras = $_POST["recamaras"];
 	
