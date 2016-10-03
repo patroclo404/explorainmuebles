@@ -328,11 +328,12 @@
     </div>
     
 </section>
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyBlYGs9bCTLNLYemvkULvJUaQR_vA7S9k4"></script>
+
 <script type="text/javascript">
     $('.cycle').cycle({fx:'scrollHorz',pager:'.slider-control-nav',pause:1,speed:800,slides:'.slide',swipe:true,timeout:6000});
     
-        $('.desplazamiento-cycle').cycle({fx:'scrollHorz',pager:'.slider-control-nav',pause:1,speed:800,slides:'.desplazamiento-slide',swipe:true,timeout:6900});
+    $('.desplazamiento-cycle').cycle({fx:'scrollHorz',pager:'.slider-control-nav',pause:1,speed:800,slides:'.desplazamiento-slide',swipe:true,timeout:6900});
     
 </script>
 <?php

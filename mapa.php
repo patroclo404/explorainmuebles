@@ -218,6 +218,6 @@
         <input type="button" value="Buscar" onclick="buscarEnMapa();" />
     </div>
     <div class="posiciones">Coordenadas: <input id="textPosiciones" type="text" value="" style="width:80%;" /></div>
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js&key=AIzaSyBRA-KzdLEazYGt2JI83xzYpJegbTwKsI8?sensor=true"></script>
 </body>
 </html>

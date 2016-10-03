@@ -586,8 +586,30 @@ function template_actualizar_ciudad(nomElemento, idCiudad, idColonia) {
 			}
 		}).always(function(respuesta_json){
 			if (respuesta_json.isExito == 1) {
-				for (var x = 0; x < respuesta_json.datos.length; x++) {
-					objMunicipio.find("li.lista ul").append("<li data-value='"+respuesta_json.datos[x].id+"'>"+respuesta_json.datos[x].nombre+"</li>");
+				
+				$estado = $('#template_busqueda_header_estado p').attr('data-value');
+				
+				if( $estado == '14' ){
+					objMunicipio.find("li.lista ul").append("<li data-value='"+respuesta_json.datos[39].id+"'>"+respuesta_json.datos[39].nombre+"</li>");
+					objMunicipio.find("li.lista ul").append("<li data-value='"+respuesta_json.datos[98].id+"'>"+respuesta_json.datos[98].nombre+"</li>");
+					objMunicipio.find("li.lista ul").append("<li data-value='"+respuesta_json.datos[120].id+"'>"+respuesta_json.datos[120].nombre+"</li>");
+					objMunicipio.find("li.lista ul").append("<li data-value='"+respuesta_json.datos[101].id+"'>"+respuesta_json.datos[101].nombre+"</li>");
+					objMunicipio.find("li.lista ul").append("<li data-value='"+respuesta_json.datos[97].id+"'>"+respuesta_json.datos[97].nombre+"</li>");
+					//objMunicipio.find("li.lista ul").append("<li data-value='"+respuesta_json.datos[22].id+"'>"+respuesta_json.datos[30].nombre+"</li>");
+
+					for (var x = 0; x < respuesta_json.datos.length; x++) {
+						switch(x){
+							case 22:case 39:case 38:case 97:case 98:case 120:
+							break;
+							default:
+							objMunicipio.find("li.lista ul").append("<li data-value='"+respuesta_json.datos[x].id+"'>"+respuesta_json.datos[x].nombre+"</li>");
+						}
+						
+					}
+				}else{
+					for (var x = 0; x < respuesta_json.datos.length; x++) {
+						objMunicipio.find("li.lista ul").append("<li data-value='"+respuesta_json.datos[x].id+"'>"+respuesta_json.datos[x].nombre+"</li>");
+					}
 				}
 
 				objMunicipio.find("li.lista li").on({

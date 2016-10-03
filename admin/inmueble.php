@@ -1323,7 +1323,7 @@
         </tbody>
     </table>
 </div>
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyBlYGs9bCTLNLYemvkULvJUaQR_vA7S9k4"></script>
 <script type="text/javascript">
 	<?php
 		$tipoCategoriaCampos = array();
