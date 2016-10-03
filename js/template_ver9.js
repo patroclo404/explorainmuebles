@@ -295,9 +295,9 @@ function template_actualizar_colonia(nomElemento, idColonia) {
 			}
 		}).always(function(respuesta_json){
 			if (respuesta_json.isExito == 1) {
-				for (var x = 0; x < respuesta_json.datos.length; x++) {
-					objColonia.find("li.lista ul").append("<li data-value='"+respuesta_json.datos[x].id+"'>"+respuesta_json.datos[x].nombre+"</li>");
-				}
+				/*for (var x = 0; x < respuesta_json.datos.length; x++) {*/
+					objColonia.find("li.lista ul").append("<li data-value='"+respuesta_json.datos[1].id+"'>"+respuesta_json.datos[1].nombre+"</li>");
+				/*}*/
 				
 				objColonia.find("li.lista li").on({
 					click: function() {
