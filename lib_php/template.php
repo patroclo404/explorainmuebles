@@ -30,6 +30,11 @@ define("adminTipo", "adminInmuebleTipo");
 $included_files = get_included_files();
 $files = array();
 
+$mapa=$_GET['mapa'];
+if ($mapa == 1) {
+    echo "<script> index_mostrarMapa(1); </script>";
+}
+
 foreach ($included_files as $filename) {
     $files[]= basename($filename);
 }
@@ -581,7 +586,7 @@ echo                            "<span class='glyphicon glyphicon-bullhorn' aria
     }
 
     echo "
-                        <div class='item' onclick='index_mostrarMapa(1)'>
+                        <div class='item' onclick='en_mapa()'>
                             Buscar en Mapa
                         </div>
                         <div class='item'>
@@ -626,6 +631,13 @@ echo                            "<span class='glyphicon glyphicon-bullhorn' aria
                 <div class='template_contenedorCuerpo'>
 				    <div class='template_cuerpo'>
 						<!-- <div class='lineaIzq'></div> -->
+    ";
+    echo "<script>
+        function en_mapa(){
+            window.location='/explorainmuebles2?mapa=1';
+        }
+        
+        </script>
     ";
 }
 
