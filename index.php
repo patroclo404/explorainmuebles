@@ -74,7 +74,7 @@
     	<div class="desplazamiento-cycle hidden-xs"><?php
 			for ($x = 0; $x < count($arrayImagenes); $x++) {
 				//echo "<div class='bloque-cycle'><img src='".$arrayImagenes[$x]["imagen"]."' class='indexFondo' alt='".$arrayImagenes[$x]["texto"]."' /></div>";
-                echo "<img class='desplazamiento-slide slider-home' src='".$arrayImagenes[$x]["imagen"]."' alt='".$arrayImagenes[$x]["texto"]."' />";
+                echo "<img style='width:100%;' class='desplazamiento-slide slider-home' src='".$arrayImagenes[$x]["imagen"]."' alt='".$arrayImagenes[$x]["texto"]."' />";
 			}
 
 			if (count($arrayImagenes) >= 3) {

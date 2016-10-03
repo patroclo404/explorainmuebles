@@ -24,6 +24,9 @@
 .catalogo_cuerpo .columna2 {
 	width:700px;
 }
+.catalogo_cuerpo .columna3{
+	width: 300px;
+}
 
 .catalogo_cuerpo .columna1 .titulo {
 	padding-top:20%;

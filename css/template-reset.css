@@ -381,8 +381,9 @@ ul.template_campos span {
 ul.template_campos li.lista {
 	position:absolute;
 	z-index:3;
-	min-width:200px;
+	min-width:140px;
 	display:none;
+	bottom: 100%;
 }
 
 ul.template_campos p {
@@ -406,11 +407,12 @@ ul.template_campos li.lista ul {
 	overflow-y:auto;
 	overflow-x:hidden;
 	max-height:200px;
+	margin-left: -14px;
 }
 
-ul.template_campos li ul li {
+/*ul.template_campos li ul li {
 	padding:0px 5px;
-}
+}*/
 
 ul.template_campos li ul li:hover {
 	background-color:#ededed;
@@ -1705,6 +1707,10 @@ input, select, textarea {
 	overflow: hidden;
 	height: 300px;
 	position: absolute;
+	width: 100%;
+}
+.banner.inmueble img{
+	width: 100%;
 }
 
 .banner.inmueble .template_contenedorBusquedaHeader {
@@ -1715,13 +1721,22 @@ input, select, textarea {
 	margin-top: 320px;
 }
 .galeria .template_contenedorBusquedaHeader {
-	margin-top: 141px;
+	margin-top: 405px;
     z-index:999;
 }
 
 .template_contenedorBusquedaHeader {
-	width: 82%;
+	width: 100%;
 	position: absolute;
+	/*background-color: rgba(255,255,255,0.45);*/
+	left: 13%;
+	padding: 0 1%;
+	z-index: 99;
+
+}
+.template_contenedorBusquedaHeader2 {
+	width: 82%;
+	/*position: absolute;*/
 	background-color: rgba(255,255,255,0.45);
 	left: 9%;
 	padding: 0 1%;
@@ -1736,7 +1751,7 @@ input, select, textarea {
 
 .template_contenedorBusquedaHeader .template_campos_select {
 	padding: 0;
-	margin-top: 1%;
+	/*margin-top: 1%;*/
 	width: 14.28%;
 	float: left;
 }
@@ -1837,6 +1852,9 @@ input, select, textarea {
 }
 
 @media (max-width: 767px){
+	ul.template_campos li.lista {
+	bottom: 30% ;
+}
 	
 	.texto-buscador-index {
 		font-size: 4em;

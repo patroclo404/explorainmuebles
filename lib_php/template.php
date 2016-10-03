@@ -2471,9 +2471,19 @@ function templateBuscadorResponsive(){
                 <li class='lista'>
                     <ul>
                         <?php
-                        for ($x = 0; $x < count($arrayTipoInmueble); $x++) {
+                        /*casa*/
+                        echo "<li data-value='" . $arrayTipoInmueble[1]["id"] . "' " . (in_array($arrayTipoInmueble[1]["id"], array(1, 2)) ? "data-transaccion='3'" : "") . ">" . $arrayTipoInmueble[1]["nombre"] . "</li>";
+                        /*Depa*/
+                        echo "<li data-value='" . $arrayTipoInmueble[2]["id"] . "' " . (in_array($arrayTipoInmueble[2]["id"], array(1, 2)) ? "data-transaccion='3'" : "") . ">" . $arrayTipoInmueble[2]["nombre"] . "</li>";
+                        /*Oficina*/
+                        echo "<li data-value='" . $arrayTipoInmueble[4]["id"] . "' " . (in_array($arrayTipoInmueble[4]["id"], array(1, 2)) ? "data-transaccion='3'" : "") . ">" . $arrayTipoInmueble[4]["nombre"] . "</li>";
+                        /*Local*/
+                        echo "<li data-value='" . $arrayTipoInmueble[6]["id"] . "' " . (in_array($arrayTipoInmueble[6]["id"], array(1, 2)) ? "data-transaccion='3'" : "") . ">" . $arrayTipoInmueble[6]["nombre"] . "</li>";
+                        /*Terreno*/
+                        echo "<li data-value='" . $arrayTipoInmueble[3]["id"] . "' " . (in_array($arrayTipoInmueble[3]["id"], array(1, 2)) ? "data-transaccion='3'" : "") . ">" . $arrayTipoInmueble[3]["nombre"] . "</li>";
+                        /*for ($x = 0; $x < count($arrayTipoInmueble); $x++) {
                             echo "<li data-value='" . $arrayTipoInmueble[$x]["id"] . "' " . (in_array($arrayTipoInmueble[$x]["id"], array(1, 2)) ? "data-transaccion='3'" : "") . ">" . $arrayTipoInmueble[$x]["nombre"] . "</li>";
-                        }
+                        }*/
                         ?>
                     </ul>
                 </li>
@@ -2486,8 +2496,12 @@ function templateBuscadorResponsive(){
                 <li class='lista'>
                     <ul>
                         <?php
+                        $var=13;
+                        echo "<li data-value='" . $arrayEstado[$var]["id"] . "'>" . $arrayEstado[$var]["nombre"] . "</li>";
                         for ($x = 0; $x < count($arrayEstado); $x++) {
-                            echo "<li data-value='" . $arrayEstado[$x]["id"] . "'>" . $arrayEstado[$x]["nombre"] . "</li>";
+                            if($x!=13){
+                                echo "<li data-value='" . $arrayEstado[$x]["id"] . "'>" . $arrayEstado[$x]["nombre"] . "</li>";
+                            }
                         }
                         ?>
                     </ul>
@@ -2505,7 +2519,7 @@ function templateBuscadorResponsive(){
                 <input type='text' value='' style='position:absolute; top:0px; left:0px; z-index:-1;' readonly='true' />
             </ul>
         </div>
-        <div class='template_campos_select colonias hidden-xs'>
+        <!--<div class='template_campos_select colonias hidden-xs'>
             <ul id='template_busqueda_header_colonia' class='template_campos'>
                 <li class='lista'>
                     <ul></ul>
@@ -2513,21 +2527,21 @@ function templateBuscadorResponsive(){
                 <p data-value='-1'>Colonia</p>
                 <input type='text' value='' style='position:absolute; top:0px; left:0px; z-index:-1;' readonly='true' />
             </ul>
-        </div>
+        </div>-->
 
-        <div class='template_campos_select precio hidden-xs'>
+        <!--<div class='template_campos_select precio hidden-xs'>
             <ul id='template_busqueda_header_precios_min' class='template_campos'>
                 <li class='lista'>
-                    <ul>
-                        <?php
-                        templateSeleccionTransaccion($_SESSION[userFiltros]['transaccion']);
+                    <ul>-->
+                        <?php/*
+                        templateSeleccionTransaccion($_SESSION[userFiltros]['transaccion']);*/
                         ?>
-                    </ul>
+                    <!--</ul>
                 </li>
                 <p data-value='-1'>Precio</p>
                 <input type='text' value='' style='position:absolute; top:0px; left:0px; z-index:-1;' readonly='true' />
             </ul>
-        </div>
+        </div>-->
 
         <p class='textBuscar template_campos_select buscar' onclick='template_buscar();'>
             <a class='buscador btn btn-inmueble btn-lg'><i class='glyphicon glyphicon-search'></i> BUSCAR</a>
@@ -2696,5 +2710,128 @@ function templateVotacionUsuario($inmobiliaria, $usuarioCalificado){
         "</div>";
 
     return $cadena;
+}
+?>
+<?php
+function templateBuscadorResponsive2(){
+    $arrayTipoInmueble = array();
+
+    $conexion = crearConexionPDO();
+    $consulta = "SELECT TIN_ID, TIN_NOMBRE FROM TIPO_INMUEBLE ORDER BY TIN_NOMBRE;";
+    foreach ($conexion->query($consulta) as $row) {
+        $arrayTipoInmueble[] = array(
+            "id" => $row["TIN_ID"],
+            "nombre" => $row["TIN_NOMBRE"]
+        );
+    }
+
+
+    $arrayEstado = array();
+
+    $consulta = "SELECT EST_ID, EST_NOMBRE FROM ESTADO ORDER BY EST_NOMBRE;";
+    foreach ($conexion->query($consulta) as $row) {
+        $arrayEstado[] = array(
+            "id" => $row["EST_ID"],
+            "nombre" => $row["EST_NOMBRE"]
+        );
+    }
+
+    ?>
+    <!-- buscador activo -->
+    <div class='template_contenedorBusquedaHeader2 hidden-print no-padding'>
+        <div class="texto-buscador-index mobile-only">Encuentra tu<br /> propiedad</div>
+        <div class='template_campos_select renta'>
+            <ul id='template_busqueda_header_transaccion' class='template_campos'>
+                <li class='lista'>
+                    <ul>
+                        <li data-value='1'>Renta</li>
+                        <li data-value='3'>Renta Vacacional</li>
+                        <li data-value='2'>Venta</li>
+                    </ul>
+                </li>
+                <p data-value='-1'>Transacci&oacute;n</p>
+                <input type='text' value='' style='position:absolute; top:0px; left:0px; z-index:-1;' readonly='true' />
+            </ul>
+        </div><!--<br/><br/><br/>-->
+        <div class='template_campos_select tipoInmueble'>
+            <ul id='template_busqueda_header_tipoInmueble' class='template_campos'>
+                <li class='lista'>
+                    <ul>
+                        <?php
+                        $var=1;
+                        echo "<li data-value='" . $arrayTipoInmueble[$var]["id"] . "' " . (in_array($arrayTipoInmueble[$var]["id"], array(1, 2)) ? "data-transaccion='3'" : "") . ">" . $arrayTipoInmueble[$var]["nombre"] . "</li>";
+                        
+                        for ($x = 0; $x < count($arrayTipoInmueble); $x++) {
+                            echo "<li data-value='" . $arrayTipoInmueble[$x]["id"] . "' " . (in_array($arrayTipoInmueble[$x]["id"], array(1, 2)) ? "data-transaccion='3'" : "") . ">" . $arrayTipoInmueble[$x]["nombre"] . "</li>";
+                        }
+                        ?>
+                    </ul>
+                </li>
+                <p data-value='-1'>Inmueble</p>
+                <input type='text' value='' style='position:absolute; top:0px; left:0px; z-index:-1;' readonly='true' />
+            </ul>
+        </div><!--<br/><br/><br/>-->
+        <div class='template_campos_select  estados'>
+            <ul id='template_busqueda_header_estado' class='template_campos'>
+                <li class='lista'>
+                    <ul>
+                        <?php
+                         $var=13;
+                        echo "<li data-value='" . $arrayEstado[$var]["id"] . "'>" . $arrayEstado[$var]["nombre"] . "</li>";
+                        for ($x = 0; $x < count($arrayEstado); $x++) {
+                            if($x!=13){
+                                echo "<li data-value='" . $arrayEstado[$x]["id"] . "'>" . $arrayEstado[$x]["nombre"] . "</li>";
+                            }
+                        }
+                        ?>
+                    </ul>
+                </li>
+                <p data-value='-1'>Estado</p>
+                <input type='text' value='' style='position:absolute; top:0px; left:0px; z-index:-1;' readonly='true' />
+            </ul>
+        </div><!--<br/><br/><br/>-->
+        <div class='template_campos_select municipios'>
+            <ul id='template_busqueda_header_municipio' class='template_campos'>
+                <li class='lista'>
+                    <ul></ul>
+                </li>
+                <p data-value='-1'>Municipio</p>
+                <input type='text' value='' style='position:absolute; top:0px; left:0px; z-index:-1;' readonly='true' />
+            </ul>
+        </div><!--<br/><br/><br/>-->
+        <!--<div class='template_campos_select colonias hidden-xs'>
+            <ul id='template_busqueda_header_colonia' class='template_campos'>
+                <li class='lista'>
+                    <ul></ul>
+                </li>
+                <p data-value='-1'>Colonia</p>
+                <input type='text' value='' style='position:absolute; top:0px; left:0px; z-index:-1;' readonly='true' />
+            </ul>
+        </div><!--<br/><br/><br/>-->
+
+        <!--<div class='template_campos_select precio hidden-xs'>
+            <ul id='template_busqueda_header_precios_min' class='template_campos'>
+                <li class='lista'>
+                    <ul>-->
+                        <?php
+                            var_dump($arrayCiudades);
+                        /*
+
+                        templateSeleccionTransaccion($_SESSION[userFiltros]['transaccion']);*/
+                        ?>
+                    <!--</ul>
+                </li>
+                <p data-value='-1'>Precio</p>
+                <input type='text' value='' style='position:absolute; top:0px; left:0px; z-index:-1;' readonly='true' />
+            </ul>
+        </div><!--<br/><br/><br/>-->
+
+        <p class='textBuscar template_campos_select buscar' onclick='template_buscar();'>
+            <a class='buscador btn btn-inmueble btn-lg'><i class='glyphicon glyphicon-search'></i> BUSCAR</a>
+        </p>
+
+    </div>
+
+    <?php
 }
 ?>
