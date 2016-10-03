@@ -2466,7 +2466,7 @@ function templateBuscadorResponsive(){
     <div class='template_contenedorBusquedaHeader hidden-print no-padding'>
     	<div class="texto-buscador-index mobile-only">Encuentra tu<br /> propiedad</div>
         <div class='template_campos_select renta'>
-            <ul id='template_busqueda_header_transaccion' class='template_campos'>
+            <ul id='template_busqueda_header_transaccion' class='template_campos butt'>
                 <li class='lista'>
                     <ul>
                         <li data-value='1'>Renta</li>
@@ -2479,7 +2479,7 @@ function templateBuscadorResponsive(){
             </ul>
         </div>
         <div class='template_campos_select tipoInmueble'>
-            <ul id='template_busqueda_header_tipoInmueble' class='template_campos'>
+            <ul id='template_busqueda_header_tipoInmueble' class='template_campos butt'>
                 <li class='lista'>
                     <ul>
                         <?php
@@ -2504,7 +2504,7 @@ function templateBuscadorResponsive(){
             </ul>
         </div>
         <div class='template_campos_select  estados'>
-            <ul id='template_busqueda_header_estado' class='template_campos'>
+            <ul id='template_busqueda_header_estado' class='template_campos butt'>
                 <li class='lista'>
                     <ul>
                         <?php
@@ -2523,7 +2523,7 @@ function templateBuscadorResponsive(){
             </ul>
         </div>
         <div class='template_campos_select municipios'>
-            <ul id='template_busqueda_header_municipio' class='template_campos'>
+            <ul id='template_busqueda_header_municipio' class='template_campos butt'>
                 <li class='lista'>
                     <ul></ul>
                 </li>
@@ -2826,7 +2826,6 @@ function templateBuscadorResponsive2(){
                 <li class='lista'>
                     <ul>-->
                         <?php
-                            var_dump($arrayCiudades);
                         /*
 
                         templateSeleccionTransaccion($_SESSION[userFiltros]['transaccion']);*/
