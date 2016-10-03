@@ -69,7 +69,7 @@
 	$medidas = getimagesize($arrayImagenes[0]["imagen"]);
 ?>
 <div class="index_cuerpo">
-	<div class="galeria" data-width="<?php echo $medidas[0]; ?>" data-height="450<?php //echo $medidas[1]; ?>">
+	<div class="galeria" data-width="<?php echo $medidas[0]; ?>" data-height="650<?php //echo $medidas[1]; ?>">
         <?php templateBuscadorResponsive() ?>
     	<div class="desplazamiento-cycle hidden-xs"><?php
 			for ($x = 0; $x < count($arrayImagenes); $x++) {

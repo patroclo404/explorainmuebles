@@ -383,6 +383,7 @@ ul.template_campos li.lista {
 	z-index:3;
 	min-width:140px;
 	display:none;
+	bottom: 100%;
 }
 
 ul.template_campos p {
@@ -1720,7 +1721,7 @@ input, select, textarea {
 	margin-top: 320px;
 }
 .galeria .template_contenedorBusquedaHeader {
-	margin-top: 141px;
+	margin-top: 405px;
     z-index:999;
 }
 
@@ -1750,7 +1751,7 @@ input, select, textarea {
 
 .template_contenedorBusquedaHeader .template_campos_select {
 	padding: 0;
-	margin-top: 1%;
+	/*margin-top: 1%;*/
 	width: 14.28%;
 	float: left;
 }
@@ -1851,6 +1852,9 @@ input, select, textarea {
 }
 
 @media (max-width: 767px){
+	ul.template_campos li.lista {
+	bottom: 30% ;
+}
 	
 	.texto-buscador-index {
 		font-size: 4em;
