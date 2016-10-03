@@ -2814,7 +2814,6 @@ function templateBuscadorResponsive2(){
                 <li class='lista'>
                     <ul>-->
                         <?php
-                            var_dump($arrayCiudades);
                         /*
 
                         templateSeleccionTransaccion($_SESSION[userFiltros]['transaccion']);*/
