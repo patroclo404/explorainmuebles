@@ -2813,7 +2813,10 @@ function templateBuscadorResponsive2(){
             <ul id='template_busqueda_header_precios_min' class='template_campos'>
                 <li class='lista'>
                     <ul>-->
-                        <?php/*
+                        <?php
+                            var_dump($arrayCiudades);
+                        /*
+
                         templateSeleccionTransaccion($_SESSION[userFiltros]['transaccion']);*/
                         ?>
                     <!--</ul>

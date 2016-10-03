@@ -1706,6 +1706,10 @@ input, select, textarea {
 	overflow: hidden;
 	height: 300px;
 	position: absolute;
+	width: 100%;
+}
+.banner.inmueble img{
+	width: 100%;
 }
 
 .banner.inmueble .template_contenedorBusquedaHeader {
