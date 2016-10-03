@@ -383,8 +383,8 @@ function catalogo_mostrarInmuebles(json_datos) {
 
 		elemento =
 			'<div class="row property items" onclick="catalogo_redirecciona_regresar(\''+_newUrl+'\');">'+
-				'<div class="col-lg-4 col-sm-4 col-xs-12"><img class="img-responsive" src="'+urlArchivos+json_datos.datos[x].imagen+'"></div>'+
-				'<div class="col-lg-8 col-sm-8 col-xs-12">'+
+				'<div class="col-lg-6 col-sm-6 col-xs-12"><img class="img-responsive" src="'+urlArchivos+json_datos.datos[x].imagen+'"></div>'+
+				'<div class="col-lg-6 col-sm-6 col-xs-12">'+
 					'<h2 class="property header" onclick="catalogo_redirecciona_regresar("'+_newUrl+'");">'+textTitulo+'</h2>'+
 					'<span class="property subheader">'+json_datos.datos[x].coloniaNombre+' | '+json_datos.datos[x].ciudadNombre+", "+json_datos.datos[x].estadoNombre+', México '+
 					'C.P. '+json_datos.datos[x].cpNombre+'</span>'+
