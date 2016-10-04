@@ -52,7 +52,21 @@ body.scrolled {
     display: -ms-flexbox;
     display:         flex;
 }
-
+.text-banner{
+	text-align: center; 
+	color:white;
+	position: absolute;
+	top: 150px;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	font-weight: bold;
+	/*font-weight: 800;*/
+	text-shadow: 2px 3px 2px black;
+}
+.text-banner span{
+	background: rgba(255,255,255,0.3);
+}
 .valign {
 	-webkit-transform-style: preserve-3d;
 	-moz-transform-style: preserve-3d;

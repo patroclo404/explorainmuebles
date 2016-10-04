@@ -31,9 +31,27 @@
 
 
 	$urlArchivos = "images/images/";
-
+    $y=0;
 
 	$arrayImagenes = array();
+    $arrayTextos = array(
+             array(
+                'id'         => '1',
+                'texto'        => 'Uno'
+            ),
+            array(
+                'id'         => '2',
+                'texto'        => 'Dos'
+            ),
+             array(
+                'id'         => '3',
+                'texto'        => 'Tres'
+            ),
+            array(
+                'id'         => '4',
+                'texto'        => 'Cuatro'
+            )
+        );
 	$conexion = crearConexionPDO();
 	$consulta =
 		"SELECT
@@ -74,12 +92,16 @@
     	<div class="desplazamiento-cycle hidden-xs"><?php
 			for ($x = 0; $x < count($arrayImagenes); $x++) {
 				//echo "<div class='bloque-cycle'><img src='".$arrayImagenes[$x]["imagen"]."' class='indexFondo' alt='".$arrayImagenes[$x]["texto"]."' /></div>";
-                echo "<img style='width:100%;' class='desplazamiento-slide slider-home' src='".$arrayImagenes[$x]["imagen"]."' alt='".$arrayImagenes[$x]["texto"]."' />";
+                echo "<img style='width:100%;position: relative;' class='desplazamiento-slide slider-home' src='".$arrayImagenes[$x]["imagen"]."' alt='".$arrayImagenes[$x]["texto"]."' />";
+                   
+               /*echo "<h2 class='text-banner'><span>Prueba<span>&nbsp;</span></h2>";*/
 			}
 
 			if (count($arrayImagenes) >= 3) {
 				//echo "<div class='bloque'><img src='".$arrayImagenes[0]."' class='indexFondo' alt='".$arrayImagenes[0]["texto"]."' /></div>";
 			}
+            
+            echo "<h2 class='text-banner'><span>Texto Banner<span>&nbsp;</span></h2>";
     	?></div>
     	<div class="mobile-only">
     		<img src="images/explora-inmuebles-banner-home-mobile.jpg" class="indexFondo" alt="Explora Inmuebles en renta o venta guadalajara" />
@@ -95,7 +117,7 @@
     <div class="filtrosMapa">
     	<div>
             <ul id="index_filtros_transaccion" class="template_campos">
-                Transacción<span></span>
+                Transacción<?php var_dump($x) ?><span></span>
                 <li class="lista">
                     <ul>
                         <li data-value="1">Renta</li>

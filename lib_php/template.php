@@ -2463,6 +2463,7 @@ function templateBuscadorResponsive(){
 
     ?>
     <!-- buscador activo -->
+    
     <div class='template_contenedorBusquedaHeader hidden-print no-padding'>
     	<div class="texto-buscador-index mobile-only">Encuentra tu<br /> propiedad</div>
         <div class='template_campos_select renta'>
