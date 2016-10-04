@@ -22,6 +22,18 @@ body.scrolled {
 	padding-top:121px;
 }
 
+.titulo{
+	position: absolute;
+    top: 33%;
+    left: 33%;
+    color: white;
+}
+.titulo h3{
+	font-size: 50px;
+	font-weight: 600;
+	text-shadow: 1px 5px 1px black;
+}
+
 .center{text-align: center;}
 
 .text-red {color: #842d2c;}

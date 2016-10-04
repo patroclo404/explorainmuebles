@@ -146,6 +146,7 @@
 <?php
 	CabeceraHTML("catalogo-responsive.css,catalogo-responsive.js", $variables);
 	bodyIndex();
+
 ?>
 
 <div class="container control-filtro mobile-only">
@@ -155,8 +156,42 @@
 </div>
 
 <div class="banner inmueble hidden-xs">
-	<img src="images/images/0451438001436838815.jpg" class="img-responsive" alt="Casas en venta en guadalajara">
+	<?php 
+	switch ($transaccion) {
+		case '1':
+			echo "<div class='titulo'>
+						<h3>
+							Explora Inmuebles Renta
+						</h3>
+					</div>";
+			break;
+		case '2':
+			echo "<div class='titulo'>
+						<h3>
+							Explora Inmuebles Renta Vacacional
+						</h3>
+					</div>";
+			break;
+		case '3':
+			echo "<div class='titulo'>
+						<h3>
+							Explora Inmuebles Venta
+						</h3>
+					</div>";
+			break;
 
+		
+		default:
+			echo "<div class='titulo'>
+						<h3>
+							Explora Inmuebles
+						</h3>
+					</div>";
+			break;
+	}
+	?>
+	<img src="images/images/0451438001436838815.jpg" class="img-responsive" alt="Casas en venta en guadalajara">
+	
 </div>
 <br>
 <div class="container catalogo_cuerpo">
