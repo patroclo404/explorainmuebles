@@ -98,10 +98,15 @@ function crearConexionPDO()
     $pass = "";
     $host = "localhost";*/
 
-    $db = "explora2";
+    /*$db = "explora2";
     $user = "root";
     $pass = "";
-    $host = "localhost";
+    $host = "localhost";*/
+
+    $db = "inmueble_inmuebledb";
+    $user = "explorainmuebles";/*inmueble_root*//*explorainmuebles*/
+    $pass = "ExploraCasas2015";/*hsNdfcyh654ON*//*Casas2015*/
+    $host = "mysql.explorainmuebles.com";/*localhost*//*mysql.explorainmuebles.com*/
 
     $conexion = new PDO("mysql:host=" . $host . "; dbname=" . $db . "; charset=utf8", $user, $pass);
     return $conexion;
@@ -384,7 +389,7 @@ function CabeceraHTML($cssJs = NULL, $varJs = NULL, $paramsMetasFB = NULL, $para
 			<html xmlns='http://www.w3.org/1999/xhtml'>
 			<head>";
 
-    echo "<base href='http://localhost/explorainmuebles2/'>";
+    echo "<base href='http://www.explorainmuebles.com/'>";
     //"<base href='http://explora.zero-oneit.com/'>";/*http://www.explorainmuebles.com/*//*http://localhost/inmuebles/*/
 
 
@@ -401,7 +406,7 @@ function CabeceraHTML($cssJs = NULL, $varJs = NULL, $paramsMetasFB = NULL, $para
         if (isset($paramsMetasFB["titulo"]))
             echo "<meta property='og:title' content='" . $paramsMetasFB["titulo"] . "' />";
         if (isset($paramsMetasFB["imagen"]))
-            echo "<meta property='og:image' content='http://localhost/explorainmuebles2/" . $paramsMetasFB["imagen"] . "' />";
+            echo "<meta property='og:image' content='http://www.explorainmuebles.com/" . $paramsMetasFB["imagen"] . "' />";
         if (isset($paramsMetasFB["descripcion"]))
             echo "<meta property='og:description' content='" . $paramsMetasFB["descripcion"] . "' />";
     }
@@ -590,19 +595,19 @@ echo                            "<span class='glyphicon glyphicon-bullhorn' aria
                             Buscar en Mapa
                         </div>
                         <div class='item'>
-                            <a href='http://localhost/explorainmuebles2/renta-vacacional/todos-los-tipos/todo-mexico/todas-las-ciudades' >Renta Vacacional</a>
+                            <a href='http://www.explorainmuebles.com/renta-vacacional/todos-los-tipos/todo-mexico/todas-las-ciudades' >Renta Vacacional</a>
                         </div>
                         <div class='item'>
-                            <a href='http://localhost/explorainmuebles2/renta/todos-los-tipos/todo-mexico/todas-las-ciudades' >Propiedades en Renta</a>
+                            <a href='http://www.explorainmuebles.com/renta/todos-los-tipos/todo-mexico/todas-las-ciudades' >Propiedades en Renta</a>
 
                         </div>
                         <div class='item'>
-                            <a href='http://localhost/explorainmuebles2/venta/todos-los-tipos/todo-mexico/todas-las-ciudades' >Propiedades en Venta</a>
+                            <a href='http://www.explorainmuebles.com/venta/todos-los-tipos/todo-mexico/todas-las-ciudades' >Propiedades en Venta</a>
 
                         </div>
 
                         <div class='item'>
-                            <a href='http://localhost/explorainmuebles2/' >Inicio</a>
+                            <a href='http://www.explorainmuebles.com/' >Inicio</a>
 
                         </div>
                         <div class='item logo'>
@@ -616,13 +621,13 @@ echo                            "<span class='glyphicon glyphicon-bullhorn' aria
 
                 </header>
                 <div class='responsive-menu'>
-                    <a href='http://localhost/explorainmuebles2/' ><div><div class='icon-responsive-menu' id='opcion-menu-home'></div>Inicio</div></a>
-                    <a href='http://localhost/explorainmuebles2/venta/todos-los-tipos/todo-mexico/todas-las-ciudades' ><div><div class='icon-responsive-menu' id='opcion-menu-venta'></div>Propiedades en Venta</div></a>
-                    <a href='http://localhost/explorainmuebles2/renta/todos-los-tipos/todo-mexico/todas-las-ciudades' ><div><div class='icon-responsive-menu' id='opcion-menu-renta'></div>Propiedades en Renta</div></a>
-                    <a href='http://localhost/explorainmuebles2/renta-vacacional/todos-los-tipos/todo-mexico/todas-las-ciudades' ><div><div class='icon-responsive-menu' id='opcion-menu-vacacional'></div>Renta Vacacional</div></a>";
+                    <a href='http://www.explorainmuebles.com/' ><div><div class='icon-responsive-menu' id='opcion-menu-home'></div>Inicio</div></a>
+                    <a href='http://www.explorainmuebles.com/venta/todos-los-tipos/todo-mexico/todas-las-ciudades' ><div><div class='icon-responsive-menu' id='opcion-menu-venta'></div>Propiedades en Venta</div></a>
+                    <a href='http://www.explorainmuebles.com/renta/todos-los-tipos/todo-mexico/todas-las-ciudades' ><div><div class='icon-responsive-menu' id='opcion-menu-renta'></div>Propiedades en Renta</div></a>
+                    <a href='http://www.explorainmuebles.com/renta-vacacional/todos-los-tipos/todo-mexico/todas-las-ciudades' ><div><div class='icon-responsive-menu' id='opcion-menu-vacacional'></div>Renta Vacacional</div></a>";
 
                     if (isset($_SESSION[userImagen])) {
-                        echo "<a href='http://localhost/explorainmuebles2/lib_php/cerrarSession.php' style='text-decoration:none;'><p class='titulo'>Cerrar Sesión</p></a>";
+                        echo "<a href='http://www.explorainmuebles.com/lib_php/cerrarSession.php' style='text-decoration:none;'><p class='titulo'>Cerrar Sesión</p></a>";
                     }else{
                         echo "<a href='#' onclick='gotoURL(\"registro.php\");'><div><div class='icon-responsive-menu' id='opcion-menu-login'></div>Iniciar Sesion</div></a>";
                     }
@@ -634,7 +639,7 @@ echo                            "<span class='glyphicon glyphicon-bullhorn' aria
     ";
     echo "<script>
         function en_mapa(){
-            window.location='/explorainmuebles2?mapa=1';
+            window.location='http://www.explorainmuebles.com/?mapa=1';
         }
         
         </script>

@@ -12,11 +12,22 @@
 
 	if (isset($_GET["validar"])) {
 		$variables.= ($variables != "" ? "," : "")."post_validar='".$_GET["validar"]."'";
+        $id = $_GET["validar"];
+        $id = before( '_', $id );
+        $con = "UPDATE USUARIO SET USU_VALIDADO = 1 WHERE USU_ID = :id";
+        $conexion = crearConexionPDO();
+        $pdo = $conexion->prepare($con);
+        $pdo->execute(array(":id" => $id) );
 	}
 	if (isset($_GET["validadoTrue"])) {
 		if (!isset($_SESSION[userId]))
 			$variables.= ($variables != "" ? "," : "")."post_validadoTrue=1";
 	}
+
+    function before ($this, $inthat)
+    {
+        return substr($inthat, 0, strpos($inthat, $this));
+    };
 
 
 	$paramsMetasPage = array(
