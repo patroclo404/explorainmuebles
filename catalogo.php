@@ -159,23 +159,24 @@
 	<?php 
 	switch ($transaccion) {
 		case '1':
-			echo "<div class='titulo'>
+			echo "<div class='titulo_ban'>
 						<h3>
 							Explora Inmuebles Renta
 						</h3>
 					</div>";
 			break;
 		case '2':
-			echo "<div class='titulo'>
+			echo "<div class='titulo_ban'>
 						<h3>
-							Explora Inmuebles Renta Vacacional
+							Explora Inmuebles Venta
 						</h3>
 					</div>";
 			break;
 		case '3':
-			echo "<div class='titulo'>
+			echo "<div class='titulo_ban'>
 						<h3>
-							Explora Inmuebles Venta
+							
+							Explora Inmuebles Renta <br> Vacacional
 						</h3>
 					</div>";
 			break;
