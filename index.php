@@ -101,7 +101,7 @@
 				//echo "<div class='bloque'><img src='".$arrayImagenes[0]."' class='indexFondo' alt='".$arrayImagenes[0]["texto"]."' /></div>";
 			}
             
-            echo "<h2 class='text-banner'><span>Texto Banner<span>&nbsp;</span></h2>";
+            echo "<h1 class='text-banner'><span>Explora Inmuebles<span>&nbsp;</span></h1>";
     	?></div>
     	<div class="mobile-only">
     		<img src="images/explora-inmuebles-banner-home-mobile.jpg" class="indexFondo" alt="Explora Inmuebles en renta o venta guadalajara" />

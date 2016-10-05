@@ -93,10 +93,10 @@ function getDateNormal($date)
 */
 function crearConexionPDO()
 {
-    $db = "inmueble_inmuebledb";
+    /*$db = "inmueble_inmuebledb";
     $user = "root";
     $pass = "";
-    $host = "localhost";
+    $host = "localhost";*/
 
     $db = "explora2";
     $user = "root";
