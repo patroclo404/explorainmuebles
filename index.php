@@ -131,7 +131,7 @@
     <div class="filtrosMapa">
     	<div>
             <ul id="index_filtros_transaccion" class="template_campos">
-                Transacción<?php var_dump($x) ?><span></span>
+                Transacción<span></span>
                 <li class="lista">
                     <ul>
                         <li data-value="1">Renta</li>
