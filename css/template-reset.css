@@ -1,6 +1,6 @@
 ﻿@charset "utf-8";
 /* CSS Document */
-
+@import 'https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i';
 @font-face {
 	font-family: GothamNarrowBook;
 	src: url(../fonts/GothamNarrowBook.otf);
@@ -128,8 +128,9 @@ ul#template_busqueda_header_municipio:before {
     line-height: 50px; 
 	/*text-shadow: 2px 3px 2px black;*/
 	text-transform: uppercase;
-	background-color: rgba(0,0,0,0.5); 
-	max-width: 571px;}
+	background-color: rgba(0,0,0,0.7); 
+	max-width: 571px;
+	padding: 25px;
 
 }
 .text-banner span{
