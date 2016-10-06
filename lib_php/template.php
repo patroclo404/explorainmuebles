@@ -430,6 +430,7 @@ function CabeceraHTML($cssJs = NULL, $varJs = NULL, $paramsMetasFB = NULL, $para
 			<link rel='stylesheet' type='text/css' href='css/pickerDate.css' />
 			<link rel='stylesheet' type='text/css' href='css/pickerTime.css' />
 			<link rel='stylesheet' type='text/css' href='css/template-reset.css' />
+            <link href='https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900' rel='stylesheet'>
 
             <script language='javascript' type='text/javascript' src='js/validaciones.js'></script>
 			<script language='javascript' type='text/javascript' src='js/jQuery.js'></script>
@@ -2775,13 +2776,20 @@ function templateBuscadorResponsive2(){
             <ul id='template_busqueda_header_tipoInmueble' class='template_campos'>
                 <li class='lista'>
                     <ul>
-                        <?php
-                        $var=1;
-                        echo "<li data-value='" . $arrayTipoInmueble[$var]["id"] . "' " . (in_array($arrayTipoInmueble[$var]["id"], array(1, 2)) ? "data-transaccion='3'" : "") . ">" . $arrayTipoInmueble[$var]["nombre"] . "</li>";
-                        
-                        for ($x = 0; $x < count($arrayTipoInmueble); $x++) {
+                          <?php
+                        /*casa*/
+                        echo "<li data-value='" . $arrayTipoInmueble[1]["id"] . "' " . (in_array($arrayTipoInmueble[1]["id"], array(1, 2)) ? "data-transaccion='3'" : "") . ">" . $arrayTipoInmueble[1]["nombre"] . "</li>";
+                        /*Depa*/
+                        echo "<li data-value='" . $arrayTipoInmueble[2]["id"] . "' " . (in_array($arrayTipoInmueble[2]["id"], array(1, 2)) ? "data-transaccion='3'" : "") . ">" . $arrayTipoInmueble[2]["nombre"] . "</li>";
+                        /*Oficina*/
+                        echo "<li data-value='" . $arrayTipoInmueble[4]["id"] . "' " . (in_array($arrayTipoInmueble[4]["id"], array(1, 2)) ? "data-transaccion='3'" : "") . ">" . $arrayTipoInmueble[4]["nombre"] . "</li>";
+                        /*Local*/
+                        echo "<li data-value='" . $arrayTipoInmueble[6]["id"] . "' " . (in_array($arrayTipoInmueble[6]["id"], array(1, 2)) ? "data-transaccion='3'" : "") . ">" . $arrayTipoInmueble[6]["nombre"] . "</li>";
+                        /*Terreno*/
+                        echo "<li data-value='" . $arrayTipoInmueble[3]["id"] . "' " . (in_array($arrayTipoInmueble[3]["id"], array(1, 2)) ? "data-transaccion='3'" : "") . ">" . $arrayTipoInmueble[3]["nombre"] . "</li>";
+                        /*for ($x = 0; $x < count($arrayTipoInmueble); $x++) {
                             echo "<li data-value='" . $arrayTipoInmueble[$x]["id"] . "' " . (in_array($arrayTipoInmueble[$x]["id"], array(1, 2)) ? "data-transaccion='3'" : "") . ">" . $arrayTipoInmueble[$x]["nombre"] . "</li>";
-                        }
+                        }*/
                         ?>
                     </ul>
                 </li>

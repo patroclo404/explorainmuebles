@@ -12,22 +12,11 @@
 
 	if (isset($_GET["validar"])) {
 		$variables.= ($variables != "" ? "," : "")."post_validar='".$_GET["validar"]."'";
-        $id = $_GET["validar"];
-        $id = before( '_', $id );
-        $con = "UPDATE USUARIO SET USU_VALIDADO = 1 WHERE USU_ID = :id";
-        $conexion = crearConexionPDO();
-        $pdo = $conexion->prepare($con);
-        $pdo->execute(array(":id" => $id) );
 	}
 	if (isset($_GET["validadoTrue"])) {
 		if (!isset($_SESSION[userId]))
 			$variables.= ($variables != "" ? "," : "")."post_validadoTrue=1";
 	}
-
-    function before ($this, $inthat)
-    {
-        return substr($inthat, 0, strpos($inthat, $this));
-    };
 
 
 	$paramsMetasPage = array(
@@ -112,10 +101,7 @@
 				//echo "<div class='bloque'><img src='".$arrayImagenes[0]."' class='indexFondo' alt='".$arrayImagenes[0]["texto"]."' /></div>";
 			}
             
-            echo "<h2 class='text-banner'>
-                    <span  style='font-size: 77px;'>Explora Inmuebles</span>
-                    <span  style='font-weight:400!important;'>&nbsp;<br/>Tu propiedad en guadalajara</span>
-                    </h2>";
+            echo "<h2 class='text-banner'><span style='font-size: 77px;'>Explora Inmuebles</span><span>&nbsp;<br/>Tu propiedad en guadalajara</span></h2>";
     	?></div>
     	<div class="mobile-only">
     		<img src="images/explora-inmuebles-banner-home-mobile.jpg" class="indexFondo" alt="Explora Inmuebles en renta o venta guadalajara" />
@@ -163,7 +149,7 @@
 </div>
 
 <section class="container main">
-    <div class="destacados hidden-xs" style="display: none;">
+    <div class="destacados hidden-xs">
 
         <div class="row-eq-height header">
             <h2 class="col-lg-10 col-xs-8">Propiedades Destacadas</h2>
@@ -214,7 +200,7 @@
         </div>
     </div>
     
-    <div class="destacados mobile-only" style="display: none;">
+    <div class="destacados mobile-only">
 
         <div class="row-eq-height header">
             <h2 class="col-lg-10 col-xs-8">Propiedades Destacadas</h2>

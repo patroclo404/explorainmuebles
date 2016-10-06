@@ -217,7 +217,7 @@
 			</div>
 			<div class="col-md-2 col-sm-2 col-xs-12">
 				<ul id="catalogo_orden" class="template_campos">
-					<p data-value='-1'></p>
+					<p data-value='-1'> <i class="fa fa-arrow-down" aria-hidden="true"></i></p>
 					<li class="lista">
 						<ul>
 							<li data-value='1'>Mayor Precio</li>
@@ -235,6 +235,7 @@
 		</div>
 	</section>
 	<section class="col-lg-3 columna3 hidden-xs">
+		<h3 style="color: #852c2b;">Filtros de busqueda</h3>
 		<?php templateBuscadorResponsive2(); ?>
 	</section>
 </div>

@@ -322,7 +322,7 @@ function catalogo_mostrarInmuebles(json_datos) {
 		cadenaResultados += parseInt(datos.tipoInmueble) != 6 ? "s" : "es";
 	}
 	if (parseInt(datos.transaccion) != -1) {
-		cadenaResultados += " en "+$("#template_busqueda_transaccion li.lista li[data-value='"+datos.transaccion+"']").text();
+		cadenaResultados += "propiedades en "+$("#template_busqueda_transaccion li.lista li[data-value='"+datos.transaccion+"']").text();
 	}
 	if (parseInt(datos.colonia) != -1) {
 		cadenaResultados += " en la colonia "+$("#template_busqueda_colonia li.lista li[data-value='"+datos.colonia+"']").text();
@@ -341,7 +341,7 @@ function catalogo_mostrarInmuebles(json_datos) {
 	for (var x = 0; x < json_datos.datos.length; x++) {
 		moneda = new NumeroFormato(json_datos.datos[x].precio);
 		textTitulo = (json_datos.datos[x].titulo).length > maxCadena ? ((json_datos.datos[x].titulo).substr(0, (maxCadena - 3))+"...") : json_datos.datos[x].titulo;
-		textDescription = (json_datos.datos[x].descripcion).length > 190 ? ((json_datos.datos[x].descripcion).substr(0, (190 - 3))+"...") : json_datos.datos[x].descripcion;
+		textDescription = (json_datos.datos[x].descripcion).length > 135 ? ((json_datos.datos[x].descripcion).substr(0, (135 - 3))+"...") : json_datos.datos[x].descripcion;
 		etiquetaPrecio = json_datos.datos[x].transaccion != 3 ? "Precio" : "Precio por noche";
 		_newUrl =
 			(json_datos.datos[x].transaccion == 1 ? "renta" : (json_datos.datos[x].transaccion == 2 ? "venta" : "renta-vacacional"))+"/"+
@@ -394,7 +394,7 @@ function catalogo_mostrarInmuebles(json_datos) {
 							(json_datos.datos[x].dimensionTotal != "" ? "<a class='otrosBotones dimensionTotal' href='javascript:catalogo_redirecciona_regresar(\""+_newUrl+"\");'>"+json_datos.datos[x].dimensionTotal+" m<sup>2</sup></a>" : "-")+
 							'</div>'+
 						'</div>'+
-						'<div class="col-md-3 col-lg-3 col-sm-6 col-xs-6 property main-info hidden-xs">'+
+						'<div class="col-md-4 col-lg-4 col-sm-6 col-xs-6 property main-info hidden-xs">'+
 							'<div><i class="flaticon-house158"></i> CONSTRUCCI&Oacute;N <br />'+
 							(json_datos.datos[x].dimensionConstruida != "" ? "<a class='otrosBotones dimensionConstruida' href='javascript:catalogo_redirecciona_regresar(\""+_newUrl+"\");'>"+json_datos.datos[x].dimensionConstruida+" m<sup>2</sup></a>" : "-")+
 							'</div>'+
@@ -404,7 +404,7 @@ function catalogo_mostrarInmuebles(json_datos) {
 							(json_datos.datos[x].recamaras != "" ? "<a class='otrosBotones recamaras' href='javascript:catalogo_redirecciona_regresar(\""+_newUrl+"\");'>"+json_datos.datos[x].recamaras+"</a>" : "-")+
 							'</div>'+
 						'</div>'+
-						'<div class="col-md-3 col-lg-3 col-sm-6 col-xs-6 property main-info">'+
+						'<div class="col-md-2 col-lg-2 col-sm-6 col-xs-6 property main-info">'+
 							'<div><i class="flaticon-shower15"></i> BA&Ntilde;OS <br />'+
 							(json_datos.datos[x].wcs != "" ? "<a class='otrosBotones wcs' href='javascript:catalogo_redirecciona_regresar(\""+_newUrl+"\");'>"+(json_datos.datos[x].wcs % 1 == 0 ? parseInt(json_datos.datos[x].wcs) : parseFloat(json_datos.datos[x].wcs).toFixed(1))+"</a>" : "-")+
 							'</div>'+

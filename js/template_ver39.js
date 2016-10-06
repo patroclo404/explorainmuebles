@@ -592,22 +592,23 @@ function template_actualizar_ciudad(nomElemento, idCiudad, idColonia) {
 				if( $estado == '14' ){
 					objMunicipio.find("li.lista ul").append("<li data-value='"+respuesta_json.datos[39].id+"'>"+respuesta_json.datos[39].nombre+"</li>");
 					objMunicipio.find("li.lista ul").append("<li data-value='"+respuesta_json.datos[98].id+"'>"+respuesta_json.datos[98].nombre+"</li>");
-					objMunicipio.find("li.lista ul").append("<li data-value='"+respuesta_json.datos[120].id+"'>"+respuesta_json.datos[120].nombre+"</li>");
+					objMunicipio.find("li.lista ul").append("<li data-value='"+respuesta_json.datos[119].id+"'>"+respuesta_json.datos[119].nombre+"</li>");
 					objMunicipio.find("li.lista ul").append("<li data-value='"+respuesta_json.datos[101].id+"'>"+respuesta_json.datos[101].nombre+"</li>");
 					objMunicipio.find("li.lista ul").append("<li data-value='"+respuesta_json.datos[97].id+"'>"+respuesta_json.datos[97].nombre+"</li>");
 					//objMunicipio.find("li.lista ul").append("<li data-value='"+respuesta_json.datos[22].id+"'>"+respuesta_json.datos[30].nombre+"</li>");
 
 					for (var x = 0; x < respuesta_json.datos.length; x++) {
 						switch(x){
-							case 22:case 39:case 38:case 97:case 98:case 120:
+							case '22':case '39':case '37':case '97':case '98':case '120':
 							break;
 							default:
 							objMunicipio.find("li.lista ul").append("<li data-value='"+respuesta_json.datos[x].id+"'>"+respuesta_json.datos[x].nombre+"</li>");
 						}
-						
+						console.log(respuesta_json.datos.length)
 					}
 				}else{
 					for (var x = 0; x < respuesta_json.datos.length; x++) {
+						console.log(respuesta_json.datos.length);
 						objMunicipio.find("li.lista ul").append("<li data-value='"+respuesta_json.datos[x].id+"'>"+respuesta_json.datos[x].nombre+"</li>");
 					}
 				}
@@ -830,15 +831,16 @@ function template_addListener_busquedas(fcnBuscar, fcnBuscarPOST) {
 		});
 	});
 
-	$("#template_busqueda_header_estado").each(function(){
+	/*$("#template_busqueda_header_estado").each(function(){
 		var elemento = $(this);
 
-		$(this).find("li.lista li").on({
+		/*$(this).find("li.lista li").on({
 			click: function() {
 				template_actualizar_ciudad(elemento.prop("id"));
 			}
 		});
-	});
+		console.log("pres");
+	});*/
 
 	//agrega evento cuando se cambian elementos flotantes
 	$("#template_busqueda_cuotaMantenimiento").on({
@@ -1574,14 +1576,14 @@ function template_buscar(transaccion) {
 
 	var urlGET = "?transaccion="+datos.transaccion+"&tipoInmueble="+datos.tipoInmueble+"&estado="+datos.estado+"&ciudad="+datos.ciudad;
 
-	if (parseInt($("#"+arrayPrecios[indexTransaccion]).find("p").attr("data-value")) != -1) {
+	/*if (parseInt($("#"+arrayPrecios[indexTransaccion]).find("p").attr("data-value")) != -1) {
 		datos2["preciosMin2"] = $("#"+arrayPrecios[indexTransaccion]).find("p").attr("data-value").split("-")[0];
 		datos2["preciosMax2"] = $("#"+arrayPrecios[indexTransaccion]).find("p").attr("data-value").split("-")[1];
 
 		/*datos["preciosMin2"] = $("#"+arrayPrecios[indexTransaccion]).find("p").attr("data-value").split("-")[0];
 		 datos["preciosMax2"] = $("#"+arrayPrecios[indexTransaccion]).find("p").attr("data-value").split("-")[1];
-		 urlGET += "&preciosMin2="+datos.preciosMin2+"&preciosMax2="+datos.preciosMax2;*/
-	}
+		 urlGET += "&preciosMin2="+datos.preciosMin2+"&preciosMax2="+datos.preciosMax2;
+	}*/
 
 
 	params2 =

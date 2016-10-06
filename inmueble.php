@@ -905,7 +905,7 @@ CabeceraHTML("inmueble-responsive.css,inmueble_ver24.js", $variables, $metasFace
 			</div>
 		<?php
 		}
-		else { 
+		else {
 			/*$_nombre = strlen($vendedor["inmobiliaria"]["nombre"]) > $_maxNombre ? substr($vendedor["inmobiliaria"]["nombre"], 0, ($_maxNombre - 3))."..." : $vendedor["inmobiliaria"]["nombre"];
 
 			if( $vendedor['inmobiliaria']['logotipo'] != ''){
@@ -913,8 +913,28 @@ CabeceraHTML("inmueble-responsive.css,inmueble_ver24.js", $variables, $metasFace
 			}
 			echo "<div class='user inmobiliaria'><a href='inmobiliaria.php?id=".$vendedor["inmobiliaria"]["id"]."'>".$_nombre."</a></div>
 				<h4>Miembro desde:</h4>
-				<p class='member-since'>".$vendedor["inmobiliaria"]["create"]."</p>";*/
-		}
+				<p class='member-since'>".$vendedor["inmobiliaria"]["create"]."</p>"; */?>
+			<div class="inmueble_contacto hidden-print">
+
+				<div>
+					<div class="col-md-12"><input type="text" id="contacto_nombre_2" class="template_campos" placeholder="Nombre" /></div>
+				</div>
+				<div>
+					<div class="col-md-6"><input type="text" id="contacto_email_2" class="template_campos" placeholder="E-mail" /></div>
+					<div class="col-md-6"><input type="text" id="contacto_telefono_2" class="template_campos" placeholder="Teléfono" /></div>
+				</div>
+
+				<div>
+					<div class="col-md-12"><textarea id="contacto_mensaje_2" class="template_campos" placeholder="Mensaje"></textarea></div>
+				</div>
+				<div>
+					<div class="col-md-12"><span class="btn btn-inmueble btn-lg" data-inmueble="<?php echo $inmueble["id"]; ?>" onclick="inmueble_validarContacto_2();">Enviar</span><br /><br /></div> 
+				</div>
+
+			</div>
+
+		<?php 
+			}
 		?>
 
 		<div class="template_contenedorReputacion" data-tipo="<?php echo $vendedor["inmobiliaria"]["id"] == 0 ? "usuario" : "inmobiliaria"; ?>" data-id="<?php echo $vendedor["inmobiliaria"]["id"] == 0 ? $inmueble["usuario"] : $vendedor["inmobiliaria"]["id"]; ?>" data-propietario="<?php echo $inmueble["usuario"]; ?>"></div>

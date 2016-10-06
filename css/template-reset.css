@@ -5,7 +5,8 @@
 	font-family: GothamNarrowBook;
 	src: url(../fonts/GothamNarrowBook.otf);
 }
-
+/*@import 'https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=latin-ext';*/
+@import 'https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900';
 @font-face {
 	font-family: GothamNarrowBlack;
 	src: url(../fonts/GothamNarrowBlack.otf);
@@ -28,13 +29,73 @@ body.scrolled {
     left: 33%;
     color: white;
 	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	letter-spacing: 1.3px;
+    line-height: 90px; 
 }
 .titulo_ban h3{
 	font-size: 50px;
 	font-weight: 600;
 	text-shadow: 1px 5px 1px black;
+	font-family: 'Work Sans', sans-serif !important;
 }
-
+ ul#catalogo_orden:before {
+   content: "";
+   position: absolute;
+   right: 22px;
+   top: 24px;
+   width: 0;
+   height: 0;
+   border-left: 10px solid transparent;
+   border-right: 10px solid transparent;
+   border-top: 10px solid #842d2c;
+}/*
+ul#template_busqueda_header_transaccion:before {
+    content: "";
+    position: absolute;
+    right: 76px;
+    top: 73px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #842d2c;
+}
+ul#template_busqueda_header_tipoInmueble:before {
+    content: "";
+    position: absolute;
+    right: 76px;
+    top: 130px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #842d2c;
+}
+ul#template_busqueda_header_estado:before {
+    content: "";
+    position: absolute;
+    right: 76px;
+    top: 187px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #842d2c;
+}
+ul#template_busqueda_header_municipio:before {
+    content: "";
+    position: absolute;
+    right: 76px;
+    top: 244px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #842d2c;
+}
+*/
 .center{text-align: center;}
 
 .text-red {color: #842d2c;}
@@ -57,16 +118,23 @@ body.scrolled {
 	text-align: center; 
 	color:white;
 	position: absolute;
-	top: 150px;
+	top: 215px;
 	left: 0;
 	width: 100%;
 	z-index: 999;
-	font-weight: bold;
-	/*font-weight: 800;*/
+	font-family: 'Work Sans', sans-serif !important;
+	font-weight: 700!important;
+	letter-spacing: 1.3px;
+    line-height: 50px; 
 	text-shadow: 2px 3px 2px black;
+	text-transform: uppercase;
+
 }
 .text-banner span{
 	/*background: rgba(255,255,255,0.3);*/
+}
+.sombra{
+	background: rgba(0,0,0,0.30);
 }
 .valign {
 	-webkit-transform-style: preserve-3d;
@@ -252,6 +320,9 @@ img.slider-home {max-width: 100%;}
 
 @media (max-width: 1366px) {
 	.titulo_ban{left: 30%;}
+
+	.text-banner{top: 110px;}
+	.galeria .template_contenedorBusquedaHeader { margin-top: 330px !important; }
 }
 
 @media (max-width: 992px) {
@@ -1660,7 +1731,13 @@ input, select, textarea {
     max-width: 350px;
     height: 250px;
     max-height: 200px;
-    width: 350px;
+    width: 320px;
+    margin: 0 auto;
+    /*display: block;
+    max-width: 500px;
+    height: 317px;
+    max-height: 400px;
+    width: 441px;*/
 }
 .property.header {
 	color: #852c2b;
@@ -1768,7 +1845,7 @@ input, select, textarea {
 	margin-top: 320px;
 }
 .galeria .template_contenedorBusquedaHeader {
-	margin-top: 550px;
+	margin-top: 418px;
     z-index:999;
 }
 
@@ -2340,7 +2417,7 @@ input, select, textarea {
 	z-index: 9999;
 	height: 140px;
 	background-color: #842d2c;
-	margin-top: 120px;
+	margin-top: 90px;
 	color: white;
 	display: none;
 
@@ -2365,7 +2442,7 @@ input, select, textarea {
 }
 
 .item.signup.register .drop-down{
-	margin-left: -373px;
+	margin-left: -296px;
 	width: 400px;
 	height: 340px;
 	font-size: 0.87rem;
@@ -2373,14 +2450,14 @@ input, select, textarea {
 }
 
 .item.signup.login .drop-down{
-	margin-left: -272px;
+	margin-left: -219px;
 	width: 300px;
 	height: 264px;
 	margin-top: 190px;
 }
 
 .item.signup.data-user .drop-down{
-	margin-left: -273px;
+	margin-left: -118px;
 	width: 300px;
 	height: 70px;
 	padding: 10px;

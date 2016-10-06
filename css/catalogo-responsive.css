@@ -31,6 +31,7 @@
 .opcionesBusqueda .opciones {
 	display:inline-block;
 	vertical-align:top;
+	margin-top: 15px;
 }
 
 .opcionesBusqueda .cadenaResultados {
@@ -65,7 +66,15 @@
 	display:inline-block;
 	vertical-align:top;
 }
-
+.property.price span {
+    display: inline-block;
+    padding: 8px 3;
+    height: 2.8rem;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #862d2c;
+    margin-top: 10px;
+    }
 .opcionesBusqueda .opciones .opcionesPaginacion span {
 	display:inline-block;
 	vertical-align:top;
@@ -91,11 +100,13 @@
 
 .opcionesBusqueda{
 	/*height: 95px;*/
+	margin-bottom: 50px;
 }
 
 .property.items {
-	/*padding: 40px 0;*/
 	border-top: 2px solid #ebebeb;
+	padding: 20px 0;
+    margin-bottom: 30px;
 
 }
 
@@ -124,7 +135,7 @@
 }
 .property.information {
 	text-align: center;
-	font-size: 1rem;
+	font-size: 11px;
 	color: #852c2b;
 	font-weight: bold;
 }
@@ -137,9 +148,9 @@
 
 .property.price span{
 	display: inline-block;
-	padding: 5px 15px;
-	height: 2.8rem;
-	font-size: 1.6rem;
+	padding: 8px 18px;
+	height: 2.5rem;
+	font-size: 1.1rem;
 	color: white;
 	background-color: #862d2c;
 	margin-top: 10px;
@@ -148,12 +159,15 @@
 .property.main-info{
 	padding: 0 3px;
 	border-right: 1px solid #efefef;
-	height: 50px;
+	height: 48px;
 	background-color: #fafafa;
-	font-size: 0.97rem;
+	font-size: 11px;
 	-webkit-transform-style: preserve-3d;
 	-moz-transform-style: preserve-3d;
 	transform-style: preserve-3d;
+	padding-top: 17px;
+	margin-bottom: 10px;
+	/*width: 23.3%;*/
 }
 
 .property.main-info div{
