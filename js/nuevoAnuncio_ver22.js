@@ -303,9 +303,38 @@ function nuevoAnuncio_actualizar_ciudad(nomElemento, idCiudad, idColonia) {
 			}
 		}).always(function(respuesta_json){
 			if (respuesta_json.isExito == 1) {
-				for (var x = 0; x < respuesta_json.datos.length; x++) {
-					objMunicipio.find("li.lista ul").append("<li data-value='"+respuesta_json.datos[x].id+"'>"+respuesta_json.datos[x].nombre+"</li>");
+				$estado = $('#crearAnuncio_estado p').attr('data-value');
+				
+				if( $estado == '14' ){
+					objMunicipio.find("li.lista ul").append("<li data-value='"+respuesta_json.datos[39].id+"'>"+respuesta_json.datos[39].nombre+"</li>");
+					objMunicipio.find("li.lista ul").append("<li data-value='"+respuesta_json.datos[98].id+"'>"+respuesta_json.datos[98].nombre+"</li>");
+					objMunicipio.find("li.lista ul").append("<li data-value='"+respuesta_json.datos[119].id+"'>"+respuesta_json.datos[119].nombre+"</li>");
+					objMunicipio.find("li.lista ul").append("<li data-value='"+respuesta_json.datos[101].id+"'>"+respuesta_json.datos[101].nombre+"</li>");
+					objMunicipio.find("li.lista ul").append("<li data-value='"+respuesta_json.datos[97].id+"'>"+respuesta_json.datos[97].nombre+"</li>");
+					//objMunicipio.find("li.lista ul").append("<li data-value='"+respuesta_json.datos[22].id+"'>"+respuesta_json.datos[30].nombre+"</li>");
+
+					for (var x = 0; x < respuesta_json.datos.length; x++) {
+						switch(x){
+							case '22':case '39':case '37':case '97':case '98':case '120':
+							break;
+							default:
+							objMunicipio.find("li.lista ul").append("<li data-value='"+respuesta_json.datos[x].id+"'>"+respuesta_json.datos[x].nombre+"</li>");
+						}
+						console.log(respuesta_json.datos.length)
+					}
+				}else{
+					for (var x = 0; x < respuesta_json.datos.length; x++) {
+						console.log(respuesta_json.datos.length);
+						objMunicipio.find("li.lista ul").append("<li data-value='"+respuesta_json.datos[x].id+"'>"+respuesta_json.datos[x].nombre+"</li>");
+					}
 				}
+				objMunicipio.find("li.lista li").on({
+					click: function() {
+						objMunicipio.find("p").attr("data-value", $(this).attr("data-value"));
+						objMunicipio.find("p").text($(this).text());
+						nuevoAnuncio_actualizar_colonia(objMunicipio.prop("id"));
+					}
+				});
 				
 				objMunicipio.find("li.lista li").on({
 					click: function() {

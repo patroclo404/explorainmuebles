@@ -496,6 +496,7 @@ ul.template_campos span {
 	top:1px;
 	background:url(../images/dropDown.png) no-repeat center center;
 	background-size:15px 15px;
+	display: none;
 }
 
 ul.template_campos li.lista {
