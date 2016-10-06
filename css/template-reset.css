@@ -1465,6 +1465,7 @@ a.template_btnsShare.twitter {
 
 .template_contenedorReputacion {
 	margin-top:10px;
+	display: none;
 }
 
 .template_contenedorReputacion ._titulo {
