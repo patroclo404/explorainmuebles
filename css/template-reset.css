@@ -519,7 +519,7 @@ ul.template_campos li.lista ul {
 	white-space:nowrap;
 	overflow-y:auto;
 	overflow-x:hidden;
-	max-height:200px;
+	max-height:85px;
 	margin-left: -14px;
 }
 
