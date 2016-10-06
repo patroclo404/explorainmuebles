@@ -208,7 +208,7 @@ function template_inicializarBotones() {
 	$(".template_btnsShare").on({
 		click: function() {
 			if ($(this).hasClass("facebook"))
-				template_fb_share($(this).attr("data-url"));
+				template_fb_share($(this).attr("data-url"),$(this).attr("data-img"));
 			if ($(this).hasClass("twitter"))
 				template_tw_share($(this).attr("data-url"), $(this).attr("data-titulo"));
 		}
@@ -1264,9 +1264,10 @@ function template_validaCampos_loginFB() {
 
 		* urlObject:	String, es la url a la que apunta el share
 */
-function template_fb_share (urlObject) {
+function template_fb_share (urlObject,$img) {
 	FB.ui({
 		method: 'share',
+		picture: 'http://www.explorainmuebles.com/images/images/'+$img,
 		href: 'http://www.explorainmuebles.com/'+urlObject
 	}, function(response){});
 }

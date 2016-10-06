@@ -957,7 +957,7 @@ CabeceraHTML("inmueble-responsive.css,inmueble_ver24.js", $variables, $metasFace
 		</p>
 		<p class="descripcionBotones inmueble-btn-secundario hidden-xs"> <a class="otrosBotones" href="javascript:inmueble_botonesCompartir();"> <i class="fa fa-share-alt"></i> Compartir este anuncio</a></p>
 		<div id="inmueble_botonesCompartir" class="contenedorCompartir">
-			<a class="template_btnsShare facebook" data-url="inmueble.php?id=<?php echo $inmueble["id"]; ?>">Facebook</a>
+			<a class="template_btnsShare facebook" data-img="<?php echo $inmueble["imagenes"][0]; ?>" data-url="inmueble.php?id=<?php echo $inmueble["id"]; ?>">Facebook</a>
 			<a class="template_btnsShare twitter" data-url="inmueble.php?id=<?php echo $inmueble["id"]; ?>" data-titulo="<?php echo $inmueble["titulo"]; ?>">Twitter</a>
 			<a class="template_btnsShare email" data-url="inmueble.php?id=<?php echo $inmueble["id"]; ?>" onclick="inmueble_compartir_email();">Email</a>
 		</div>
