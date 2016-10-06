@@ -158,11 +158,8 @@
 </div>
 
 <section class="container main">
-<<<<<<< HEAD
-    <div class="destacados hidden-xs" style="">
-=======
+
     <div class="destacados hidden-xs">
->>>>>>> a74f2927c1c5ad8a1a51eb65fa048dfaa0aeacdc
 
         <div class="row-eq-height header">
             <h2 class="col-lg-10 col-xs-8">Propiedades Destacadas</h2>
