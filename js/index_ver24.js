@@ -377,13 +377,14 @@ function index_buscarEnMapa() {
 			
 		arrayMarcas = new Array();
 	
-		
+		$tra = $("#index_filtros_transaccion p").attr("data-value");
+		if( $tra == -1 ) $tra = 2;
 		$.ajax({
 			url: "lib_php/consultamapa.php",
 			type: "POST",
 			dataType: "json",
 			data: {
-				transaccion: $("#index_filtros_transaccion p").attr("data-value"),
+				transaccion: $tra,
 				tipoInmueble: $("#index_filtros_tipoInmueble p").attr("data-value"),
 				estado: -1,
 				ciudad: -1,
