@@ -169,7 +169,7 @@ table {
 
 
 header {
-	height: 120px;
+	height: 80px;
 	color: #842d2c;
 	background-color: #ffffff;
 
@@ -191,7 +191,7 @@ header .container {
 }
 
 header .item {
-	height: 120px;
+	height: 80px;
 	display: flex;
 	align-items: center;
 	width: 150px;
