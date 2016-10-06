@@ -161,7 +161,7 @@
 </div>
 
 <section class="container main">
-    <div class="destacados hidden-xs" style="display: none;">
+    <div class="destacados hidden-xs" style="">
 
         <div class="row-eq-height header">
             <h2 class="col-lg-10 col-xs-8">Propiedades Destacadas</h2>

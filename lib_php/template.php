@@ -108,6 +108,11 @@ function crearConexionPDO()
     $pass = "ExploraCasas2015";/*hsNdfcyh654ON*//*Casas2015*/
     $host = "mysql.explorainmuebles.com";/*localhost*//*mysql.explorainmuebles.com*/
 
+        $db = "explora2";
+    $user = "webstylemx";/*inmueble_root*//*explorainmuebles*/
+    $pass = "Diego64.";/*hsNdfcyh654ON*//*Casas2015*/
+    $host = "mysql.webstyle.mx";/*localhost*//*mysql.explorainmuebles.com*/
+
     $conexion = new PDO("mysql:host=" . $host . "; dbname=" . $db . "; charset=utf8", $user, $pass);
     return $conexion;
 }
