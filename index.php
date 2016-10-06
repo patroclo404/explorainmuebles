@@ -96,7 +96,7 @@
 
 ?>
 <div class="index_cuerpo">
-	<div class="galeria" data-width="<?php echo $medidas[0]; ?>" data-height="650<?php //echo $medidas[1]; ?>">
+	<div class="galeria" data-width="<?php echo $medidas[0]; ?>" data-height="690<?php //echo $medidas[1]; ?>">
         <?php templateBuscadorResponsive() ?>
     	<div class="desplazamiento-cycle hidden-xs"><?php
 			for ($x = 0; $x < count($arrayImagenes); $x++) {
@@ -110,10 +110,7 @@
 				//echo "<div class='bloque'><img src='".$arrayImagenes[0]."' class='indexFondo' alt='".$arrayImagenes[0]["texto"]."' /></div>";
 			}
             
-            echo "<h2 class='text-banner'>
-                    <span  style='font-size: 77px;'>Explora Inmuebles</span>
-                    <span  style='font-weight:400!important;'>&nbsp;<br/>Tu propiedad en guadalajara</span>
-                    </h2>";
+            echo "<h2 class='text-banner'><span style='font-size: 37px;font-weight: 300;'>Explora Inmuebles</span><span style='text-transform: capitalize;font-weight: 300;font-size: 33px;background: rgb(132, 45, 44);'><br/>&nbsp;&nbsp;&nbsp;Tu propiedad en guadalajara&nbsp;&nbsp;&nbsp;</span></h2>";
     	?></div>
     	<div class="mobile-only">
     		<img src="images/explora-inmuebles-banner-home-mobile.jpg" class="indexFondo" alt="Explora Inmuebles en renta o venta guadalajara" />
@@ -129,7 +126,7 @@
     <div class="filtrosMapa">
     	<div>
             <ul id="index_filtros_transaccion" class="template_campos">
-                Transacción<?php var_dump($x) ?><span></span>
+                Transacción<span></span>
                 <li class="lista">
                     <ul>
                         <li data-value="1">Renta</li>
@@ -161,7 +158,11 @@
 </div>
 
 <section class="container main">
+<<<<<<< HEAD
     <div class="destacados hidden-xs" style="">
+=======
+    <div class="destacados hidden-xs">
+>>>>>>> a74f2927c1c5ad8a1a51eb65fa048dfaa0aeacdc
 
         <div class="row-eq-height header">
             <h2 class="col-lg-10 col-xs-8">Propiedades Destacadas</h2>
@@ -212,7 +213,7 @@
         </div>
     </div>
     
-    <div class="destacados mobile-only" style="display: none;">
+    <div class="destacados mobile-only">
 
         <div class="row-eq-height header">
             <h2 class="col-lg-10 col-xs-8">Propiedades Destacadas</h2>

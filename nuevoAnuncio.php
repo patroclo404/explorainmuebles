@@ -452,9 +452,15 @@
                                         Tipo de Inmueble*<span></span>
                                         <li class="lista">
                                             <ul><?php
-                                                for ($x = 0; $x < count($arrayTipoCategoria); $x++) {
+                                            	echo "<li data-value='".$arrayTipoCategoria[1]["id"]."' data-categorias='".implode(",", $arrayTipoCategoria[1]["categorias"])."'>".$arrayTipoCategoria[1]["nombre"]."</li>";
+                                            	echo "<li data-value='".$arrayTipoCategoria[2]["id"]."' data-categorias='".implode(",", $arrayTipoCategoria[2]["categorias"])."'>".$arrayTipoCategoria[2]["nombre"]."</li>";
+                                            	echo "<li data-value='".$arrayTipoCategoria[4]["id"]."' data-categorias='".implode(",", $arrayTipoCategoria[4]["categorias"])."'>".$arrayTipoCategoria[4]["nombre"]."</li>";
+                                            	echo "<li data-value='".$arrayTipoCategoria[6]["id"]."' data-categorias='".implode(",", $arrayTipoCategoria[6]["categorias"])."'>".$arrayTipoCategoria[6]["nombre"]."</li>";
+                                            	echo "<li data-value='".$arrayTipoCategoria[3]["id"]."' data-categorias='".implode(",", $arrayTipoCategoria[3]["categorias"])."'>".$arrayTipoCategoria[3]["nombre"]."</li>";
+                                            	
+                                                /*for ($x = 0; $x < count($arrayTipoCategoria); $x++) {
                                                     echo "<li data-value='".$arrayTipoCategoria[$x]["id"]."' data-categorias='".implode(",", $arrayTipoCategoria[$x]["categorias"])."'>".$arrayTipoCategoria[$x]["nombre"]."</li>";
-                                                }
+                                                }*/
                                             ?></ul>
                                         </li>
                                         <p data-value="-1"></p>
@@ -471,8 +477,12 @@
                                         Estado*<span></span>
                                         <li class="lista">
                                             <ul><?php
+                                            $var=13;
+                                            echo "<li data-value='".$arrayEstado[$var]["id"]."'>".$arrayEstado[$var]["nombre"]."</li>";
                                                 for ($x = 0; $x < count($arrayEstado); $x++) {
+                                                	if($x!=13){
                                                     echo "<li data-value='".$arrayEstado[$x]["id"]."'>".$arrayEstado[$x]["nombre"]."</li>";
+                                                }
                                                 }
                                             ?></ul>
                                         </li>

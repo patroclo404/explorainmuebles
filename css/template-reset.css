@@ -1,6 +1,6 @@
 ﻿@charset "utf-8";
 /* CSS Document */
-
+@import 'https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i';
 @font-face {
 	font-family: GothamNarrowBook;
 	src: url(../fonts/GothamNarrowBook.otf);
@@ -25,7 +25,7 @@ body.scrolled {
 
 .titulo_ban{
 	position: absolute;
-    top: 33%;
+    top: 10%;
     left: 33%;
     color: white;
 	text-align: center;
@@ -40,6 +40,9 @@ body.scrolled {
 	text-shadow: 1px 5px 1px black;
 	font-family: 'Work Sans', sans-serif !important;
 }
+i.glyphicon.glyphicon-search {
+    font-size: 25px;
+    }
  ul#catalogo_orden:before {
    content: "";
    position: absolute;
@@ -118,16 +121,19 @@ ul#template_busqueda_header_municipio:before {
 	text-align: center; 
 	color:white;
 	position: absolute;
-	top: 215px;
-	left: 0;
+	top: 370px;
+	left: 13%;
 	width: 100%;
 	z-index: 999;
-	font-family: 'Work Sans', sans-serif !important;
-	font-weight: 700!important;
+	font-family: 'Roboto', sans-serif !important;
+	/*font-weight: 700!important;*/
 	letter-spacing: 1.3px;
     line-height: 50px; 
-	text-shadow: 2px 3px 2px black;
+	/*text-shadow: 2px 3px 2px black;*/
 	text-transform: uppercase;
+	background-color: rgba(0,0,0,0.7); 
+	max-width: 571px;
+	padding: 25px;
 
 }
 .text-banner span{
@@ -166,7 +172,7 @@ table {
 
 
 header {
-	height: 120px;
+	height: 80px;
 	color: #842d2c;
 	background-color: #ffffff;
 
@@ -188,7 +194,7 @@ header .container {
 }
 
 header .item {
-	height: 120px;
+	height: 80px;
 	display: flex;
 	align-items: center;
 	width: 150px;
@@ -321,8 +327,15 @@ img.slider-home {max-width: 100%;}
 @media (max-width: 1366px) {
 	.titulo_ban{left: 30%;}
 
-	.text-banner{top: 110px;}
-	.galeria .template_contenedorBusquedaHeader { margin-top: 330px !important; }
+}
+@media (max-width: 990px){
+	.text-banner{display: none;}
+}
+@media (min-width: 769px) and (max-width: 1366px) {
+	.titulo_ban{left: 30%;}
+
+	.text-banner{top: 255px;background-color: rgba(0,0,0,0.5);max-width: 571px;}
+	.galeria .template_contenedorBusquedaHeader {	margin-top: 95px !important;	}
 }
 
 @media (max-width: 992px) {
@@ -486,6 +499,7 @@ ul.template_campos span {
 	top:1px;
 	background:url(../images/dropDown.png) no-repeat center center;
 	background-size:15px 15px;
+	display: none;
 }
 
 ul.template_campos li.lista {
@@ -496,7 +510,7 @@ ul.template_campos li.lista {
 	/*bottom: 100%;*/
 }
 ul.butt li.lista{
-	bottom: 100%;
+	top: 94%;
 }
 
 ul.template_campos p {
@@ -519,7 +533,7 @@ ul.template_campos li.lista ul {
 	white-space:nowrap;
 	overflow-y:auto;
 	overflow-x:hidden;
-	max-height:200px;
+	max-height:85px;
 	margin-left: -14px;
 }
 
@@ -552,7 +566,9 @@ ul.template_campos p:after {
 	width: 12px;
 	font: normal normal normal 10px/1 FontAwesome;
 }
-
+.template_contenedorBusquedaHeader.hidden-print.no-padding {
+    color: #842d2c;
+}
 .template_contenedorBusquedaAvanzada ul.template_campos p:after {
 
 	position: absolute;
@@ -1460,6 +1476,7 @@ a.template_btnsShare.twitter {
 
 .template_contenedorReputacion {
 	margin-top:10px;
+	display: none;
 }
 
 .template_contenedorReputacion ._titulo {
@@ -1829,7 +1846,7 @@ input, select, textarea {
 
 .banner.inmueble{
 	overflow: hidden;
-	height: 300px;
+	height: 190px;
 	position: absolute;
 	width: 100%;
 }
@@ -1845,7 +1862,7 @@ input, select, textarea {
 	margin-top: 320px;
 }
 .galeria .template_contenedorBusquedaHeader {
-	margin-top: 418px;
+	margin-top: 200px;
     z-index:999;
 }
 
@@ -1853,7 +1870,7 @@ input, select, textarea {
 	width: 100%;
 	position: absolute;
 	/*background-color: rgba(255,255,255,0.45);*/
-	left: 13%;
+	left: 19%;
 	padding: 0 1%;
 	z-index: 99;
 
@@ -1893,7 +1910,7 @@ input, select, textarea {
 }
 
 .template_contenedorBusquedaHeader .template_campos_select.buscar a{
-	width: 100%;
+	width: 30%;
 	height: 45px;
 }
 
@@ -2012,8 +2029,6 @@ input, select, textarea {
 		margin-right: 25%;
 		background-color: inherit;
 	}
-	
-	.template_contenedorBusquedaHeader
 
 	.template_contenedorBusquedaHeader .template_campos_select {
 		padding: 0;
