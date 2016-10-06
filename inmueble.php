@@ -972,7 +972,7 @@ CabeceraHTML("inmueble-responsive.css,inmueble_ver24.js", $variables, $metasFace
 			        <p data-value="-1"></p>
 			        <input type="text" value="" style="position:absolute; top:0px; left:0px; z-index:-1;">
 			    </ul>
-			    <span class="btnEnviar" onclick="inmueble_validarReporte();" data-inmueble="255">Enviar</span>
+			    <span class="btnEnviar btn btn-block btn-inmueble" style="cursor: pointer;" onclick="inmueble_validarReporte();" data-inmueble="255">Enviar</span>
 			</div>
 		</p>
 		<?php

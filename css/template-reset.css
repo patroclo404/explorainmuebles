@@ -118,16 +118,18 @@ ul#template_busqueda_header_municipio:before {
 	text-align: center; 
 	color:white;
 	position: absolute;
-	top: 215px;
-	left: 0;
+	top: 370px;
+	left: 13%;
 	width: 100%;
 	z-index: 999;
-	font-family: 'Work Sans', sans-serif !important;
-	font-weight: 700!important;
+	font-family: 'Roboto', sans-serif !important;
+	/*font-weight: 700!important;*/
 	letter-spacing: 1.3px;
     line-height: 50px; 
-	text-shadow: 2px 3px 2px black;
+	/*text-shadow: 2px 3px 2px black;*/
 	text-transform: uppercase;
+	background-color: rgba(0,0,0,0.5); 
+	max-width: 571px;}
 
 }
 .text-banner span{
@@ -321,13 +323,15 @@ img.slider-home {max-width: 100%;}
 @media (max-width: 1366px) {
 	.titulo_ban{left: 30%;}
 
-	.text-banner{top: 110px;}
 }
-@media (min-width: 768px) and (max-width: 1366px) {
+@media (max-width: 990px){
+	.text-banner{display: none;}
+}
+@media (min-width: 769px) and (max-width: 1366px) {
 	.titulo_ban{left: 30%;}
 
-	.text-banner{top: 110px;}
-	.galeria .template_contenedorBusquedaHeader { margin-top: 330px !important; }
+	.text-banner{top: 255px;background-color: rgba(0,0,0,0.5);max-width: 571px;}
+	.galeria .template_contenedorBusquedaHeader {	margin-top: 95px !important;	}
 }
 
 @media (max-width: 992px) {
@@ -501,7 +505,7 @@ ul.template_campos li.lista {
 	/*bottom: 100%;*/
 }
 ul.butt li.lista{
-	bottom: 100%;
+	top: 94%;
 }
 
 ul.template_campos p {
@@ -557,7 +561,9 @@ ul.template_campos p:after {
 	width: 12px;
 	font: normal normal normal 10px/1 FontAwesome;
 }
-
+.template_contenedorBusquedaHeader.hidden-print.no-padding {
+    color: #842d2c;
+}
 .template_contenedorBusquedaAvanzada ul.template_campos p:after {
 
 	position: absolute;
@@ -1851,7 +1857,7 @@ input, select, textarea {
 	margin-top: 320px;
 }
 .galeria .template_contenedorBusquedaHeader {
-	margin-top: 418px;
+	margin-top: 200px;
     z-index:999;
 }
 

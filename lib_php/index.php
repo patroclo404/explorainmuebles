@@ -101,7 +101,7 @@
 				//echo "<div class='bloque'><img src='".$arrayImagenes[0]."' class='indexFondo' alt='".$arrayImagenes[0]["texto"]."' /></div>";
 			}
             
-            echo "<h2 class='text-banner'><span style='font-size: 77px;'>Explora Inmuebles</span><span>&nbsp;<br/>Tu propiedad en guadalajara</span></h2>";
+            echo "<h2 class='text-banner'><span style='font-size: 37px;'>Explora Inmuebles</span><span style='background:    background: rgb(132, 45, 44);'><br/>Tu propiedad en guadalajara</span></h2>";
     	?></div>
     	<div class="mobile-only">
     		<img src="images/explora-inmuebles-banner-home-mobile.jpg" class="indexFondo" alt="Explora Inmuebles en renta o venta guadalajara" />
