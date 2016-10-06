@@ -31,7 +31,7 @@
 		</div>";
 	
 	
-	$to = "contacto@explorainmuebles.com";
+	$to = "contacto@explorainmuebles.com,sergio@glucosacomunicacion.com";
 	$subject = "Formulario Contacto";
 	$message = $cadenaEmail;
 	$header = "From: Explora Inmuebles <contacto@explorainmuebles.com>"."\r\n";
@@ -47,7 +47,7 @@
         'From'      => 'contacto@explorainmuebles.com',
         'To'        => $to,
         'Subject'   => $subject,
-        'HtmlBody'  => $message.'<br />Enviado desde Postmark'
+        'HtmlBody'  => $message.'<br />Enviado desde Explora inmuebles'
         );
     $data = json_encode($data);
 
