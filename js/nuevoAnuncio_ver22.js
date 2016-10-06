@@ -92,9 +92,10 @@ $(document).ready(function(){
 	var mapaGoogle = document.getElementById("contenedorMapa");
 	var mapOptions = {
 		center: tempCenter,
-		zoom: 14,
+		zoom: 12,
 		mapMaker: true,
 		scrollwheel: false,
+		draggable: true,
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	};//SATELLITE,ROADMAP
 	
@@ -398,6 +399,7 @@ function mapDefinirMarca(evt) {
 	marker = new google.maps.Marker({
 		position: evt.latLng,
 		map: map,
+		draggable : true,
 		icon: "images/marcador3.png"
 	});
 }
