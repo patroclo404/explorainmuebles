@@ -25,7 +25,7 @@ body.scrolled {
 
 .titulo_ban{
 	position: absolute;
-    top: 33%;
+    top: 10%;
     left: 33%;
     color: white;
 	text-align: center;
@@ -40,6 +40,9 @@ body.scrolled {
 	text-shadow: 1px 5px 1px black;
 	font-family: 'Work Sans', sans-serif !important;
 }
+i.glyphicon.glyphicon-search {
+    font-size: 25px;
+    }
  ul#catalogo_orden:before {
    content: "";
    position: absolute;
@@ -1843,7 +1846,7 @@ input, select, textarea {
 
 .banner.inmueble{
 	overflow: hidden;
-	height: 300px;
+	height: 190px;
 	position: absolute;
 	width: 100%;
 }
@@ -1867,7 +1870,7 @@ input, select, textarea {
 	width: 100%;
 	position: absolute;
 	/*background-color: rgba(255,255,255,0.45);*/
-	left: 13%;
+	left: 19%;
 	padding: 0 1%;
 	z-index: 99;
 
@@ -1907,7 +1910,7 @@ input, select, textarea {
 }
 
 .template_contenedorBusquedaHeader .template_campos_select.buscar a{
-	width: 100%;
+	width: 30%;
 	height: 45px;
 }
 
@@ -2026,8 +2029,6 @@ input, select, textarea {
 		margin-right: 25%;
 		background-color: inherit;
 	}
-	
-	.template_contenedorBusquedaHeader
 
 	.template_contenedorBusquedaHeader .template_campos_select {
 		padding: 0;

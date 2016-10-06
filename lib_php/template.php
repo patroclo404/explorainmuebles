@@ -2563,7 +2563,7 @@ function templateBuscadorResponsive(){
         </div>-->
 
         <p class='textBuscar template_campos_select buscar' onclick='template_buscar();'>
-            <a class='buscador btn btn-inmueble btn-lg'><i class='glyphicon glyphicon-search'></i> BUSCAR</a>
+            <a class='buscador btn btn-inmueble btn-lg'><i class='glyphicon glyphicon-search'></i></a>
         </p>
 
     </div>
