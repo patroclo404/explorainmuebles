@@ -2825,7 +2825,7 @@ function templateBuscadorResponsive2(){
                 <input type='text' value='' style='position:absolute; top:0px; left:0px; z-index:-1;' readonly='true' />
             </ul>
         </div><!--<br/><br/><br/>-->
-        <!--<div class='template_campos_select colonias hidden-xs'>
+        <div class='template_campos_select colonias hidden-xs'>
             <ul id='template_busqueda_header_colonia' class='template_campos'>
                 <li class='lista'>
                     <ul></ul>
@@ -2833,23 +2833,22 @@ function templateBuscadorResponsive2(){
                 <p data-value='-1'>Colonia</p>
                 <input type='text' value='' style='position:absolute; top:0px; left:0px; z-index:-1;' readonly='true' />
             </ul>
-        </div><!--<br/><br/><br/>-->
+        </div><br/><br/><br/>
 
-        <!--<div class='template_campos_select precio hidden-xs'>
+        <div class='template_campos_select precio hidden-xs'>
             <ul id='template_busqueda_header_precios_min' class='template_campos'>
                 <li class='lista'>
-                    <ul>-->
+                    <ul>
                         <?php
-                        /*
 
                         templateSeleccionTransaccion($_SESSION[userFiltros]['transaccion']);*/
                         ?>
-                    <!--</ul>
+                    </ul>
                 </li>
                 <p data-value='-1'>Precio</p>
                 <input type='text' value='' style='position:absolute; top:0px; left:0px; z-index:-1;' readonly='true' />
             </ul>
-        </div><!--<br/><br/><br/>-->
+        </div><br/><br/><br/>
 
         <p class='textBuscar template_campos_select buscar' onclick='template_buscar();'>
             <a class='buscador btn btn-inmueble btn-lg'><i class='glyphicon glyphicon-search'></i> BUSCAR</a>
