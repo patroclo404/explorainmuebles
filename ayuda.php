@@ -15,6 +15,7 @@
 	
 	CabeceraHTML("ayuda_ver2.css,ayuda.js");
 	CuerpoHTML();
+	//echo "hola";
 ?>
 <div class="ayuda_cuerpo container"><?php
 	echo $contenido;
