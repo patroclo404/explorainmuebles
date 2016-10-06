@@ -10,15 +10,7 @@
 		$variables.= "post_mapa=1,post_transaccion=".$_GET["transaccion"];
 	}
 
-	if (isset($_GET["validar"])) {
-		$variables.= ($variables != "" ? "," : "")."post_validar='".$_GET["validar"]."'";
-        $id = $_GET["validar"];
-        $id = before( '_', $id );
-        $con = "UPDATE USUARIO SET USU_VALIDADO = 1 WHERE USU_ID = :id";
-        $conexion = crearConexionPDO();
-        $pdo = $conexion->prepare($con);
-        $pdo->execute(array(":id" => $id) );
-	}
+
 	if (isset($_GET["validadoTrue"])) {
 		if (!isset($_SESSION[userId]))
 			$variables.= ($variables != "" ? "," : "")."post_validadoTrue=1";
@@ -96,6 +88,12 @@
 	}
 
 	$medidas = getimagesize($arrayImagenes[0]["imagen"]);
+
+
+
+
+
+
 ?>
 <div class="index_cuerpo">
 	<div class="galeria" data-width="<?php echo $medidas[0]; ?>" data-height="650<?php //echo $medidas[1]; ?>">
@@ -396,6 +394,18 @@ $(window).load(function() {
   });
 });
 </script>
+
 <?php
+        if (isset($_GET["validar"])) {
+        $variables.= ($variables != "" ? "," : "")."post_validar='".$_GET["validar"]."'";
+        $id = $_GET["validar"];
+        $id = before( '_', $id );
+        $con = "UPDATE USUARIO SET USU_VALIDADO = 1 WHERE USU_ID = :id";
+        $conexion = crearConexionPDO();
+        $pdo = $conexion->prepare($con);
+        $pdo->execute(array(":id" => $id) );
+        echo "<script> template_validacion_ok(); </script>";
+
+    }
 	FinHTML();
 ?>

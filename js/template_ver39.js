@@ -1210,6 +1210,11 @@ function template_validaCampos_count() {
 	}
 }
 
+function template_validacion_ok() {
+	$("#template_alertPersonalizado td").text("La cuenta cuenta fue validada exitosamente \n inicia sesión para continuar");
+	template_alertPersonalizado();
+}
+
 
 /*
 	Inicia session con FB y completa los datos para registrarse con FB
