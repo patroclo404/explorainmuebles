@@ -322,6 +322,11 @@ img.slider-home {max-width: 100%;}
 	.titulo_ban{left: 30%;}
 
 	.text-banner{top: 110px;}
+}
+@media (min-width: 768px) and (max-width: 1366px) {
+	.titulo_ban{left: 30%;}
+
+	.text-banner{top: 110px;}
 	.galeria .template_contenedorBusquedaHeader { margin-top: 330px !important; }
 }
 
