@@ -16,9 +16,14 @@ $(document).ready(function(){
 		$(this).on({
 			click: function() {
 				var arrayEstados = Array("template_venta_estado", "template_renta_estado", "template_rentaVac_estado", "template_busqueda_estado", "template_busqueda_header_estado");
-				if (parseInt($("#"+arrayEstados[index]+" p").attr("data-value")) == -1) {
-					template_errorSelectMunicipio();
+				for (var i = 0; i < arrayEstados.length ; i++) {
+					if( parseInt ($("#"+arrayEstados[i]+" p").attr("data-value") ) == -1 ){
+						template_errorSelectMunicipio();
+					}
 				}
+				/*if (parseInt($("#"+arrayEstados[index]+" p").attr("data-value")) == -1) {
+					template_errorSelectMunicipio();
+				}*/
 			}
 		});
 	});

@@ -236,8 +236,14 @@
 	</section>
 	<section class="col-lg-3 columna3 hidden-xs">
 		<h3 style="color: #852c2b;">Filtros de busqueda</h3>
-		<?php templateBuscadorResponsive2(); ?>
+		<?php 
+			templateBuscadorResponsive2(); 
+
+		?>
 	</section>
+</div>
+<div class="holamundo">	
+	<?php PopUpGenerales(); ?>
 </div>
 <!-- <div class="catalogo_cuerpo">
 	<div class="columna1"><?php
@@ -248,11 +254,11 @@
             </h1><div class="opciones">
                 <div class="campo1">
                     Resultados por página <p id="catalogo_paginacion_elem" class="opcionesPaginacion"><?php
-						$arrayPaginacion = array(10, 30, 50);
+						//$arrayPaginacion = array(10, 30, 50);
 
-						for ($x = 0; $x < count($arrayPaginacion); $x++) {
-							echo "<span ".($arrayPaginacion[$x] == $elem ? "class='active'" : "").">".$arrayPaginacion[$x]."</span>";
-						}
+						//for ($x = 0; $x < count($arrayPaginacion); $x++) {
+							//echo "<span ".($arrayPaginacion[$x] == $elem ? "class='active'" : //"").">".$arrayPaginacion[$x]."</span>";
+						//}
 					?></p>
                 </div><div class="campo2">
 
@@ -271,6 +277,6 @@
 <?php
 	getFooter();
 	getCatalogjsFuntions();
-	PopUpGenerales();
+	
 	FinHTML();
 ?>
