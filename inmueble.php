@@ -832,7 +832,7 @@ CabeceraHTML("inmueble-responsive.css,inmueble_ver24.js", $variables, $metasFace
 		</span>
 		<div id="inmueble_mapa" class="inmueble_mapa" data-latitud="<?php echo $inmueble["latitud"] ?>" data-longitud="<?php echo $inmueble["longitud"]; ?>"></div>
 
-		<h2 id="pregunta-inmueble" class="titulo hidden-print">PREGUNTA POR ESTE INMUEBLE</h2>
+		<!--<h2 id="pregunta-inmueble" class="titulo hidden-print">PREGUNTA POR ESTE INMUEBLE</h2>
 		<div class="col-md-9 col-sm-12 np">
 
 
@@ -850,11 +850,11 @@ CabeceraHTML("inmueble-responsive.css,inmueble_ver24.js", $variables, $metasFace
 				<div class="col-md-12"><textarea id="contacto_mensaje" class="template_campos" placeholder="Mensaje"></textarea></div>
 			</div>
 			<div>
-				<div class="col-md-12"><span  class="btn btn-inmueble btn-lg" data-inmueble="<?php echo $inmueble["id"]; ?>" onclick="inmueble_validarContacto();">Enviar</span><br /><br /></div> 
+				<div class="col-md-12"><span  class="btn btn-inmueble btn-lg" data-inmueble="<?php //echo $inmueble["id"]; ?>" onclick="inmueble_validarContacto();">Enviar</span><br /><br /></div> 
 			</div>
 
 		</div>
-		</div>
+		</div>-->
 	</section>
 
 
@@ -868,8 +868,8 @@ CabeceraHTML("inmueble-responsive.css,inmueble_ver24.js", $variables, $metasFace
 			</a>
 		</div> -->
 
-		<!--<h2 class="titulo">Anunciante:</h2>-->
-		<h2 class="titulo">Pregunta por este inmueble:</h2>
+		<!--<h2 class="titulo">Anunciante:</h2>
+		<h2 class="titulo">Pregunta por este inmueble:</h2>-->
 		<?php
 		$_maxNombre = 35;
 
@@ -930,7 +930,6 @@ CabeceraHTML("inmueble-responsive.css,inmueble_ver24.js", $variables, $metasFace
 				<div>
 					<div class="col-md-12"><span class="btn btn-inmueble btn-lg" data-inmueble="<?php echo $inmueble["id"]; ?>" onclick="inmueble_validarContacto_2();">Enviar</span><br /><br /></div> 
 				</div>
-
 			</div>
 
 		<?php 
