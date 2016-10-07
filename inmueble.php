@@ -850,7 +850,7 @@ CabeceraHTML("inmueble-responsive.css,inmueble_ver24.js", $variables, $metasFace
 				<div class="col-md-12"><textarea id="contacto_mensaje" class="template_campos" placeholder="Mensaje"></textarea></div>
 			</div>
 			<div>
-				<div class="col-md-12"><span class="btn btn-inmueble btn-lg" data-inmueble="<?php echo $inmueble["id"]; ?>" onclick="inmueble_validarContacto();">Enviar</span><br /><br /></div> 
+				<div class="col-md-12"><span  class="btn btn-inmueble btn-lg" data-inmueble="<?php echo $inmueble["id"]; ?>" onclick="inmueble_validarContacto();">Enviar</span><br /><br /></div> 
 			</div>
 
 		</div>
@@ -899,7 +899,7 @@ CabeceraHTML("inmueble-responsive.css,inmueble_ver24.js", $variables, $metasFace
 					<div class="col-md-12"><textarea id="contacto_mensaje_2" class="template_campos" placeholder="Mensaje"></textarea></div>
 				</div>
 				<div>
-					<div class="col-md-12"><span class="btn btn-inmueble btn-lg" data-inmueble="<?php echo $inmueble["id"]; ?>" onclick="inmueble_validarContacto_2();">Enviar</span><br /><br /></div> 
+					<div class="col-md-12"><span id="enviar" class="btn btn-inmueble btn-lg" data-inmueble="<?php echo $inmueble["id"]; ?>" onclick="inmueble_validarContacto_2();">Enviar</span><br /><br /></div> 
 				</div>
 
 			</div>

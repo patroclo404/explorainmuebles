@@ -456,9 +456,10 @@ function inmueble_validarContacto_2() {
 							email: $("#contacto_email_2").val(),
 							telefono: $("#contacto_telefono_2").val(),
 							mensaje: $("#contacto_mensaje_2").val(),
-							inmueble: $("table.inmueble_contacto span.btnEnviar").attr("data-inmueble")
+							inmueble: $("#enviar").attr("data-inmueble")
 						}
 					}).always(function(){
+						
 						$("#template_alertPersonalizado td").text("Hemos enviado un mensaje con tus datos al anunciante.");
 						template_alertPersonalizado();
 						$("#contacto_nombre_2").val("");

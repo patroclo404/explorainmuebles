@@ -42,7 +42,7 @@
 		"SELECT USU_ID, USU_EMAIL, USU_INMOBILIARIA, USU_NOTIFICACIONES
 		FROM INMUEBLE, USUARIO
 		WHERE IMU_USUARIO = USU_ID
-		AND IMU_ID = ?;";
+		AND IMU_ID = $inmueble;";
 	$pdo = $conexion->prepare($consulta);
 	$pdo->execute(array($inmueble));
 	$res = $pdo->fetchAll(PDO::FETCH_ASSOC);
@@ -87,7 +87,7 @@
         'From'      => 'contacto@explorainmuebles.com',
         'To'        => $to,
         'Subject'   => $subject,
-        'HtmlBody'  => $message.'<br />Enviado desde Postmark'
+        'HtmlBody'  => $message.'<br />Enviado desde Explora Inmuebles'
         );
     $data = json_encode($data);
 
@@ -99,5 +99,4 @@
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     $result = curl_exec($ch);
     curl_close($ch);
-
 ?>
