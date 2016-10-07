@@ -1661,8 +1661,14 @@ function template_eventosVotacionResponsive_validarCampos() {
 
 function regresar($id){
 	//window.history.back()+"#"+$id;
-	a =  document.referrer;// + "#" + $id;
-	console.log(a);
+	a =  document.referrer;
+	a = a.replace("#" , "");
+	a = a.replace(/[0-9]/g, '');
+	a =  a + "#" + $id;
+	//console.log(a);
 	//window.location.hash = '#'+$id;
+	//data = JSON.parse($id);
+	//console.log(a+data);
 	window.location.href = a;
+
 }

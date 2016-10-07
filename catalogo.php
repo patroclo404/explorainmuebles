@@ -161,31 +161,31 @@
 	switch ($transaccion) {
 		case '1':
 			echo "<div class='titulo_ban'>
-						<h3>
+						<h1>
 							Explora Inmuebles Renta
-						</h3>
+						</h1>
 					</div>";
 			break;
 		case '2':
 			echo "<div class='titulo_ban'>
-						<h3>
+						<h1>
 							Explora Inmuebles Venta
-						</h3>
+						</h1>
 					</div>";
 			break;
 		case '3':
 			echo "<div class='titulo_ban'>
-						<h3>
+						<h1>
 							
 							Explora Inmuebles Renta <br> Vacacional
-						</h3>
+						</h1>
 					</div>";
 			break;
 		default:
 			echo "<div class='titulo_ban'>
-						<h3>
+						<h1>
 							Explora Inmuebles
-						</h3>
+						</h1>
 					</div>".var_dump($transaccion);
 			break;
 	}
@@ -275,20 +275,12 @@
     	$( '.filtro-avanzado' ).toggleClass( "collapse" );
     });
 
-	/*$('a[href*=#]').click(function() {
-	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-	    && location.hostname == this.hostname) {
-	      var $target = $(this.hash);
-	      $target = $target.length && $target
-	      || $('[name=' + this.hash.slice(1) +']');
-	      if ($target.length) {
-	        var targetOffset = $target.offset().top;
-	        $('html,body')
-	        .animate({scrollTop: targetOffset}, 1500);
-	       return false;
-	      }
-	    }
-	});*/
+	/*url = document.URL;
+	tam = url.indexOf('=');
+	id = url.substring(tam);
+	id = id.replace("=" , "");
+	window.location.hash = "#"+id;
+	console.log(id);*/
 
 </script>
 

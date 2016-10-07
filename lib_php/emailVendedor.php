@@ -18,7 +18,7 @@
 	
 	$cadenaEmail = 
 		"<div style='width:700px; margin:0px; padding:0px; font-family:Arial, Helvetica, sans-serif;'>
-			<div style='padding:20px;'>
+			<div style='padding:20px;text-align:center;'>
 				<a href='http://www.explorainmuebles.com/'><img src='http://www.explorainmuebles.com/images/logo.png' alt='Explora Inmuebles' /></a>
 			</div>
 			<div style='background-color:#f6f6f6; padding:20px;'>
