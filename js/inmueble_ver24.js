@@ -3,6 +3,7 @@
 
 $(document).ready(function(){
 	template_addListener_busquedas(inmueble_fcnBuscar);
+	$('.container.catalogo_cuerpo').css("margin-top" , 0);
 	
 	
 	tempCenter = new google.maps.LatLng($("#inmueble_mapa").attr("data-latitud"), $("#inmueble_mapa").attr("data-longitud"));

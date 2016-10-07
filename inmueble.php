@@ -535,11 +535,11 @@ $colonia = (isset($_SESSION[userFiltros]["colonia"]))?$_SESSION[userFiltros]["co
 CabeceraHTML("inmueble-responsive.css,inmueble_ver24.js", $variables, $metasFacebook);
 	bodyIndex();
 ?>
-	<div class="banner inmueble hidden-xs hidden-print">
-		<?php templateBuscadorResponsive(); ?>
-		<img src="images/images/0451438001436838815.jpg" class="img-responsive" alt="Casas en venta en guadalajara">
+	<!--<div class="banner inmueble hidden-xs hidden-print">-->
+		<?php //templateBuscadorResponsive(); ?>
+		<!--<img src="images/images/0451438001436838815.jpg" class="img-responsive" alt="Casas en venta en guadalajara">-->
 
-	</div>
+	<!--</div>-->
 	<br>
 <div class="container mobile-only">
 	<a href="#" class="btn btn-inmueble btn-lg btn-block" onclick="window.history.back();" >Regresar a Propiedades</a>

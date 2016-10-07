@@ -1587,14 +1587,14 @@ function template_buscar(transaccion) {
 
 	var urlGET = "?transaccion="+datos.transaccion+"&tipoInmueble="+datos.tipoInmueble+"&estado="+datos.estado+"&ciudad="+datos.ciudad;
 
-	/*if (parseInt($("#"+arrayPrecios[indexTransaccion]).find("p").attr("data-value")) != -1) {
+	if (parseInt($("#"+arrayPrecios[indexTransaccion]).find("p").attr("data-value")) != -1) {
 		datos2["preciosMin2"] = $("#"+arrayPrecios[indexTransaccion]).find("p").attr("data-value").split("-")[0];
 		datos2["preciosMax2"] = $("#"+arrayPrecios[indexTransaccion]).find("p").attr("data-value").split("-")[1];
 
 		/*datos["preciosMin2"] = $("#"+arrayPrecios[indexTransaccion]).find("p").attr("data-value").split("-")[0];
 		 datos["preciosMax2"] = $("#"+arrayPrecios[indexTransaccion]).find("p").attr("data-value").split("-")[1];
-		 urlGET += "&preciosMin2="+datos.preciosMin2+"&preciosMax2="+datos.preciosMax2;
-	}*/
+		 urlGET += "&preciosMin2="+datos.preciosMin2+"&preciosMax2="+datos.preciosMax2;*/
+	}
 
 
 	params2 =

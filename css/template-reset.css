@@ -2461,14 +2461,14 @@ input, select, textarea {
 	width: 400px;
 	height: 340px;
 	font-size: 0.87rem;
-	margin-top: 230px;
+	margin-top: 200px;
 }
 
 .item.signup.login .drop-down{
 	margin-left: -219px;
 	width: 300px;
 	height: 264px;
-	margin-top: 190px;
+	margin-top: 170px;
 }
 
 .item.signup.data-user .drop-down{
