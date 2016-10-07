@@ -181,14 +181,12 @@
 						</h3>
 					</div>";
 			break;
-
-		
 		default:
-			echo "<div class='titulo'>
+			echo "<div class='titulo_ban'>
 						<h3>
 							Explora Inmuebles
 						</h3>
-					</div>";
+					</div>".var_dump($transaccion);
 			break;
 	}
 	?>

@@ -344,7 +344,7 @@ function catalogo_mostrarInmuebles(json_datos) {
 		textDescription = (json_datos.datos[x].descripcion).length > 135 ? ((json_datos.datos[x].descripcion).substr(0, (135 - 3))+"...") : json_datos.datos[x].descripcion;
 		etiquetaPrecio = json_datos.datos[x].transaccion != 3 ? "Precio" : "Precio por noche";
 		_newUrl =
-			(json_datos.datos[x].transaccion == 1 ? "renta" : (json_datos.datos[x].transaccion == 2 ? "venta" : "renta-vacacional"))+"/"+
+			(json_datos.datos[x].transaccion == 1 ? "renta" : (json_datos.datos[x].transaccion == 2 ? "venta" : "renta"))+"/"+
 			(json_datos.datos[x].tipoInmueble == -1 ? "todos-los-tipos" : ($("#template_busqueda_tipoInmueble li.lista li[data-value='"+json_datos.datos[x].tipoInmueble+"']").text()))+"/"+
 			json_datos.datos[x].estadoNombre+"/"+
 			json_datos.datos[x].ciudadNombre+"/"+
