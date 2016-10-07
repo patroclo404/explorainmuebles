@@ -148,6 +148,7 @@
 	bodyIndex();
 
 ?>
+		
 
 <div class="container control-filtro mobile-only">
 	<div class="col-xs-6 btn btn-inmueble btn-lg button-filtro">
@@ -242,7 +243,7 @@
 		?>
 	</section>
 </div>
-<div class="holamundo">	
+<div>	
 	<?php PopUpGenerales(); ?>
 </div>
 <!-- <div class="catalogo_cuerpo">
@@ -269,11 +270,30 @@
     </div>
 </div> -->
 
+
+
 <script type="text/javascript">
     $('.button-filtro').click(function(){
     	$( '.filtro-avanzado' ).toggleClass( "collapse" );
     });
+
+	/*$('a[href*=#]').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+	    && location.hostname == this.hostname) {
+	      var $target = $(this.hash);
+	      $target = $target.length && $target
+	      || $('[name=' + this.hash.slice(1) +']');
+	      if ($target.length) {
+	        var targetOffset = $target.offset().top;
+	        $('html,body')
+	        .animate({scrollTop: targetOffset}, 1500);
+	       return false;
+	      }
+	    }
+	});*/
+
 </script>
+
 <?php
 	getFooter();
 	getCatalogjsFuntions();

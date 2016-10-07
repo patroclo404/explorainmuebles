@@ -382,7 +382,7 @@ function catalogo_mostrarInmuebles(json_datos) {
 			"</div>";
 
 		elemento =
-			'<div class="row property items" onclick="catalogo_redirecciona_regresar(\''+_newUrl+'\');">'+
+			'<div class="row property items" id='+json_datos.datos[x].id+' onclick="catalogo_redirecciona_regresar(\''+_newUrl+'\');">'+
 				'<div class="col-lg-6 col-sm-6 col-xs-12"><img class="img-responsive" src="'+urlArchivos+json_datos.datos[x].imagen+'"></div>'+
 				'<div class="col-lg-6 col-sm-6 col-xs-12">'+
 					'<h2 class="property header" onclick="catalogo_redirecciona_regresar("'+_newUrl+'");">'+textTitulo+'</h2>'+

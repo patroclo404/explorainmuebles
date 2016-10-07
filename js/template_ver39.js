@@ -1658,3 +1658,11 @@ function template_eventosVotacionResponsive_validarCampos() {
 		}
 	});
 }
+
+function regresar($id){
+	//window.history.back()+"#"+$id;
+	a =  document.referrer;// + "#" + $id;
+	console.log(a);
+	//window.location.hash = '#'+$id;
+	window.location.href = a;
+}

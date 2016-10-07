@@ -859,7 +859,7 @@ CabeceraHTML("inmueble-responsive.css,inmueble_ver24.js", $variables, $metasFace
 
 
 	<aside class="col-md-12 col-lg-3 hidden-print">
-		<a href="#" class="btn btn-inmueble btn-lg  hidden-xs col-md-6 col-lg-12 " onclick="window.history.back();" >Regresar a Propiedades</a><br /><br /><br />
+		<button href="#" class="btn btn-inmueble btn-lg  hidden-xs col-md-6 col-lg-12" onclick="regresar(<?php echo $inmueble["id"]; ?>)" >Regresar a Propiedades</button><br /><br /><br />
 
 		<!-- <div class="add-toFavorites otrosBotones">
 			<a class="btnBotones estrella" data-id="<?php echo $inmueble["like"]; ?>" data-inmueble="<?php echo $inmueble["id"]; ?>">
@@ -1079,3 +1079,4 @@ if (isset($_GET["create"])) {
 
 	FinHTML();
 ?>
+

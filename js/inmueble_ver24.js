@@ -556,3 +556,6 @@ function catalogo_redirecciona_regresar(newUrl) {
 	});
 }
 /**/
+
+/*regresar*/
+
