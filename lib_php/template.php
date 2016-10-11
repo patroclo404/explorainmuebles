@@ -437,6 +437,23 @@ function CabeceraHTML($cssJs = NULL, $varJs = NULL, $paramsMetasFB = NULL, $para
 			<link rel='stylesheet' type='text/css' href='css/template-reset.css' />
             <link href='https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900' rel='stylesheet'>
 
+            <style type='text/css'>
+                @-moz-document url-prefix() {
+                    .item.signup.login .drop-down {
+                        margin-top: 40px;
+                    }
+                    .item.signup.register .drop-down{
+                       margin-top: 40px; 
+                    }
+                    .item.signup .drop-down{
+                        margin-top: 40px;
+                    }
+                    .item.signup.data-user .drop-down{
+                        margin-left: -231px;
+                    }
+                }
+            </style>
+
             <script language='javascript' type='text/javascript' src='js/validaciones.js'></script>
 			<script language='javascript' type='text/javascript' src='js/jQuery.js'></script>
 			<script language='javascript' type='text/javascript' src='js/jQueryForm.js'></script>
