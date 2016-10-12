@@ -451,9 +451,31 @@ function CabeceraHTML($cssJs = NULL, $varJs = NULL, $paramsMetasFB = NULL, $para
                     .item.signup.data-user .drop-down{
                         margin-left: -231px;
                     }
+                    ul.template_campos li.lista ul {
+                        max-height: 145px;
+                    }
+                    @media (min-width: 769px) and (max-width: 1366px) {
+                        .text-banner{
+                            top: 300px;
+                        }
+                    }
                 }
+                
             </style>
-
+             <style>
+                @media screen and (min-width:0\\0) { 
+                /* Tus estilos CSS para IE9, IE10, IE11  */
+                 .item.signup.login .drop-down {
+                        margin-top: 40px;
+                    }
+                    .item.signup.register .drop-down{
+                       margin-top: 40px; 
+                    }
+                    .item.signup .drop-down{
+                        margin-top: 40px;
+                    }
+                }  
+            </style>
             <script language='javascript' type='text/javascript' src='js/validaciones.js'></script>
 			<script language='javascript' type='text/javascript' src='js/jQuery.js'></script>
 			<script language='javascript' type='text/javascript' src='js/jQueryForm.js'></script>
