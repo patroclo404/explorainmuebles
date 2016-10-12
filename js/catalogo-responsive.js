@@ -21,7 +21,10 @@ $(document).ready(function(){
 
 		$(this).find("li.lista li").on({
 			click: function() {
-				catalogo_fcnBuscarRedireccionar(false);
+				//catalogo_fcnBuscarRedireccionar(false);
+				rel = $("#catalogo_orden p").attr("data-value");
+				console.log(rel);
+				template_addListener_busquedas(catalogo_fcnBuscarRedireccionar, catalogo_fcnBuscar);
 			}
 		});
 	});
@@ -39,7 +42,6 @@ $(document).ready(function(){
 
 
 });
-
 
 /*
 	funcion a realizar cuando se da click en el boton de buscar
@@ -116,7 +118,6 @@ function catalogo_fcnBuscar() {
 		catalogo_mostrarInmuebles(respuesta_json);
 	});
 }
-
 
 /*
 	redirecciona con los parametros get
@@ -306,7 +307,6 @@ function catalogo_fcnBuscarRedireccionar(_setPagina) {
 	}
 }
 
-
 /*
 	Muestra los elementos encontrados por la busqueda
 */
@@ -433,7 +433,6 @@ function catalogo_mostrarInmuebles(json_datos) {
 	}
 }
 
-
 /*
 	Genera y actualiza el sistema de paginacion.
 
@@ -539,7 +538,6 @@ function catalogo_sistemaPaginacion(pagina, elem, numeroElementos, maxPaginas) {
 		});
 	});
 }
-
 
 /*
 	Redireccion a la url, pero antes, asigna a la seccion el parametro de regresar
