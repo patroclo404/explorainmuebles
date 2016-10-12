@@ -544,7 +544,7 @@ CabeceraHTML("inmueble-responsive.css,inmueble_ver24.js", $variables, $metasFace
 <div class="container mobile-only">
 	<a href="#" class="btn btn-inmueble btn-lg btn-block" onclick="window.history.back();" >Regresar a Propiedades</a>
 </div>
-<div class="container catalogo_cuerpo propiedad">
+<div class="container catalogo_cuerpo propiedad" style="margin-top:20px !important; ">
 	<section class="col-lg-9 col-md-12">
 		<h1 class="titulo"><?php echo $inmueble["titulo"]; ?></h1>
 		<span class="address">
