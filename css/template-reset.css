@@ -22,17 +22,6 @@ html, body {
 body.scrolled {
 	padding-top:121px;
 }
- @media screen and (min-width:0\0) {
- 	.item.signup.login .drop-down {
-        margin-top: 40px;
-    }
-    .item.signup.register .drop-down{
-        margin-top: 40px; 
-    }
-    .item.signup .drop-down{
-        margin-top: 40px;
-    }
- }
 .titulo_ban{
 	position: absolute;
     top: 10%;
