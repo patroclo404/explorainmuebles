@@ -2592,19 +2592,19 @@ function templateBuscadorResponsive(){
             </ul>
         </div>-->
 
-        <!--<div class='template_campos_select precio hidden-xs'>
+        <div class='template_campos_select precio hidden-xs' style="display: none!important;">
             <ul id='template_busqueda_header_precios_min' class='template_campos'>
                 <li class='lista'>
                     <ul>-->
-                        <?php/*
-                        templateSeleccionTransaccion($_SESSION[userFiltros]['transaccion']);*/
+                        <?php
+                        templateSeleccionTransaccion($_SESSION[userFiltros]['transaccion']);
                         ?>
-                    <!--</ul>
+                    </ul>
                 </li>
                 <p data-value='-1'>Precio</p>
                 <input type='text' value='' style='position:absolute; top:0px; left:0px; z-index:-1;' readonly='true' />
             </ul>
-        </div>-->
+        </div>
 
         <p class='textBuscar template_campos_select buscar' onclick='template_buscar();'>
             <a class='buscador btn btn-inmueble btn-lg'><i class='glyphicon glyphicon-search'></i></a>
