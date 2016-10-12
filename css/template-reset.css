@@ -29,16 +29,20 @@ body.scrolled {
     left: 33%;
     color: white;
 	text-align: center;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 	letter-spacing: 1.3px;
     line-height: 90px; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 .titulo_ban > h1{
-	font-size: 50px;
-	font-weight: 300;
-	text-shadow: 1px 5px 1px black;
-	font-family: 'Raleway', sans-serif;
+	font-size: 40px;
+    font-weight: 300;
+    /* text-shadow: 1px 5px 1px black; */
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(0,0,0,0.6);
+    padding: 20px;
 }
 i.glyphicon.glyphicon-search {
     font-size: 25px;

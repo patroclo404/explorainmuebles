@@ -939,11 +939,11 @@ CabeceraHTML("inmueble-responsive.css,inmueble_ver24.js", $variables, $metasFace
 		<div class="template_contenedorReputacion" data-tipo="<?php echo $vendedor["inmobiliaria"]["id"] == 0 ? "usuario" : "inmobiliaria"; ?>" data-id="<?php echo $vendedor["inmobiliaria"]["id"] == 0 ? $inmueble["usuario"] : $vendedor["inmobiliaria"]["id"]; ?>" data-propietario="<?php echo $inmueble["usuario"]; ?>"></div>
 		<br><br>
 
-		<?php if ($vendedor['inmobiliaria']['id'] == 0) : ?>
+		<!--<?php if ($vendedor['inmobiliaria']['id'] == 0) : ?>
 			<p class="col-md-6 col-lg-12"><a href='usuario.php?id=<?php echo $inmueble["usuario"]; ?>' class="otrosBotones btn-block btn-lg btn btn-inmueble" data-label="inmueble_contacto">Contactar al anunciante</a></p>
 		<?php else : ?>
 			<p class="col-md-6 col-lg-12"><a href='inmobiliaria.php?id=<?php echo $vendedor['inmobiliaria']['id']; ?>' class="otrosBotones btn-block btn-lg btn btn-inmueble" data-label="inmueble_contacto">Contactar al anunciante</a></p>
-		<?php endif; ?>
+		<?php endif; ?>-->
 
 		<p class="hidden-xs col-md-6 col-lg-12"><a class="otrosBotones btn btn-block btn-lg btn-inmueble" onclick="window.print();">Guardar en PDF</a></p>
 		<br><br>

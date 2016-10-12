@@ -162,22 +162,21 @@
 		case '1':
 			echo "<div class='titulo_ban'>
 						<h1>
-							Explora Inmuebles Renta
+							Inmuebles En Renta
 						</h1>
 					</div>";
 			break;
 		case '2':
 			echo "<div class='titulo_ban'>
 						<h1>
-							Explora Inmuebles Venta
+							Inmuebles En Venta
 						</h1>
 					</div>";
 			break;
 		case '3':
 			echo "<div class='titulo_ban'>
 						<h1>
-							
-							Explora Inmuebles Renta <br> Vacacional
+							Inmuebles En Renta <br> Vacacional
 						</h1>
 					</div>";
 			break;

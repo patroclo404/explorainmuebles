@@ -151,7 +151,7 @@
                             <a class="template_btnsShare twitter" data-url="desarrollo.php?id=<?php echo $desarrollo["id"]; ?>" data-titulo="<?php echo $desarrollo["titulo"]; ?>">Twitter</a>
                             <a class="template_btnsShare email" data-url="desarrollo.php?id=<?php echo $desarrollo["id"]; ?>">Email</a>
                         </div>
-                        <p><a class="btnBotones contacto" data-label="desarrollo_contacto">Contactar</a><a class="otrosBotones" data-label="desarrollo_contacto">Contactar al anunciante</a></p>
+                        <!--<p><a class="btnBotones contacto" data-label="desarrollo_contacto">Contactar</a><a class="otrosBotones" data-label="desarrollo_contacto">Contactar al anunciante</a></p>-->
                         <p><a class="btnBotones pdf">PDF</a><a class="otrosBotones">Guardar en PDF</a></p>
                         <p><a class="btnBotones imprimir" href="javascript:window.print();">Imprimir</a><a class="otrosBotones" href="javascript:window.print();">Imprime este anuncio</a></p>
                         <p><a class="btnBotones reportar" href="javascript:desarrollo_reportarAnuncio();">Reportar</a><a class="otrosBotones" href="javascript:desarrollo_reportarAnuncio();">Reportar este anuncio</a></p>
