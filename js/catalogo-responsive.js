@@ -23,7 +23,7 @@ $(document).ready(function(){
 			click: function() {
 				//catalogo_fcnBuscarRedireccionar(false);
 				rel = $("#catalogo_orden p").attr("data-value");
-				console.log(rel);
+				//console.log(rel);
 				template_addListener_busquedas(catalogo_fcnBuscarRedireccionar, catalogo_fcnBuscar);
 			}
 		});
@@ -268,7 +268,7 @@ function catalogo_fcnBuscarRedireccionar(_setPagina) {
 		}
 		var precio_min = parseInt($("#template_busqueda_precios_min p").attr('data-value'));
 		var precio_max = parseInt($("#template_busqueda_precios_max p").attr('data-value'));
-		console.log(precio_min, precio_max);
+		//console.log(precio_min, precio_max);
 
 		if (precio_min > -1 ){
 			datos2["preciosMin2"] = precio_min;
