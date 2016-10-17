@@ -151,7 +151,6 @@ function inmueble_cerrarPopup() {
 	$(window).unbind("keyup");
 }
 
-
 /*
 	Muestra un popup con una mensaje del exito de la creacion del inmueble
 */

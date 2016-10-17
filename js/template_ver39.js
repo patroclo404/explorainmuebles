@@ -255,6 +255,43 @@ function template_inicializarBotones() {
 function gotoURL(url){
 	window.location=url;
 }
+function printMaps() {
+    var body               = $('body');
+    var mapContainer       = $('.map-container');
+    var mapContainerParent = mapContainer.parent();
+    var printContainer     = $('<div>');
+
+    printContainer
+        .addClass('print-container')
+        .css('position', 'relative')
+        .height(mapContainer.height())
+        .append(mapContainer)
+        .prependTo(body);
+
+    var content = body
+        .children()
+        .not('script')
+        .not(printContainer)
+        .detach();
+
+    /*
+     * Needed for those who use Bootstrap 3.x, because some of
+     * its `@media print` styles ain't play nicely when printing.
+     */
+    var patchedStyle = $('<style>')
+        .attr('media', 'print')
+        .text('img { max-width: none !important; }' +
+              'a[href]:after { content: ""; }')
+        .appendTo('head');
+
+    window.print();
+
+    body.prepend(content);
+    mapContainerParent.prepend(mapContainer);
+
+    printContainer.remove();
+    patchedStyle.remove();
+}
 
 
 /*

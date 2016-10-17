@@ -435,6 +435,7 @@ function CabeceraHTML($cssJs = NULL, $varJs = NULL, $paramsMetasFB = NULL, $para
 			<link rel='stylesheet' type='text/css' href='css/pickerDate.css' />
 			<link rel='stylesheet' type='text/css' href='css/pickerTime.css' />
 			<link rel='stylesheet' type='text/css' href='css/template-reset.css' />
+            <script type='text/javascript' src='js/prueba.js'></script>
             <link href='https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900' rel='stylesheet'>
 
             <style type='text/css'>
