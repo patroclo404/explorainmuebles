@@ -256,6 +256,7 @@
             <h2 class="col-lg-10 col-xs-8">&Uacute;ltimas Propiedades</h2>
             <div class="col-lg-2 col-xs-4"> <div class="more" onclick="catalogo_redirecciona_regresar('/venta/todos-los-tipos/todo-mexico/todas-las-ciudades');"> ver m&aacute;s ></div> </div>
         </div>
+        
         <div class="row body">
             <?php
 
